@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FAQTableViewCell" rowHeight="35" id="U6K-cA-Hh9" customClass="FAQTableViewCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U6K-cA-Hh9" id="TtW-mI-A3O">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A8H-rr-IYT">
+                        <rect key="frame" x="16" y="4" width="288" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oT6-c8-kO8" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="240.5" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="OIQ-b8-8xv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yn-Nq-wgk">
+                                <rect key="frame" x="256" y="13.5" width="16" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="txS-vw-pom"/>
+                                    <constraint firstAttribute="height" constant="16" id="xWA-cI-6bY"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="DownArrow"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oT6-c8-kO8" firstAttribute="leading" secondItem="A8H-rr-IYT" secondAttribute="leading" constant="8" id="0AX-p4-4gn"/>
+                            <constraint firstItem="9Yn-Nq-wgk" firstAttribute="leading" secondItem="oT6-c8-kO8" secondAttribute="trailing" constant="7.5" id="5x4-3D-kor"/>
+                            <constraint firstAttribute="bottom" secondItem="oT6-c8-kO8" secondAttribute="bottom" constant="8" id="ADX-NS-VJN"/>
+                            <constraint firstAttribute="trailing" secondItem="9Yn-Nq-wgk" secondAttribute="trailing" constant="16" id="IhS-s4-epE"/>
+                            <constraint firstItem="oT6-c8-kO8" firstAttribute="top" secondItem="A8H-rr-IYT" secondAttribute="top" constant="8" id="V8D-Yl-2sc"/>
+                            <constraint firstItem="9Yn-Nq-wgk" firstAttribute="centerY" secondItem="A8H-rr-IYT" secondAttribute="centerY" id="gSS-ZK-f7Z"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="tintColor" systemColor="systemGrayColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="A8H-rr-IYT" secondAttribute="bottom" constant="4" id="LLV-Xa-PzN"/>
+                    <constraint firstItem="A8H-rr-IYT" firstAttribute="top" secondItem="TtW-mI-A3O" secondAttribute="top" constant="4" id="jfx-YV-gm6"/>
+                    <constraint firstAttribute="trailing" secondItem="A8H-rr-IYT" secondAttribute="trailing" constant="16" id="mQH-k3-I6Z"/>
+                    <constraint firstItem="A8H-rr-IYT" firstAttribute="leading" secondItem="TtW-mI-A3O" secondAttribute="leading" constant="16" id="nHi-sa-rGx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="21L-LX-eCS"/>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="accessoryButton" destination="9Yn-Nq-wgk" id="B3q-WO-Jx9"/>
+                <outlet property="questionLabel" destination="oT6-c8-kO8" id="D2U-g5-n5M"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="81.361607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DownArrow" width="10.5" height="7"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapInfoWindow" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="246" height="154"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v66-tL-3wf">
+                    <rect key="frame" x="56" y="4" width="134.33333333333334" height="146"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="sd sdc sd sd sd " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSP-t5-EAe">
+                    <rect key="frame" x="63.999999999999993" y="8" width="118.33333333333329" height="138"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GQu-8o-O5q"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="230" id="LwG-sL-zqQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdX-fk-8VE">
+                    <rect key="frame" x="246" y="64.666666666666671" width="0.0" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="oVB-Bl-S6u"/>
+                        <constraint firstAttribute="height" constant="25" id="zuP-w1-ZcM"/>
+                    </constraints>
+                    <state key="normal" image="Add"/>
+                    <connections>
+                        <action selector="addButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="1KD-Y2-NqZ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcE-Lg-wZe">
+                    <rect key="frame" x="246" y="64.666666666666671" width="0.0" height="25"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="UhU-qw-ujM"/>
+                        <constraint firstAttribute="width" id="nBH-oa-DZX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SSP-t5-EAe" secondAttribute="bottom" constant="8" id="5P6-ua-g5b"/>
+                <constraint firstItem="v66-tL-3wf" firstAttribute="trailing" secondItem="SSP-t5-EAe" secondAttribute="trailing" constant="8" id="DZw-Rw-lUQ"/>
+                <constraint firstItem="SSP-t5-EAe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Hw4-po-wck"/>
+                <constraint firstItem="EdX-fk-8VE" firstAttribute="leading" secondItem="FcE-Lg-wZe" secondAttribute="trailing" id="TFR-Xg-fAO"/>
+                <constraint firstItem="FcE-Lg-wZe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Zub-dZ-ca3"/>
+                <constraint firstItem="SSP-t5-EAe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="a7p-o3-deA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EdX-fk-8VE" secondAttribute="trailing" id="gis-9T-NDK"/>
+                <constraint firstItem="SSP-t5-EAe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="k2l-WD-F4h"/>
+                <constraint firstItem="v66-tL-3wf" firstAttribute="top" secondItem="SSP-t5-EAe" secondAttribute="top" constant="-4" id="m9v-RZ-cbV"/>
+                <constraint firstItem="EdX-fk-8VE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mef-9T-zPp"/>
+                <constraint firstItem="v66-tL-3wf" firstAttribute="leading" secondItem="SSP-t5-EAe" secondAttribute="leading" constant="-8" id="nBS-GK-lDR"/>
+                <constraint firstItem="v66-tL-3wf" firstAttribute="bottom" secondItem="SSP-t5-EAe" secondAttribute="bottom" constant="4" id="wbG-LV-M2Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="addButton" destination="EdX-fk-8VE" id="vC9-nd-d0d"/>
+                <outlet property="addressLabel" destination="SSP-t5-EAe" id="ueB-Aj-HoC"/>
+                <outlet property="borderView" destination="v66-tL-3wf" id="2it-gW-NyO"/>
+                <outlet property="buttonLeadingConstraint" destination="TFR-Xg-fAO" id="0Xw-6B-xdn"/>
+                <outlet property="buttonTrailingConstraint" destination="gis-9T-NDK" id="ZTk-ON-k1y"/>
+                <outlet property="buttonWidthConstraint" destination="oVB-Bl-S6u" id="YHf-41-oBL"/>
+            </connections>
+            <point key="canvasLocation" x="-311.4503816793893" y="-4.9295774647887329"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Add" width="24" height="24"/>
+    </resources>
+</document>

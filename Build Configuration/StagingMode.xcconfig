@@ -1,0 +1,34 @@
+//
+//  StagingMode.xcconfig
+//  RCRC
+//
+//  Created by Ganesh Shinde on 01/04/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//JourneyPlannerBaseURL = https:/$()/37.224.41.117:8243/
+//FrequentlyAskedQuestionsURL = https:/$()/37.224.41.117:8080/
+//LatestNewsURL = https:/$()/37.224.41.117:8080/o/
+//ContactURL = https:/$()/37.224.41.117:8080/
+//LoginURL = https:/$()/37.224.41.117:8243/
+//Liferay = https:/$()/37.224.41.117:8080/
+
+// Private Base URL
+// Global Network
+//JourneyPlannerBaseURL = https:/$()/192.168.59.12:8243/
+
+// Cisco VPN Staging Network
+//JourneyPlannerBaseURL = https:/$()/gateway.am.wso2.com:30343/
+//FrequentlyAskedQuestionsURL = https:/$()/10.200.24.190:8443/
+//LatestNewsURL = https:/$()/10.200.24.190:8443/o/
+//ContactURL = https:/$()/10.200.24.190:8443/
+//Wso2TokenUrl = https:/$()/identity.wso2.com:30343/oauth2/
+
+// Cisco VPN Staging Network
+JourneyPlannerBaseURL = https:/$()/sitgw.riyadhbus.sa/
+FrequentlyAskedQuestionsURL = https:/$()/sit.riyadhbus.sa/
+LatestNewsURL = https:/$()/sit.riyadhbus.sa/o/
+ContactURL = https:/$()/sit.riyadhbus.sa/
+Wso2TokenUrl = https:/$()/sitidam.riyadhbus.sa/oauth2/

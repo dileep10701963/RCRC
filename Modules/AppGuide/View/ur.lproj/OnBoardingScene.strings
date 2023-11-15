@@ -1,0 +1,63 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "2Q3-Su-e6j"; */
+"2Q3-Su-e6j.normalTitle" = "اگلے";
+
+/* Class = "UILabel"; text = "Plan a Trip"; ObjectID = "5gR-s3-r7i"; */
+"5gR-s3-r7i.text" = "سفر کا منصوبہ بنائیں";
+
+/* Class = "UILabel"; text = "Places of Interest"; ObjectID = "BiY-TV-KJL"; */
+"BiY-TV-KJL.text" = "دلچسپی کے مقامات";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "DFW-Xb-io1"; */
+"DFW-Xb-io1.normalTitle" = "چھوڑ دو";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "DcN-63-gt7"; */
+"DcN-63-gt7.normalTitle" = "چھوڑ دو";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "HtV-qJ-nE8"; */
+"HtV-qJ-nE8.normalTitle" = "چھوڑ دو";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "J7K-Wf-LiZ"; */
+"J7K-Wf-LiZ.normalTitle" = "شروع کرنے کے";
+
+/* Class = "UILabel"; text = "Automated Fare"; ObjectID = "KjV-pg-XmM"; */
+"KjV-pg-XmM.text" = "خود کار کرایہ";
+
+/* Class = "UILabel"; text = "Access places of Interest or Events by searching or directly selecting from map to know distance from your origin"; ObjectID = "N3d-A3-b8m"; */
+"N3d-A3-b8m.text" = "اپنی اصل سے فاصلہ معلوم کرنے کیلئے نقشہ سے براہ راست منتخب کرکے یا دلچسپ مقامات یا واقعات تک رسائی حاصل کریں";
+
+/* Class = "UILabel"; text = "Personalization"; ObjectID = "QwW-Q9-kO6"; */
+"QwW-Q9-kO6.text" = "ذاتی نوعیت";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "STv-q7-ncf"; */
+"STv-q7-ncf.normalTitle" = "سائن اپ";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "UI0-0e-BpG"; */
+"UI0-0e-BpG.normalTitle" = "اگلے";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "XTu-d2-xAM"; */
+"XTu-d2-xAM.normalTitle" = "چھوڑ دو";
+
+/* Class = "UILabel"; text = "Plan a Trip or Schedule a Trip based on all available transport options according to your travel preferences"; ObjectID = "YnY-FK-sLY"; */
+"YnY-FK-sLY.text" = "سفر کی منصوبہ بندی کریں یا اپنے سفر کی ترجیحات کے مطابق تمام دستیاب ٹرانسپورٹ آپشنز کی بنیاد پر ٹرپ کا شیڈول کریں";
+
+/* Class = "UILabel"; text = "Sign up for enhanced personalization & synching your details across all the platforms"; ObjectID = "ZSS-bQ-CVD"; */
+"ZSS-bQ-CVD.text" = "بڑھتی ہوئی شخصییت کے لئے سائن اپ کریں اور تمام پلیٹ فارمز میں اپنی تفصیلات مطابقت پذیر بنائیں";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "dtO-2U-ytg"; */
+"dtO-2U-ytg.normalTitle" = "اگلے";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "eSa-CT-3ap"; */
+"eSa-CT-3ap.normalTitle" = "اگلے";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "k0a-fM-YdO"; */
+"k0a-fM-YdO.normalTitle" = "چھوڑ دو";
+
+/* Class = "UILabel"; text = "KAPRPT Network"; ObjectID = "nfc-u9-5Db"; */
+"nfc-u9-5Db.text" = "KAPRPT نیٹ ورک";
+
+/* Class = "UILabel"; text = "Know all the information of Riyadh Public Transport about of their respective route names or numbers and time table"; ObjectID = "ums-0k-ERW"; */
+"ums-0k-ERW.text" = "ریاض پبلک ٹرانسپورٹ کی ان تمام متعلقہ راستوں کے ناموں یا نمبروں اور ٹائم ٹیبل کے بارے میں معلومات جانیں";
+
+/* Class = "UILabel"; text = "Option to automatic buying the Journey e-tickets, Top up of Fare Media Smart Card"; ObjectID = "xiU-AK-w5P"; */
+"xiU-AK-w5P.text" = "سفر ای ٹکٹوں کو خود بخود خریدنے کا اختیار ، فیر میڈیا سمارٹ کارڈ کا ٹاپ اپ";

@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "KHh-fS-oFn"; */
+"KHh-fS-oFn.text" = "Label";
+
+/* Class = "UITextField"; text = "Select a Related Topic"; ObjectID = "ME6-al-Yv2"; */
+"ME6-al-Yv2.text" = "حدد موضوعًا ذا صلة";
+
+/* Class = "UITextField"; placeholder = "Contact Number"; ObjectID = "Z0o-Sg-4IE"; */
+"Z0o-Sg-4IE.placeholder" = "رقم الاتصال";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZqY-P7-evP"; */
+"ZqY-P7-evP.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Your Full Name"; ObjectID = "cro-U8-Pp7"; */
+"cro-U8-Pp7.placeholder" = "اسمك الكامل";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oYc-R3-B2r"; */
+"oYc-R3-B2r.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pYk-vF-J7K"; */
+"pYk-vF-J7K.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "w79-mr-pkA"; */
+"w79-mr-pkA.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Proceed"; ObjectID = "wZz-OR-Oap"; */
+"wZz-OR-Oap.normalTitle" = "تابع";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "yg7-8p-3hr"; */
+"yg7-8p-3hr.placeholder" = "عنوان بريد الكتروني";

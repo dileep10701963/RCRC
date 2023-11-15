@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExistingCardsViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="addNewCardButton" destination="ySV-mQ-8s7" id="rt6-io-apR"/>
+                <outlet property="allPaymentMethodsTableView" destination="vjb-LT-4t1" id="pPC-be-znL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GHu-kJ-2Yl" userLabel="NavigationView">
+                    <rect key="frame" x="0.0" y="60" width="414" height="35"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_left" translatesAutoresizingMaskIntoConstraints="NO" id="5nS-Wo-Ppk">
+                            <rect key="frame" x="0.0" y="0.0" width="53" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="53" id="2KK-S3-vGL"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_right" translatesAutoresizingMaskIntoConstraints="NO" id="KTb-zJ-iLq">
+                            <rect key="frame" x="53" y="0.0" width="361" height="35"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Methods" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jv8-f0-JKZ">
+                            <rect key="frame" x="88" y="0.0" width="326" height="35"/>
+                            <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KTb-zJ-iLq" secondAttribute="bottom" id="AND-a6-gI7"/>
+                        <constraint firstAttribute="bottom" secondItem="5nS-Wo-Ppk" secondAttribute="bottom" id="Bqs-vl-yma"/>
+                        <constraint firstItem="jv8-f0-JKZ" firstAttribute="top" secondItem="GHu-kJ-2Yl" secondAttribute="top" id="F5P-ho-5hM"/>
+                        <constraint firstItem="KTb-zJ-iLq" firstAttribute="leading" secondItem="5nS-Wo-Ppk" secondAttribute="trailing" id="JG1-Sk-GR3"/>
+                        <constraint firstAttribute="trailing" secondItem="jv8-f0-JKZ" secondAttribute="trailing" id="JtN-GE-Jvd"/>
+                        <constraint firstItem="jv8-f0-JKZ" firstAttribute="leading" secondItem="5nS-Wo-Ppk" secondAttribute="trailing" constant="35" id="NBe-Po-4vg"/>
+                        <constraint firstItem="5nS-Wo-Ppk" firstAttribute="leading" secondItem="GHu-kJ-2Yl" secondAttribute="leading" id="VGC-MU-roe"/>
+                        <constraint firstItem="5nS-Wo-Ppk" firstAttribute="top" secondItem="GHu-kJ-2Yl" secondAttribute="top" id="Yyl-7T-Vae"/>
+                        <constraint firstAttribute="bottom" secondItem="jv8-f0-JKZ" secondAttribute="bottom" id="e2b-o2-Bfq"/>
+                        <constraint firstAttribute="height" constant="35" id="qlG-UQ-8uh"/>
+                        <constraint firstAttribute="trailing" secondItem="KTb-zJ-iLq" secondAttribute="trailing" id="uxZ-JS-cQL"/>
+                        <constraint firstItem="KTb-zJ-iLq" firstAttribute="top" secondItem="GHu-kJ-2Yl" secondAttribute="top" id="vwu-PH-Ihm"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vjb-LT-4t1">
+                    <rect key="frame" x="0.0" y="191" width="414" height="368"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="368" id="ufP-Kg-D8k"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.43529411759999997" green="0.82352941180000006" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySV-mQ-8s7">
+                    <rect key="frame" x="127" y="631" width="160" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="2p7-nY-Aub"/>
+                        <constraint firstAttribute="height" constant="44" id="rV6-cD-rwM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Add card" backgroundImage="button_dark_light">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewCard:" destination="-1" eventType="touchUpInside" id="UAj-oL-DOJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View your saved cards below." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT3-lu-mws">
+                    <rect key="frame" x="24" y="143" width="366" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="SYv-Cg-JqO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rpt_bottom_banner" translatesAutoresizingMaskIntoConstraints="NO" id="ALd-LZ-U9y">
+                    <rect key="frame" x="0.0" y="872" width="414" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="XHX-bD-HfQ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vjb-LT-4t1" firstAttribute="top" secondItem="HT3-lu-mws" secondAttribute="bottom" constant="24" id="25d-W6-nWy"/>
+                <constraint firstItem="HT3-lu-mws" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="IDN-tY-u98"/>
+                <constraint firstAttribute="bottom" secondItem="ALd-LZ-U9y" secondAttribute="bottom" id="ISV-M0-Wd6"/>
+                <constraint firstItem="GHu-kJ-2Yl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JkO-pd-Nsm"/>
+                <constraint firstItem="HT3-lu-mws" firstAttribute="top" secondItem="GHu-kJ-2Yl" secondAttribute="bottom" constant="48" id="TDZ-BK-tll"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ALd-LZ-U9y" secondAttribute="trailing" id="Ydf-Ua-WK5"/>
+                <constraint firstItem="ySV-mQ-8s7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bYN-2y-vqN"/>
+                <constraint firstItem="GHu-kJ-2Yl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="czL-yV-FNi"/>
+                <constraint firstItem="ySV-mQ-8s7" firstAttribute="top" secondItem="vjb-LT-4t1" secondAttribute="bottom" constant="72" id="ddX-E1-lEg"/>
+                <constraint firstItem="vjb-LT-4t1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fQf-0I-806"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vjb-LT-4t1" secondAttribute="trailing" id="iWR-N0-Rtj"/>
+                <constraint firstItem="ALd-LZ-U9y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rP7-va-vJ9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GHu-kJ-2Yl" secondAttribute="trailing" id="vjf-k7-Dp8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HT3-lu-mws" secondAttribute="trailing" constant="24" id="wyi-L9-wM9"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button_dark_light" width="168" height="48"/>
+        <image name="profile_left" width="48" height="35"/>
+        <image name="profile_right" width="321" height="35"/>
+        <image name="rpt_bottom_banner" width="4833" height="202"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

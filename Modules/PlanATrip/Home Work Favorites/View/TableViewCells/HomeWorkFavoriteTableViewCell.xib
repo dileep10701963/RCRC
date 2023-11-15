@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="HomeWorkFavoriteTableViewCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5pK-Fg-9OF">
+                        <rect key="frame" x="16" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Wub-hl-z60"/>
+                            <constraint firstAttribute="height" constant="40" id="zLC-u0-KIE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIx-C2-7r3">
+                        <rect key="frame" x="76" y="15" width="196" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="MqN-Ro-J1B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                        <color key="textColor" red="0.086274509803921567" green="0.14901960784313725" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUI-k7-ZMY">
+                        <rect key="frame" x="76" y="37" width="196" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="ZR9-08-Fm5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="14"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYn-Zc-NwS">
+                        <rect key="frame" x="280" y="28" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HTe-md-jUF"/>
+                            <constraint firstAttribute="width" constant="20" id="Ziu-rI-h19"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="editProfile"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wIx-C2-7r3" firstAttribute="leading" secondItem="5pK-Fg-9OF" secondAttribute="trailing" constant="20" id="5pV-i3-zb1"/>
+                    <constraint firstAttribute="trailing" secondItem="wYn-Zc-NwS" secondAttribute="trailing" constant="20" id="Ar8-yF-ux4"/>
+                    <constraint firstAttribute="bottom" secondItem="zUI-k7-ZMY" secondAttribute="bottom" constant="10" id="JsQ-Hn-Heh"/>
+                    <constraint firstItem="zUI-k7-ZMY" firstAttribute="top" secondItem="wIx-C2-7r3" secondAttribute="bottom" constant="8" id="Kq7-SH-lfi"/>
+                    <constraint firstItem="5pK-Fg-9OF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="NGP-Gd-NZ6"/>
+                    <constraint firstItem="wYn-Zc-NwS" firstAttribute="leading" secondItem="wIx-C2-7r3" secondAttribute="trailing" constant="8" id="VSJ-hJ-XTD"/>
+                    <constraint firstItem="wIx-C2-7r3" firstAttribute="top" secondItem="5pK-Fg-9OF" secondAttribute="top" constant="5" id="bzP-7T-Aob"/>
+                    <constraint firstItem="zUI-k7-ZMY" firstAttribute="leading" secondItem="5pK-Fg-9OF" secondAttribute="trailing" constant="20" id="e0k-z2-roZ"/>
+                    <constraint firstItem="wYn-Zc-NwS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fPD-5e-T0l"/>
+                    <constraint firstItem="5pK-Fg-9OF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ihi-7d-UPb"/>
+                    <constraint firstItem="wYn-Zc-NwS" firstAttribute="leading" secondItem="zUI-k7-ZMY" secondAttribute="trailing" constant="8" id="ybD-nc-mIO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="zUI-k7-ZMY" id="yzA-Dm-y1n"/>
+                <outlet property="cellImage" destination="5pK-Fg-9OF" id="4P5-74-ux7"/>
+                <outlet property="editButton" destination="wYn-Zc-NwS" id="8wR-H3-VAD"/>
+                <outlet property="editButtonWidth" destination="Ziu-rI-h19" id="Oa8-2z-Imb"/>
+                <outlet property="locationLabel" destination="wIx-C2-7r3" id="731-hR-G6j"/>
+            </connections>
+            <point key="canvasLocation" x="-830" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="editProfile" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FareMediaPurchaseViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="doNotGoBackLabel" destination="e05-jy-fTB" id="ZQC-GE-iPD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webview" destination="lUG-Qo-wkg" id="22l-lG-AUx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please do not close the application or go back during the payment process." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e05-jy-fTB">
+                    <rect key="frame" x="16" y="64" width="382" height="24.5"/>
+                    <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUG-Qo-wkg">
+                    <rect key="frame" x="0.0" y="108.5" width="414" height="753.5"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lUG-Qo-wkg" secondAttribute="trailing" id="KuA-gK-FTZ"/>
+                <constraint firstItem="lUG-Qo-wkg" firstAttribute="top" secondItem="e05-jy-fTB" secondAttribute="bottom" constant="20" id="KuR-Ct-2Ij"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lUG-Qo-wkg" secondAttribute="bottom" id="MB3-r5-UiW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e05-jy-fTB" secondAttribute="trailing" constant="16" id="Mtx-Yl-zeB"/>
+                <constraint firstItem="e05-jy-fTB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dfX-Cn-qtC"/>
+                <constraint firstItem="e05-jy-fTB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gXn-Gg-paI"/>
+                <constraint firstItem="lUG-Qo-wkg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hjT-Tc-icG"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="62"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

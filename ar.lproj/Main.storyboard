@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uHa-Lx-16u">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="HtX-qH-sRL">
+            <objects>
+                <viewController id="uHa-Lx-16u" customClass="MainViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CwA-GV-fCH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ith-vP-pDW" userLabel="ContentView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="6tq-rA-WDg" kind="embed" identifier="" id="V78-63-Wf2"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QWe-GC-beq" userLabel="SideMenuView">
+                                <rect key="frame" x="-300" y="0.0" width="300" height="667"/>
+                                <connections>
+                                    <segue destination="OFD-G3-sf5" kind="embed" identifier="" id="sxs-Wv-kie"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ith-vP-pDW" firstAttribute="top" secondItem="CwA-GV-fCH" secondAttribute="top" id="3ok-aZ-cpF"/>
+                            <constraint firstItem="Ith-vP-pDW" firstAttribute="leading" secondItem="CwA-GV-fCH" secondAttribute="leading" id="89i-Pm-P3m"/>
+                            <constraint firstItem="Ith-vP-pDW" firstAttribute="width" secondItem="CwA-GV-fCH" secondAttribute="width" id="Kuf-27-PuF"/>
+                            <constraint firstItem="QWe-GC-beq" firstAttribute="top" secondItem="CwA-GV-fCH" secondAttribute="top" id="L2J-Ld-diR"/>
+                            <constraint firstItem="Ith-vP-pDW" firstAttribute="height" secondItem="CwA-GV-fCH" secondAttribute="height" id="bHN-Fk-VHA"/>
+                            <constraint firstItem="QWe-GC-beq" firstAttribute="width" secondItem="CwA-GV-fCH" secondAttribute="width" multiplier="0.8" id="fZH-Fn-AaG"/>
+                            <constraint firstItem="QWe-GC-beq" firstAttribute="leading" secondItem="CwA-GV-fCH" secondAttribute="leading" constant="-300" id="lkW-k2-ITC"/>
+                            <constraint firstItem="QWe-GC-beq" firstAttribute="height" secondItem="CwA-GV-fCH" secondAttribute="height" id="rDX-b8-Pis"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NI4-uL-K6K"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentViewLeadingConstraint" destination="89i-Pm-P3m" id="oUS-wU-Xe1"/>
+                        <outlet property="sideMenuContainer" destination="QWe-GC-beq" id="9Yo-8b-K42"/>
+                        <outlet property="sideMenuViewLeadingConstraint" destination="lkW-k2-ITC" id="Zcn-eX-nVj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIS-ig-neb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-212" y="-44"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PaH-sv-2iE">
+            <objects>
+                <tabBarController id="6tq-rA-WDg" customClass="RCRCTabBarController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E2s-aV-j6E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.15294117647058825" green="0.37254901960784315" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmG-U0-eFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-211" y="748"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="VcX-k1-mT8">
+            <objects>
+                <viewController id="OFD-G3-sf5" customClass="SideMenuViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B7k-ge-Qpg">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCO-j9-WQY">
+                                <rect key="frame" x="16" y="12" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="KBC-iR-TRJ"/>
+                                    <constraint firstAttribute="height" constant="55" id="wAM-Dt-Os7"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="default_profile_pic"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ypc-QJ-LHf">
+                                <rect key="frame" x="0.0" y="75" width="300" height="592"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-bF-79t">
+                                <rect key="frame" x="87" y="29" width="60" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="MTm-j0-7KO">
+                                <rect key="frame" x="250" y="22.5" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="g8N-5c-3OK"/>
+                                    <constraint firstAttribute="height" constant="34" id="hwS-t0-dGH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-ze-sKt">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="vG0-br-58O"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="hideSideMenu" destination="OFD-G3-sf5" eventType="touchUpInside" id="GyH-eV-Cyr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.37254901960784315" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tJK-bF-79t" firstAttribute="leading" secondItem="VCO-j9-WQY" secondAttribute="trailing" constant="16" id="2FM-sM-dsx"/>
+                            <constraint firstItem="VCO-j9-WQY" firstAttribute="top" secondItem="rCI-Xn-klt" secondAttribute="top" constant="12" id="6hc-8g-XGR"/>
+                            <constraint firstItem="ypc-QJ-LHf" firstAttribute="leading" secondItem="rCI-Xn-klt" secondAttribute="leading" id="Bop-hw-Ct4"/>
+                            <constraint firstItem="VCO-j9-WQY" firstAttribute="leading" secondItem="rCI-Xn-klt" secondAttribute="leading" constant="16" id="DhR-nj-JCe"/>
+                            <constraint firstAttribute="bottom" secondItem="ypc-QJ-LHf" secondAttribute="bottom" id="JzM-3J-cg3"/>
+                            <constraint firstItem="tJK-bF-79t" firstAttribute="centerY" secondItem="VCO-j9-WQY" secondAttribute="centerY" id="LWM-fM-FIa"/>
+                            <constraint firstItem="MTm-j0-7KO" firstAttribute="centerY" secondItem="tJK-bF-79t" secondAttribute="centerY" id="Pbe-sU-Nq8"/>
+                            <constraint firstItem="ypc-QJ-LHf" firstAttribute="trailing" secondItem="rCI-Xn-klt" secondAttribute="trailing" id="Re2-Jv-dFF"/>
+                            <constraint firstItem="uAr-ze-sKt" firstAttribute="top" secondItem="rCI-Xn-klt" secondAttribute="top" id="S8v-cq-VhE"/>
+                            <constraint firstItem="rCI-Xn-klt" firstAttribute="trailing" secondItem="MTm-j0-7KO" secondAttribute="trailing" constant="16" id="ZYh-bi-r1e"/>
+                            <constraint firstItem="ypc-QJ-LHf" firstAttribute="top" secondItem="VCO-j9-WQY" secondAttribute="bottom" constant="8" id="agg-Vj-NSr"/>
+                            <constraint firstItem="uAr-ze-sKt" firstAttribute="leading" secondItem="rCI-Xn-klt" secondAttribute="leading" id="oaL-BH-Lqb"/>
+                            <constraint firstItem="uAr-ze-sKt" firstAttribute="trailing" secondItem="rCI-Xn-klt" secondAttribute="trailing" id="wkK-3K-SwT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rCI-Xn-klt"/>
+                    </view>
+                    <connections>
+                        <outlet property="avatarButton" destination="VCO-j9-WQY" id="KWh-73-RYD"/>
+                        <outlet property="menuTableView" destination="ypc-QJ-LHf" id="cbv-qs-TKW"/>
+                        <outlet property="nameLabel" destination="tJK-bF-79t" id="stq-8r-XMh"/>
+                        <outlet property="rightArrowImageView" destination="MTm-j0-7KO" id="1aW-NH-JJs"/>
+                        <outlet property="tableViewBottomConstraint" destination="JzM-3J-cg3" id="A9v-f7-n0X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHo-03-zQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-880" y="66.11694152923539"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.0" green="0.43529411764705883" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="default_profile_pic" width="40" height="40"/>
+        <image name="down-arrow" width="45" height="53"/>
+    </resources>
+</document>

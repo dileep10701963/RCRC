@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "   Attach photos or videos of the incidence"; ObjectID = "0IO-pe-gym"; */
+"0IO-pe-gym.text" = "   Attach photos or videos of the incidence";
+
+/* Class = "UITextField"; text = "Where did the incident happen?"; ObjectID = "6mT-4Q-6Kc"; */
+"6mT-4Q-6Kc.text" = "Where did the incident happen?";
+
+/* Class = "UIButton"; normalTitle = "Report"; ObjectID = "EnP-tz-35E"; */
+"EnP-tz-35E.normalTitle" = "Report";
+
+/* Class = "UITextField"; text = "When did the incident happen?"; ObjectID = "JUI-X5-Gzt"; */
+"JUI-X5-Gzt.text" = "When did the incident happen?";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "POY-Pe-RiT"; */
+"POY-Pe-RiT.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "When did the incident happen?"; ObjectID = "XdE-6V-UmT"; */
+"XdE-6V-UmT.placeholder" = "When did the incident happen?";
+
+/* Class = "UITextField"; text = "When did the incident happen?"; ObjectID = "XdE-6V-UmT"; */
+"XdE-6V-UmT.text" = "When did the incident happen?";
+
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "abm-f3-B59"; */
+"abm-f3-B59.normalTitle" = "Done";
+
+/* Class = "UIButton"; normalTitle = "Report"; ObjectID = "crE-qu-kW6"; */
+"crE-qu-kW6.normalTitle" = "Report";
+
+/* Class = "UITextField"; text = "I have Lost an Item"; ObjectID = "epO-jx-Sft"; */
+"epO-jx-Sft.text" = "I have Lost an Item";
+
+/* Class = "UIButton"; normalTitle = "Incident Subtype"; ObjectID = "srW-xT-Qt8"; */
+"srW-xT-Qt8.normalTitle" = "النوع الفرعي للحادث";
+
+/* Class = "UIButton"; normalTitle = "Incident Type"; ObjectID = "uxs-gE-kkS"; */
+"uxs-gE-kkS.normalTitle" = "Incident Type";
+
+/* Class = "UIButton"; normalTitle = "Where did the incident happen?"; ObjectID = "vmd-l2-cfL"; */
+"vmd-l2-cfL.normalTitle" = "أين وقع الحادث؟";
+
+/* Class = "UILabel"; text = "Describe the incident"; ObjectID = "w16-ab-zk5"; */
+"w16-ab-zk5.text" = "Describe the incident";
+
+/* Class = "UILabel"; text = "Attach photos or videos of the incidence"; ObjectID = "wYm-rm-aQG"; */
+"wYm-rm-aQG.text" = "إرفاق صور أو مقاطع فيديو للحادث";
+
+/* Class = "UITextField"; text = "Select Item Category"; ObjectID = "xuE-Op-ccN"; */
+"xuE-Op-ccN.text" = "Select Item Category";

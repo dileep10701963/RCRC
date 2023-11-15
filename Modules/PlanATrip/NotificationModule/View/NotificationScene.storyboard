@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="tek-JI-hMd">
+            <objects>
+                <viewController storyboardIdentifier="NotificationViewController" id="6sD-0Y-d90" customClass="NotificationViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qmn-vz-hKz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C7X-43-S2n">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CDO-5u-V66"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C7X-43-S2n" firstAttribute="leading" secondItem="CDO-5u-V66" secondAttribute="leading" id="82v-QF-e0V"/>
+                            <constraint firstItem="CDO-5u-V66" firstAttribute="bottom" secondItem="C7X-43-S2n" secondAttribute="bottom" id="Aec-6c-q9S"/>
+                            <constraint firstItem="C7X-43-S2n" firstAttribute="top" secondItem="CDO-5u-V66" secondAttribute="top" id="HVH-OJ-N0k"/>
+                            <constraint firstItem="CDO-5u-V66" firstAttribute="trailing" secondItem="C7X-43-S2n" secondAttribute="trailing" id="LCf-ch-qvY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="C7X-43-S2n" id="8fk-OZ-Ymb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PZs-PI-Pgp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="117"/>
+        </scene>
+        <!--Notification Detail View Controller-->
+        <scene sceneID="QSJ-zU-uTV">
+            <objects>
+                <viewController storyboardIdentifier="NotificationDetailViewController" id="3TB-jm-eta" customClass="NotificationDetailViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dbw-uY-hr4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PtS-m1-Wwi">
+                                <rect key="frame" x="36" y="102.5" width="362" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GWQ-Sg-l8V"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuy-bj-0f8">
+                                <rect key="frame" x="36" y="66" width="36.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GD-1A-1Lo">
+                                <rect key="frame" x="361.5" y="66" width="36.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMO-BB-abH">
+                                <rect key="frame" x="36" y="152" width="362" height="28.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ea-bi-Uk5">
+                                <rect key="frame" x="36" y="111.5" width="36.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1g-lg-nig">
+                                <rect key="frame" x="376" y="111.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="JqN-dg-QaL"/>
+                                    <constraint firstAttribute="width" constant="22" id="KiB-jh-nPQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="deleteButtonTapped:" destination="3TB-jm-eta" eventType="touchUpInside" id="IfV-ce-8Oe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ynv-it-l1X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lMO-BB-abH" firstAttribute="top" secondItem="0ea-bi-Uk5" secondAttribute="bottom" constant="12" id="771-o6-dFh"/>
+                            <constraint firstItem="0ea-bi-Uk5" firstAttribute="top" secondItem="PtS-m1-Wwi" secondAttribute="bottom" constant="8" id="CEm-Pi-YDx"/>
+                            <constraint firstItem="Iuy-bj-0f8" firstAttribute="top" secondItem="Ynv-it-l1X" secondAttribute="top" constant="22" id="J8o-jR-4wh"/>
+                            <constraint firstItem="lMO-BB-abH" firstAttribute="leading" secondItem="Iuy-bj-0f8" secondAttribute="leading" id="JlJ-dY-8IB"/>
+                            <constraint firstItem="Ynv-it-l1X" firstAttribute="trailing" secondItem="0GD-1A-1Lo" secondAttribute="trailing" constant="16" id="QVx-vD-Jzm"/>
+                            <constraint firstItem="0GD-1A-1Lo" firstAttribute="top" secondItem="Ynv-it-l1X" secondAttribute="top" constant="22" id="Uhc-QB-MsM"/>
+                            <constraint firstItem="j1g-lg-nig" firstAttribute="top" secondItem="0ea-bi-Uk5" secondAttribute="top" id="Vld-nj-ilx"/>
+                            <constraint firstItem="Iuy-bj-0f8" firstAttribute="leading" secondItem="Dbw-uY-hr4" secondAttribute="leadingMargin" constant="16" id="Wan-Fg-YUN"/>
+                            <constraint firstItem="lMO-BB-abH" firstAttribute="trailing" secondItem="0GD-1A-1Lo" secondAttribute="trailing" id="cXe-ED-x8m"/>
+                            <constraint firstItem="PtS-m1-Wwi" firstAttribute="top" secondItem="Iuy-bj-0f8" secondAttribute="bottom" constant="8" id="dp9-RD-lRd"/>
+                            <constraint firstItem="0ea-bi-Uk5" firstAttribute="leading" secondItem="Iuy-bj-0f8" secondAttribute="leading" id="kO9-rH-9OR"/>
+                            <constraint firstItem="j1g-lg-nig" firstAttribute="trailing" secondItem="0GD-1A-1Lo" secondAttribute="trailing" id="l5f-f3-5Rj"/>
+                            <constraint firstItem="PtS-m1-Wwi" firstAttribute="trailing" secondItem="0GD-1A-1Lo" secondAttribute="trailing" id="m58-Vc-8tT"/>
+                            <constraint firstItem="PtS-m1-Wwi" firstAttribute="leading" secondItem="Iuy-bj-0f8" secondAttribute="leading" id="mN6-OU-0Gj"/>
+                            <constraint firstItem="j1g-lg-nig" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0ea-bi-Uk5" secondAttribute="trailing" constant="22" id="t36-d9-n0O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deleteButton" destination="j1g-lg-nig" id="1LA-NI-MFR"/>
+                        <outlet property="notificationDateLabel" destination="0GD-1A-1Lo" id="a8l-bf-d9g"/>
+                        <outlet property="notificationMessageLabel" destination="0ea-bi-Uk5" id="FF6-a9-yfF"/>
+                        <outlet property="notificationSubMessageLabel" destination="lMO-BB-abH" id="8JZ-RJ-ydS"/>
+                        <outlet property="notificationTitleLabel" destination="Iuy-bj-0f8" id="gR6-dQ-b85"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJ8-Ak-odC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete" width="14.5" height="16"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

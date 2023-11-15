@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="BusViewTimeTableCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="511" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="511" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="pK9-6V-Fwk">
+                        <rect key="frame" x="47" y="0.0" width="464" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="CFY-GF-EFv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMc-zY-Tlf" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                        <rect key="frame" x="83" y="0.0" width="393" height="35"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiJ-FY-28z">
+                        <rect key="frame" x="479" y="9.5" width="16" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="TE4-06-YeR"/>
+                            <constraint firstAttribute="width" constant="16" id="dN7-ns-4uW"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="plusIcon"/>
+                        <connections>
+                            <action selector="accessoryButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h1l-ZB-W1W"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YD-iI-wcM">
+                        <rect key="frame" x="83" y="51" width="30" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="vbE-WA-pTR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="viewTimeTableButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Guj-rC-ck1"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-bd-4pL">
+                        <rect key="frame" x="122" y="51.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="NyH-Xh-KvK"/>
+                            <constraint firstAttribute="height" constant="20" id="ai1-nW-YaK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YiJ-FY-28z" firstAttribute="centerY" secondItem="pK9-6V-Fwk" secondAttribute="centerY" id="4Wa-Ke-DCe"/>
+                    <constraint firstItem="4YD-iI-wcM" firstAttribute="leading" secondItem="sMc-zY-Tlf" secondAttribute="leading" id="FPe-ZV-86Z"/>
+                    <constraint firstItem="YiJ-FY-28z" firstAttribute="leading" secondItem="sMc-zY-Tlf" secondAttribute="trailing" constant="3" id="GL2-Qb-eaF"/>
+                    <constraint firstItem="pK9-6V-Fwk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Jtt-99-bcr"/>
+                    <constraint firstItem="sMc-zY-Tlf" firstAttribute="top" secondItem="pK9-6V-Fwk" secondAttribute="top" id="N50-Qz-Ait"/>
+                    <constraint firstAttribute="trailing" secondItem="YiJ-FY-28z" secondAttribute="trailing" constant="16" id="QY3-va-pkP"/>
+                    <constraint firstItem="4YD-iI-wcM" firstAttribute="top" secondItem="pK9-6V-Fwk" secondAttribute="bottom" constant="16" id="Qpt-LG-NNt"/>
+                    <constraint firstItem="sMc-zY-Tlf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="83" id="aqH-OC-XbO"/>
+                    <constraint firstItem="YP3-bd-4pL" firstAttribute="leading" secondItem="4YD-iI-wcM" secondAttribute="trailing" constant="9" id="b0p-Z3-mfi"/>
+                    <constraint firstItem="YP3-bd-4pL" firstAttribute="centerY" secondItem="4YD-iI-wcM" secondAttribute="centerY" id="b7v-6J-Dzg"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4YD-iI-wcM" secondAttribute="bottom" constant="4" id="cpS-ci-oOU"/>
+                    <constraint firstAttribute="trailing" secondItem="pK9-6V-Fwk" secondAttribute="trailing" id="eHv-s5-4aj"/>
+                    <constraint firstItem="sMc-zY-Tlf" firstAttribute="bottom" secondItem="pK9-6V-Fwk" secondAttribute="bottom" id="mZZ-iA-btO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="pK9-6V-Fwk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="47" id="PBm-BK-Joc"/>
+            </constraints>
+            <connections>
+                <outlet property="accessoryButton" destination="YiJ-FY-28z" id="63Z-eR-RuZ"/>
+                <outlet property="buttonHeightConstraint" destination="vbE-WA-pTR" id="QHZ-sz-K1X"/>
+                <outlet property="headerLabel" destination="sMc-zY-Tlf" id="eUV-xQ-ZDY"/>
+                <outlet property="timeTableButtonBottomConstraint" destination="cpS-ci-oOU" id="4Ib-ZA-dde"/>
+                <outlet property="timeTableButtonTopConstraint" destination="Qpt-LG-NNt" id="iso-gi-82G"/>
+                <outlet property="timeTableImageHeightConstraint" destination="ai1-nW-YaK" id="suM-7X-eDL"/>
+                <outlet property="timeTableImageView" destination="YP3-bd-4pL" id="xKq-zP-kPX"/>
+                <outlet property="viewTimeTableButton" destination="4YD-iI-wcM" id="pw6-Z1-gAG"/>
+            </connections>
+            <point key="canvasLocation" x="265.94202898550725" y="121.54017857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CellBackgroundImage" width="323" height="36"/>
+        <image name="plusIcon" width="16.5" height="16"/>
+    </resources>
+</document>

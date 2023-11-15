@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="259" id="KGk-i7-Jjw" customClass="TimeTableContentCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="566" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frz-4S-6Gg">
+                        <rect key="frame" x="18" y="10" width="538" height="239"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnO-sl-IJb">
+                                <rect key="frame" x="0.0" y="0.0" width="226" height="239"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t3-Un-SSl" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="6" width="218" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Sw0-vW-Llc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3J0-vZ-cb5" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="70" width="218" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="W3R-Hz-YVJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grk-lR-Xqo" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="134" width="218" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="bz4-D6-l5v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akl-kq-dwI" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="178" width="218" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="kqo-b9-vUu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBP-9D-JOm" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                        <rect key="frame" x="6" y="212" width="218" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="UoA-kq-TtB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Akl-kq-dwI" secondAttribute="trailing" constant="2" id="8kH-UH-QhV"/>
+                                    <constraint firstItem="3J0-vZ-cb5" firstAttribute="leading" secondItem="XnO-sl-IJb" secondAttribute="leading" constant="6" id="Dqg-5m-XHB"/>
+                                    <constraint firstItem="JBP-9D-JOm" firstAttribute="leading" secondItem="XnO-sl-IJb" secondAttribute="leading" constant="6" id="F1c-oL-1Iz"/>
+                                    <constraint firstItem="Grk-lR-Xqo" firstAttribute="leading" secondItem="XnO-sl-IJb" secondAttribute="leading" constant="6" id="Gz2-7a-zyc"/>
+                                    <constraint firstAttribute="bottom" secondItem="JBP-9D-JOm" secondAttribute="bottom" constant="6" id="JDT-Kj-Q7D"/>
+                                    <constraint firstAttribute="trailing" secondItem="Grk-lR-Xqo" secondAttribute="trailing" constant="2" id="K2o-rs-RKp"/>
+                                    <constraint firstItem="0t3-Un-SSl" firstAttribute="top" secondItem="XnO-sl-IJb" secondAttribute="top" constant="6" id="LPB-fK-7nO"/>
+                                    <constraint firstAttribute="trailing" secondItem="0t3-Un-SSl" secondAttribute="trailing" constant="2" id="MYs-G5-1JR"/>
+                                    <constraint firstItem="0t3-Un-SSl" firstAttribute="leading" secondItem="XnO-sl-IJb" secondAttribute="leading" constant="6" id="RSi-K3-zrx"/>
+                                    <constraint firstAttribute="trailing" secondItem="3J0-vZ-cb5" secondAttribute="trailing" constant="2" id="eia-Oa-Qrp"/>
+                                    <constraint firstItem="Akl-kq-dwI" firstAttribute="leading" secondItem="XnO-sl-IJb" secondAttribute="leading" constant="6" id="mpS-rC-Kf1"/>
+                                    <constraint firstAttribute="trailing" secondItem="JBP-9D-JOm" secondAttribute="trailing" constant="2" id="w6f-Bd-SZs"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemGray2Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-Oz-AsA" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="232" y="6" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="ON9-h9-Q8G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLL-2T-ivf" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="232" y="35" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="iEJ-sa-ynD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3w-tc-bcS">
+                                <rect key="frame" x="0.0" y="62" width="538" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="CRg-OJ-i4w"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pd9-oN-D74">
+                                <rect key="frame" x="0.0" y="63" width="538" height="1"/>
+                                <color key="backgroundColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GWo-m7-sXn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fX0-kl-PRv" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="232" y="70" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="y0W-9X-Cyw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdY-2o-Emp" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="232" y="99" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="a9c-hb-KB5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-dY-v3h">
+                                <rect key="frame" x="0.0" y="126" width="538" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="JXG-Or-1NJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-fr-KWC" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="232" y="178" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Pvy-aJ-ocK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3V-Yt-dyA">
+                                <rect key="frame" x="0.0" y="127" width="538" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="CeH-Qh-0q7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Vn-gr-cIS" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="232" y="134" width="300" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Lxe-0x-n0P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvd-Bv-tYj" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="232" y="212" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="HI5-S6-QJc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ADM-N4-jav">
+                                <rect key="frame" x="0.0" y="171" width="538" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="EXH-zj-lSg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHR-pv-J60">
+                                <rect key="frame" x="0.0" y="205" width="538" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="nkM-nb-d9y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fX0-kl-PRv" secondAttribute="trailing" constant="6" id="02J-GC-rjD"/>
+                            <constraint firstAttribute="trailing" secondItem="G3V-Yt-dyA" secondAttribute="trailing" id="0Xt-bo-GEi"/>
+                            <constraint firstItem="bc9-fr-KWC" firstAttribute="leading" secondItem="5Vn-gr-cIS" secondAttribute="leading" id="19L-Ww-dNz"/>
+                            <constraint firstItem="XnO-sl-IJb" firstAttribute="top" secondItem="frz-4S-6Gg" secondAttribute="top" id="2Wo-9E-Aob"/>
+                            <constraint firstItem="RdY-2o-Emp" firstAttribute="leading" secondItem="fX0-kl-PRv" secondAttribute="leading" id="2aI-Jv-8J1"/>
+                            <constraint firstItem="G3V-Yt-dyA" firstAttribute="top" secondItem="eqK-dY-v3h" secondAttribute="bottom" id="2ok-wB-MA7"/>
+                            <constraint firstItem="G3V-Yt-dyA" firstAttribute="leading" secondItem="frz-4S-6Gg" secondAttribute="leading" id="32s-o3-fpa"/>
+                            <constraint firstAttribute="bottom" secondItem="XnO-sl-IJb" secondAttribute="bottom" id="3Qh-rU-Yie"/>
+                            <constraint firstItem="fX0-kl-PRv" firstAttribute="top" secondItem="Pd9-oN-D74" secondAttribute="bottom" constant="6" id="45R-q1-cow"/>
+                            <constraint firstItem="n3w-tc-bcS" firstAttribute="leading" secondItem="frz-4S-6Gg" secondAttribute="leading" id="48b-I0-T4k"/>
+                            <constraint firstItem="iHR-pv-J60" firstAttribute="top" secondItem="bc9-fr-KWC" secondAttribute="bottom" constant="6" id="4ZJ-d8-NWu"/>
+                            <constraint firstItem="JBP-9D-JOm" firstAttribute="top" secondItem="uvd-Bv-tYj" secondAttribute="top" id="4xZ-ts-1i0"/>
+                            <constraint firstAttribute="trailing" secondItem="RdY-2o-Emp" secondAttribute="trailing" constant="6" id="7bc-z6-YL7"/>
+                            <constraint firstItem="Pd9-oN-D74" firstAttribute="top" secondItem="n3w-tc-bcS" secondAttribute="bottom" id="8gQ-NG-7e4"/>
+                            <constraint firstItem="XnO-sl-IJb" firstAttribute="leading" secondItem="frz-4S-6Gg" secondAttribute="leading" id="97k-tm-tQH"/>
+                            <constraint firstAttribute="trailing" secondItem="RF8-Oz-AsA" secondAttribute="trailing" constant="6" id="BGM-xC-Aqy"/>
+                            <constraint firstItem="uvd-Bv-tYj" firstAttribute="leading" secondItem="bc9-fr-KWC" secondAttribute="leading" id="EHy-gj-OU9"/>
+                            <constraint firstItem="ZLL-2T-ivf" firstAttribute="top" secondItem="RF8-Oz-AsA" secondAttribute="bottom" constant="8" id="EqX-Yt-btg"/>
+                            <constraint firstItem="bc9-fr-KWC" firstAttribute="top" secondItem="ADM-N4-jav" secondAttribute="bottom" constant="6" id="JkY-PB-ifO"/>
+                            <constraint firstItem="3J0-vZ-cb5" firstAttribute="top" secondItem="fX0-kl-PRv" secondAttribute="top" id="N0U-dh-aeR"/>
+                            <constraint firstItem="ZLL-2T-ivf" firstAttribute="leading" secondItem="RF8-Oz-AsA" secondAttribute="leading" id="NN2-gH-Yel"/>
+                            <constraint firstItem="XnO-sl-IJb" firstAttribute="width" secondItem="frz-4S-6Gg" secondAttribute="width" multiplier="0.42" id="NY3-eo-QSn"/>
+                            <constraint firstItem="eqK-dY-v3h" firstAttribute="top" secondItem="RdY-2o-Emp" secondAttribute="bottom" constant="6" id="Nmf-lO-RDC"/>
+                            <constraint firstItem="uvd-Bv-tYj" firstAttribute="top" secondItem="iHR-pv-J60" secondAttribute="bottom" constant="6" id="Oye-Yg-7xv"/>
+                            <constraint firstItem="Grk-lR-Xqo" firstAttribute="top" secondItem="5Vn-gr-cIS" secondAttribute="top" id="PwH-8h-eUg"/>
+                            <constraint firstItem="Pd9-oN-D74" firstAttribute="leading" secondItem="n3w-tc-bcS" secondAttribute="leading" id="T8P-HC-OJh"/>
+                            <constraint firstItem="RF8-Oz-AsA" firstAttribute="top" secondItem="0t3-Un-SSl" secondAttribute="top" id="UU4-fW-Wct"/>
+                            <constraint firstItem="5Vn-gr-cIS" firstAttribute="top" secondItem="G3V-Yt-dyA" secondAttribute="bottom" constant="6" id="WJd-Ur-FtX"/>
+                            <constraint firstItem="uvd-Bv-tYj" firstAttribute="trailing" secondItem="bc9-fr-KWC" secondAttribute="trailing" id="Wqt-Fb-1wU"/>
+                            <constraint firstAttribute="trailing" secondItem="n3w-tc-bcS" secondAttribute="trailing" id="Wri-4c-MtL"/>
+                            <constraint firstItem="iHR-pv-J60" firstAttribute="leading" secondItem="G3V-Yt-dyA" secondAttribute="leading" id="a8f-aO-1sg"/>
+                            <constraint firstAttribute="trailing" secondItem="bc9-fr-KWC" secondAttribute="trailing" constant="6" id="dRa-Us-OSJ"/>
+                            <constraint firstAttribute="trailing" secondItem="5Vn-gr-cIS" secondAttribute="trailing" constant="6" id="daf-NU-fXy"/>
+                            <constraint firstItem="Pd9-oN-D74" firstAttribute="trailing" secondItem="n3w-tc-bcS" secondAttribute="trailing" id="dkO-xC-evx"/>
+                            <constraint firstItem="RdY-2o-Emp" firstAttribute="top" secondItem="fX0-kl-PRv" secondAttribute="bottom" constant="8" id="hbr-rl-4zf"/>
+                            <constraint firstItem="eqK-dY-v3h" firstAttribute="leading" secondItem="Pd9-oN-D74" secondAttribute="leading" id="jRb-gc-GUc"/>
+                            <constraint firstItem="Akl-kq-dwI" firstAttribute="top" secondItem="bc9-fr-KWC" secondAttribute="top" id="nc6-zg-xjx"/>
+                            <constraint firstItem="n3w-tc-bcS" firstAttribute="top" secondItem="ZLL-2T-ivf" secondAttribute="bottom" constant="6" id="qBk-Y9-C2j"/>
+                            <constraint firstItem="ADM-N4-jav" firstAttribute="leading" secondItem="G3V-Yt-dyA" secondAttribute="leading" id="rJ1-RX-Yhz"/>
+                            <constraint firstItem="RF8-Oz-AsA" firstAttribute="leading" secondItem="XnO-sl-IJb" secondAttribute="trailing" constant="6" id="rZb-h4-zS2"/>
+                            <constraint firstItem="fX0-kl-PRv" firstAttribute="leading" secondItem="RF8-Oz-AsA" secondAttribute="leading" id="vI5-mi-WTj"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLL-2T-ivf" secondAttribute="trailing" constant="6" id="vZx-n5-RGM"/>
+                            <constraint firstItem="ADM-N4-jav" firstAttribute="top" secondItem="5Vn-gr-cIS" secondAttribute="bottom" constant="6" id="vkY-3G-ZLR"/>
+                            <constraint firstItem="eqK-dY-v3h" firstAttribute="trailing" secondItem="Pd9-oN-D74" secondAttribute="trailing" id="x67-aj-Jaz"/>
+                            <constraint firstItem="ADM-N4-jav" firstAttribute="trailing" secondItem="G3V-Yt-dyA" secondAttribute="trailing" id="xEJ-W4-tgK"/>
+                            <constraint firstItem="iHR-pv-J60" firstAttribute="trailing" secondItem="G3V-Yt-dyA" secondAttribute="trailing" id="xxS-3g-BUk"/>
+                            <constraint firstItem="5Vn-gr-cIS" firstAttribute="leading" secondItem="fX0-kl-PRv" secondAttribute="leading" id="ziP-Gc-9Oh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="frz-4S-6Gg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AX4-GU-yN0"/>
+                    <constraint firstAttribute="trailing" secondItem="frz-4S-6Gg" secondAttribute="trailing" constant="10" id="W11-fJ-bbf"/>
+                    <constraint firstItem="frz-4S-6Gg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="qbB-K3-jAM"/>
+                    <constraint firstAttribute="bottom" secondItem="frz-4S-6Gg" secondAttribute="bottom" constant="10" id="yzP-Bx-RMu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="destStopNameArbLabel" destination="RdY-2o-Emp" id="Wsw-tf-j9u"/>
+                <outlet property="destStopNameEngLabel" destination="fX0-kl-PRv" id="1Ce-7k-zuG"/>
+                <outlet property="destStopNameLabel" destination="3J0-vZ-cb5" id="Ryp-6z-UdM"/>
+                <outlet property="firstBusTimeLabel" destination="Grk-lR-Xqo" id="dwv-jZ-nUm"/>
+                <outlet property="firstBusTimeValueLabel" destination="5Vn-gr-cIS" id="KXF-cs-6hP"/>
+                <outlet property="frequencyLabel" destination="JBP-9D-JOm" id="zyT-DY-C6f"/>
+                <outlet property="frequencyValueLabel" destination="uvd-Bv-tYj" id="nIT-RX-uqr"/>
+                <outlet property="lastBusTimeLabel" destination="Akl-kq-dwI" id="iXj-ht-Ndg"/>
+                <outlet property="lastBusTimeValueLabel" destination="bc9-fr-KWC" id="9Hr-uh-tz5"/>
+                <outlet property="leftContainerView" destination="XnO-sl-IJb" id="5JV-dT-VjR"/>
+                <outlet property="mainContainerView" destination="frz-4S-6Gg" id="4G0-ef-xVE"/>
+                <outlet property="originStopNameArbLabel" destination="ZLL-2T-ivf" id="dCk-Ux-4kR"/>
+                <outlet property="originStopNameEngLabel" destination="RF8-Oz-AsA" id="ucC-DH-Fb6"/>
+                <outlet property="originStopNameLabel" destination="0t3-Un-SSl" id="vwI-Rg-jeX"/>
+            </connections>
+            <point key="canvasLocation" x="59" y="148"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

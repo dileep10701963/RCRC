@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="35" id="KGk-i7-Jjw" customClass="PurchaseHistoryTableCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pt_texfield" translatesAutoresizingMaskIntoConstraints="NO" id="HMb-3D-2eM">
+                        <rect key="frame" x="20" y="0.0" width="280" height="43"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICZ-8O-peu">
+                        <rect key="frame" x="274" y="13.666666666666664" width="16" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="KQI-eu-S2V"/>
+                            <constraint firstAttribute="width" constant="16" id="v4b-Cf-nrL"/>
+                        </constraints>
+                        <color key="tintColor" red="0.43529411764705883" green="0.82352941176470584" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="down_arrow"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDc-sF-9ig" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                        <rect key="frame" x="54" y="4" width="215" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Cf7-r2-9MB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ICZ-8O-peu" firstAttribute="centerY" secondItem="iDc-sF-9ig" secondAttribute="centerY" id="0ww-Be-QuI"/>
+                    <constraint firstItem="iDc-sF-9ig" firstAttribute="top" secondItem="HMb-3D-2eM" secondAttribute="top" constant="4" id="8Wf-mw-FKR"/>
+                    <constraint firstAttribute="trailing" secondItem="HMb-3D-2eM" secondAttribute="trailing" constant="20" id="9la-Xu-sAz"/>
+                    <constraint firstItem="iDc-sF-9ig" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="54" id="WHH-25-Fxr"/>
+                    <constraint firstItem="iDc-sF-9ig" firstAttribute="bottom" secondItem="HMb-3D-2eM" secondAttribute="bottom" constant="-4" id="WM8-kX-Iuy"/>
+                    <constraint firstItem="HMb-3D-2eM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Xnj-6Q-5dK"/>
+                    <constraint firstAttribute="bottom" secondItem="HMb-3D-2eM" secondAttribute="bottom" constant="8" id="cIi-Ma-ydb"/>
+                    <constraint firstItem="ICZ-8O-peu" firstAttribute="leading" secondItem="iDc-sF-9ig" secondAttribute="trailing" constant="5" id="igq-tl-sbB"/>
+                    <constraint firstItem="HMb-3D-2eM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="j9h-ER-sOY"/>
+                    <constraint firstItem="HMb-3D-2eM" firstAttribute="trailing" secondItem="ICZ-8O-peu" secondAttribute="trailing" constant="10" id="sUo-rF-3Pr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accessoryButton" destination="ICZ-8O-peu" id="7CS-hP-8UQ"/>
+                <outlet property="imageBottomConstraint" destination="cIi-Ma-ydb" id="YVh-Lm-zEH"/>
+                <outlet property="purchaseHeaderLabel" destination="iDc-sF-9ig" id="sXn-4V-NXc"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-8.8028169014084519"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down_arrow" width="13" height="8"/>
+        <image name="pt_texfield" width="312" height="32"/>
+    </resources>
+</document>

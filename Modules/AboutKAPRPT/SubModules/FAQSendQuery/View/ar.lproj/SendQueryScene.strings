@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Hi, there. If you have any questions, we are here to help you."; ObjectID = "QuJ-7u-ban"; */
+"QuJ-7u-ban.text" = "أهلا. إذا كان لديك أي أسئلة ، فنحن هنا لمساعدتك.";
+
+/* Class = "UITextField"; placeholder = "Type Your Query"; ObjectID = "Rzm-GV-OLE"; */
+"Rzm-GV-OLE.placeholder" = "Type Your Query";
+
+/* Class = "UIButton"; normalTitle = "Proceed"; ObjectID = "gwR-7r-Ls5"; */
+"gwR-7r-Ls5.normalTitle" = "تابع";
+
+/* Class = "UITextField"; placeholder = "Enter Your Email Address*"; ObjectID = "hSl-fo-lYV"; */
+"hSl-fo-lYV.placeholder" = "أدخل عنوان بريدك الالكتروني *";

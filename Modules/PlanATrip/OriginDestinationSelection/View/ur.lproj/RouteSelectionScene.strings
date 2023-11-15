@@ -1,0 +1,43 @@
+
+/* Class = "UIButton"; normalTitle = "Change Current Location On Map"; ObjectID = "0AH-p4-YzV"; */
+"0AH-p4-YzV.normalTitle" = "نقشہ پر موجودہ مقام تبدیل کریں";
+
+/* Class = "UILabel"; text = "Events"; ObjectID = "EGM-zn-pPa"; */
+"EGM-zn-pPa.text" = "تقریبات";
+
+/* Class = "UISearchBar"; placeholder = "Add a Home Address"; ObjectID = "FVR-Z4-KL3"; */
+"FVR-Z4-KL3.placeholder" = "گھر کا پتہ شامل کریں";
+
+/* Class = "UILabel"; text = "Favorites"; ObjectID = "IzE-Cr-8DI"; */
+"IzE-Cr-8DI.text" = "پسندیدہ";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "RQp-WF-Rzm"; */
+"RQp-WF-Rzm.normalTitle" = "شروع";
+
+/* Class = "UINavigationItem"; title = "Plan a Trip"; ObjectID = "S21-F6-4L3"; */
+"S21-F6-4L3.title" = "سفر کا منصوبہ بنائیں";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "TzP-6n-2ye"; */
+"TzP-6n-2ye.text" = "مین صفحہ ";
+
+/* Class = "UILabel"; text = "Nearby Stations"; ObjectID = "V4x-Q2-tbg"; */
+"V4x-Q2-tbg.text" = "قریبی اسٹیشنز";
+
+/* Class = "UISearchBar"; placeholder = "Select Your Destination"; ObjectID = "WUv-2y-ZQ4"; */
+"WUv-2y-ZQ4.placeholder" = "اپنی منزل مقصود منتخب کریں";
+
+// Updated Translation
+/* Class = "UISearchBar"; placeholder = "Your Current Location"; ObjectID = "bN3-Zz-vSF"; */
+"bN3-Zz-vSF.placeholder" = "اپنا موجودہ مقام منتخب کریں۔";
+
+/* Class = "UISearchBar"; placeholder = "Your Current Location"; ObjectID = "bN3-Zz-vSF"; */
+//"bN3-Zz-vSF.placeholder" = "آپ کا موجودہ مقام";
+
+/* Class = "UIButton"; normalTitle = "Use Your Current Location"; ObjectID = "fEX-JZ-tJZ"; */
+"fEX-JZ-tJZ.normalTitle" = "اپنا موجودہ مقام استعمال کریں";
+
+/* Class = "UIBarButtonItem"; title = "    "; ObjectID = "hml-dD-da2"; */
+"hml-dD-da2.title" = "    ";
+
+/* Class = "UILabel"; text = "Work"; ObjectID = "k7J-BQ-inv"; */
+"k7J-BQ-inv.text" = "کام";

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapLocationSelectionViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="locationLabel" destination="z55-9L-hr3" id="pfS-wB-GN5"/>
+                <outlet property="mapView" destination="Xjw-aI-TO3" id="AIm-mK-YCT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Location: " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z55-9L-hr3">
+                    <rect key="frame" x="22" y="64" width="370" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="ujt-bs-Mer"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xjw-aI-TO3" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="164" width="414" height="616"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8J-Zw-kqC">
+                    <rect key="frame" x="22" y="800" width="370" height="42"/>
+                    <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="18"/>
+                    <state key="normal" title="Proceed">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="proceedTapped:" destination="-1" eventType="touchUpInside" id="1r4-mr-wd5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="z55-9L-hr3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="33d-XQ-bta"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l8J-Zw-kqC" secondAttribute="trailing" constant="22" id="Aao-7K-zfz"/>
+                <constraint firstItem="Xjw-aI-TO3" firstAttribute="top" secondItem="z55-9L-hr3" secondAttribute="bottom" constant="10" id="OHy-xn-K3P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z55-9L-hr3" secondAttribute="trailing" constant="22" id="Q0U-Ln-Laq"/>
+                <constraint firstItem="Xjw-aI-TO3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Xi6-sy-USX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="l8J-Zw-kqC" secondAttribute="bottom" constant="20" id="bfJ-Zu-mMB"/>
+                <constraint firstItem="z55-9L-hr3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="fcs-Yq-srG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xjw-aI-TO3" secondAttribute="trailing" id="mUk-iO-wub"/>
+                <constraint firstItem="l8J-Zw-kqC" firstAttribute="top" secondItem="Xjw-aI-TO3" secondAttribute="bottom" constant="20" id="rTF-zs-V5N"/>
+                <constraint firstItem="l8J-Zw-kqC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="vno-in-sTT"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

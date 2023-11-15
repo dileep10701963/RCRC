@@ -1,0 +1,24 @@
+
+/* Class = "UITabBarItem"; title = "Plan My Trip"; ObjectID = "Egm-jj-8wc"; */
+"Egm-jj-8wc.title" = "میرا دورہ منصوبہ";
+
+/* Class = "UILabel"; text = "Work"; ObjectID = "JPO-Mi-cdh"; */
+"JPO-Mi-cdh.text" = "کام";
+
+/* Class = "UILabel"; text = "Nearby Stations"; ObjectID = "TyV-ZI-btK"; */
+"TyV-ZI-btK.text" = "قریبی اسٹیشنوں";
+
+/* Class = "UILabel"; text = "Events"; ObjectID = "cUS-lG-QTt"; */
+"cUS-lG-QTt.text" = "تقریبات";
+
+/* Class = "UILabel"; text = "Favorites"; ObjectID = "eC4-2I-Tzc"; */
+"eC4-2I-Tzc.text" = "پسندیدہ";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "kvf-3E-Sgp"; */
+"kvf-3E-Sgp.text" = "مین صفحہ ";
+
+/* Class = "UILabel"; text = "Plan a Trip"; ObjectID = "n8x-vV-Omy"; */
+"n8x-vV-Omy.text" = "سفر کا منصوبہ بنائیں";
+
+/* Class = "UITabBarItem"; title = "Urdu"; ObjectID = "hub-jp-JYV"; */
+"hub-jp-JYV.title" = "تقریب";

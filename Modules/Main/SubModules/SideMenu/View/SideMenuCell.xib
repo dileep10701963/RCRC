@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SideMenuCell" id="KGk-i7-Jjw" customClass="SideMenuCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Swo-En-vLr">
+                        <rect key="frame" x="16" y="11" width="22" height="22"/>
+                        <color key="tintColor" red="0.0" green="0.43529411764705883" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="BGk-x5-wDD"/>
+                            <constraint firstAttribute="height" constant="22" id="rZH-T6-d8G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSP-Ns-9AK">
+                        <rect key="frame" x="60" y="12" width="244" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4pD-jd-0Co"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MSP-Ns-9AK" firstAttribute="leading" secondItem="Swo-En-vLr" secondAttribute="trailing" constant="22" id="1Wm-Iv-4cZ"/>
+                    <constraint firstItem="MSP-Ns-9AK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3ro-td-dye"/>
+                    <constraint firstAttribute="trailing" secondItem="MSP-Ns-9AK" secondAttribute="trailing" constant="16" id="Jk6-Ip-hg1"/>
+                    <constraint firstItem="Swo-En-vLr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="hKr-32-kE5"/>
+                    <constraint firstItem="Swo-En-vLr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iuY-CY-zAL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="MSP-Ns-9AK" id="5aB-Eg-p9F"/>
+                <outlet property="sideMenuImageView" destination="Swo-En-vLr" id="BGG-Vv-UN0"/>
+            </connections>
+            <point key="canvasLocation" x="314" y="-102"/>
+        </tableViewCell>
+    </objects>
+</document>

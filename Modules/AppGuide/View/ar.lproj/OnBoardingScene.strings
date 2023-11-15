@@ -1,0 +1,63 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "2Q3-Su-e6j"; */
+"2Q3-Su-e6j.normalTitle" = "التالى";
+
+/* Class = "UILabel"; text = "Plan a Trip"; ObjectID = "5gR-s3-r7i"; */
+"5gR-s3-r7i.text" = "خطة رحلة";
+
+/* Class = "UILabel"; text = "Places of Interest"; ObjectID = "BiY-TV-KJL"; */
+"BiY-TV-KJL.text" = "الأماكن ذات الأهمية";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "DFW-Xb-io1"; */
+"DFW-Xb-io1.normalTitle" = "تخطى";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "DcN-63-gt7"; */
+"DcN-63-gt7.normalTitle" = "تخطى";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "HtV-qJ-nE8"; */
+"HtV-qJ-nE8.normalTitle" = "تخطى";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "J7K-Wf-LiZ"; */
+"J7K-Wf-LiZ.normalTitle" = "البدء";
+
+/* Class = "UILabel"; text = "Automated Fare"; ObjectID = "KjV-pg-XmM"; */
+"KjV-pg-XmM.text" = "الأجرة الآلية";
+
+/* Class = "UILabel"; text = "Access places of Interest or Events by searching or directly selecting from map to know distance from your origin"; ObjectID = "N3d-A3-b8m"; */
+"N3d-A3-b8m.text" = "الوصول إلى الأماكن المهمة أو الأحداث من خلال البحث أو التحديد المباشر من الخريطة لمعرفة المسافة من أصلك";
+
+/* Class = "UILabel"; text = "Personalization"; ObjectID = "QwW-Q9-kO6"; */
+"QwW-Q9-kO6.text" = "إضفاء الطابع الشخصي";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "STv-q7-ncf"; */
+"STv-q7-ncf.normalTitle" = "سجل";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "UI0-0e-BpG"; */
+"UI0-0e-BpG.normalTitle" = "التالى";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "XTu-d2-xAM"; */
+"XTu-d2-xAM.normalTitle" = "تخطى";
+
+/* Class = "UILabel"; text = "Plan a Trip or Schedule a Trip based on all available transport options according to your travel preferences"; ObjectID = "YnY-FK-sLY"; */
+"YnY-FK-sLY.text" = "خطط لرحلة أو حدد موعدًا لرحلة بناءً على جميع خيارات النقل المتاحة وفقًا لتفضيلات السفر الخاصة بك";
+
+/* Class = "UILabel"; text = "Sign up for enhanced personalization & synching your details across all the platforms"; ObjectID = "ZSS-bQ-CVD"; */
+"ZSS-bQ-CVD.text" = "اشترك للحصول على تخصيص محسن ومزامنة بياناتك عبر جميع الأنظمة الأساسية";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "dtO-2U-ytg"; */
+"dtO-2U-ytg.normalTitle" = "التالى";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "eSa-CT-3ap"; */
+"eSa-CT-3ap.normalTitle" = "التالى";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "k0a-fM-YdO"; */
+"k0a-fM-YdO.normalTitle" = "تخطى";
+
+/* Class = "UILabel"; text = "KAPRPT Network"; ObjectID = "nfc-u9-5Db"; */
+"nfc-u9-5Db.text" = "شبكة KAPRPT";
+
+/* Class = "UILabel"; text = "Know all the information of Riyadh Public Transport about of their respective route names or numbers and time table"; ObjectID = "ums-0k-ERW"; */
+"ums-0k-ERW.text" = "تعرف على كافة المعلومات الخاصة بمواصلات الرياض العامة حول أسماء خطوطها أو أرقامها والجدول الزمني";
+
+/* Class = "UILabel"; text = "Option to automatic buying the Journey e-tickets, Top up of Fare Media Smart Card"; ObjectID = "xiU-AK-w5P"; */
+"xiU-AK-w5P.text" = "خيار الشراء التلقائي للتذاكر الإلكترونية للرحلة ، وتعبئة بطاقةالذكية";

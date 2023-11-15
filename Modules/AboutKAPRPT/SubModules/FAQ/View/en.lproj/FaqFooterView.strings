@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; configuration.title = "Button"; ObjectID = "4jg-uU-xXm"; */
+"4jg-uU-xXm.configuration.title" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4jg-uU-xXm"; */
+"4jg-uU-xXm.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Email :"; ObjectID = "9IM-Jy-1Xl"; */
+"9IM-Jy-1Xl.text" = "Email :";
+
+/* Class = "UILabel"; text = "Send Query"; ObjectID = "PcN-ZO-JLE"; */
+"PcN-ZO-JLE.text" = "Send Query";
+
+/* Class = "UILabel"; text = "Need Assistance"; ObjectID = "Pvz-Va-iGZ"; */
+"Pvz-Va-iGZ.text" = "For Assistance";
+
+/* Class = "UILabel"; text = "Toll-Free :"; ObjectID = "bhR-EU-vr9"; */
+"bhR-EU-vr9.text" = "Call us:";

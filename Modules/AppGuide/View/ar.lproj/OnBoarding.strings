@@ -1,0 +1,60 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "4rs-GG-pGw"; */
+"4rs-GG-pGw.normalTitle" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "7ZD-Vh-tTV"; */
+"7ZD-Vh-tTV.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "Learn about the Riyadh Transit Network, including bus and metro routes and their timetables"; ObjectID = "7tv-Rh-VD3"; */
+"7tv-Rh-VD3.text" = "تعرف على شبكة النقل العام لمدينة الرياض وجدول رحلات مسارات الحافلات والمترو";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "DAs-Oe-hLA"; */
+"DAs-Oe-hLA.normalTitle" = "البدء";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "GVw-dO-4Na"; */
+"GVw-dO-4Na.normalTitle" = "سجل";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "HbY-NN-umy"; */
+"HbY-NN-umy.normalTitle" = "تخطى";
+
+/* Class = "UILabel"; text = "Plan a Trip or Schedule a Trip based on all available transport options according to your travel preferences"; ObjectID = "TkO-DX-kTR"; */
+"TkO-DX-kTR.text" = "خطط أو جدول رحلتك بناءً على جميع خيارات النقل المتاحة وتفضيلاتك الشخصية";
+
+/* Class = "UILabel"; text = "Places of Interest"; ObjectID = "VFB-LH-qN4"; */
+"VFB-LH-qN4.text" = "أماكن ذات أهمية";
+
+/* Class = "UILabel"; text = "Search for places of interest or events in Riyadh city and plan a journey to or from them"; ObjectID = "X3N-WE-W7E"; */
+"X3N-WE-W7E.text" = "أبحث عن معالم المدينة او فعاليتها وخطط رحلتك";
+
+/* Class = "UILabel"; text = "Open an account for enhanced personalisation and synching your details across several platforms"; ObjectID = "YgH-BQ-yr3"; */
+"YgH-BQ-yr3.text" = "أنشئ حسابك الشخصي لتتمتع بتجربة شخصية أفضل ولكي تربط  معلوماتك في جميع منصات النظام";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Zbm-Ji-bvb"; */
+"Zbm-Ji-bvb.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "Plan a Trip"; ObjectID = "eQ3-um-Xz1"; */
+"eQ3-um-Xz1.text" = "خطط لرحلة";
+
+/* Class = "UILabel"; text = "Riyadh Transit Network"; ObjectID = "em6-FH-EnY"; */
+"em6-FH-EnY.text" = "شبكةشبكة النقل العام لمدينة الرياض";
+
+/* Class = "UILabel"; text = "Personalization"; ObjectID = "leM-iA-ct9"; */
+"leM-iA-ct9.text" = "إضفاء الطابع الشخصي";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "pmn-7U-cFS"; */
+"pmn-7U-cFS.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "Darb Cards"; ObjectID = "s1G-Cl-Dta"; */
+"s1G-Cl-Dta.text" = "بطائق درب";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "uIA-B9-o7P"; */
+"uIA-B9-o7P.normalTitle" = "تخطى";
+
+/* Class = "UILabel"; text = "Carry your fare media with you on your device and use it to travel around Riyadh city. Top-up and renew your travel pass within the app"; ObjectID = "vIy-pN-4m8"; */
+"vIy-pN-4m8.text" = "أحمل بطاقتك معك على جهازك واستعملها للتنقل حول المدينة. أعد تعبئة بطاقتك وجددها عن طريق التطبيق";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "w7X-X6-YtX"; */
+"w7X-X6-YtX.normalTitle" = "تخطى";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "wEe-3L-gmQ"; */
+"wEe-3L-gmQ.normalTitle" = "تخطى";

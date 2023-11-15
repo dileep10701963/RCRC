@@ -1,0 +1,16 @@
+/* 
+  CameraUI.strings
+  RCRC
+
+  Created by Aashish Singh on 15/06/23.
+  
+*/
+"API_CANCEL_TITLE" = "إلغاء";
+"ZOOM_FACTOR_TEXT" = "1.0";
+"PHOTO" = "PHOTO";
+"HDR_AUTO" = "Auto";
+"HDR_ON" = "On";
+"HDR_OFF" = "Off";
+"VIDEO" = "VIDEO";
+"USE_PHOTO" = "Use Photo";
+"RETAKE" = "Retake";

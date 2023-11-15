@@ -1,0 +1,60 @@
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "4rs-GG-pGw"; */
+"4rs-GG-pGw.normalTitle" = "اگلا";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "7ZD-Vh-tTV"; */
+"7ZD-Vh-tTV.normalTitle" = "اگلا";
+
+/* Class = "UILabel"; text = "Learn about the Riyadh Transit Network, including bus and metro routes and their timetables"; ObjectID = "7tv-Rh-VD3"; */
+"7tv-Rh-VD3.text" = "ریاض پبلک ٹرانسپورٹ کے بارے اور اس کے نیٹورک اور ٹائمٹیبل کے بارے  سیکھیے ";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "DAs-Oe-hLA"; */
+"DAs-Oe-hLA.normalTitle" = "شروع کرنے کے";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "GVw-dO-4Na"; */
+"GVw-dO-4Na.normalTitle" = "سائن اپ";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "HbY-NN-umy"; */
+"HbY-NN-umy.normalTitle" = "چھوڑ دو";
+
+/* Class = "UILabel"; text = "Plan or schedule a trip based on all available modes of transport in accordance with your travel preferences"; ObjectID = "TkO-DX-kTR"; */
+"TkO-DX-kTR.text" = "سفر کا ارادہ ان ذدائع کے مطا بق جو درکار ہیں ";
+
+/* Class = "UILabel"; text = "Places of Interest"; ObjectID = "VFB-LH-qN4"; */
+"VFB-LH-qN4.text" = "دلچسپی کے مقامات";
+
+/* Class = "UILabel"; text = "Search for places of interest or events in Riyadh city and plan a journey to or from them"; ObjectID = "X3N-WE-W7E"; */
+"X3N-WE-W7E.text" = "ریاض شہر کے دلچسپ مقامات اور ایونٹس تلاش کریں اور سفر کا پلان بنائیں";
+
+/* Class = "UILabel"; text = "Open an account for enhanced personalisation and synching your details across several platforms"; ObjectID = "YgH-BQ-yr3"; */
+"YgH-BQ-yr3.text" = "اکاؤنٹ بنائیں اور اپنی تفصیلات کو مختلف ذرائع سے استعمال کریں";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Zbm-Ji-bvb"; */
+"Zbm-Ji-bvb.normalTitle" = "اگلا";
+
+/* Class = "UILabel"; text = "Plan a Trip"; ObjectID = "eQ3-um-Xz1"; */
+"eQ3-um-Xz1.text" = "سفر کا منصوبہ بنائیں";
+
+/* Class = "UILabel"; text = "Riyadh Transit Network"; ObjectID = "em6-FH-EnY"; */
+"em6-FH-EnY.text" = "ریاض پبلک ٹرانسپورٹ";
+
+/* Class = "UILabel"; text = "Personalization"; ObjectID = "leM-iA-ct9"; */
+"leM-iA-ct9.text" = "ذاتی نوعیت";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "pmn-7U-cFS"; */
+"pmn-7U-cFS.normalTitle" = "اگلا";
+
+/* Class = "UILabel"; text = "Darb Cards"; ObjectID = "s1G-Cl-Dta"; */
+"s1G-Cl-Dta.text" = "ٹکٹ";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "uIA-B9-o7P"; */
+"uIA-B9-o7P.normalTitle" = "چھوڑ دو";
+
+/* Class = "UILabel"; text = "Carry your fare media with you on your device and use it to travel around Riyadh city. Top-up and renew your travel pass within the app"; ObjectID = "vIy-pN-4m8"; */
+"vIy-pN-4m8.text" = "اپنا ٹکٹ اپنے موبائل میں لوڈ کریں، اس ایپ  سے ہی ٹاپ اپ کریں";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "w7X-X6-YtX"; */
+"w7X-X6-YtX.normalTitle" = "چھوڑ دو";
+
+/* Class = "UIButton"; normalTitle = "Skip"; ObjectID = "wEe-3L-gmQ"; */
+"wEe-3L-gmQ.normalTitle" = "چھوڑ دو";

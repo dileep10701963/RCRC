@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="266" id="KGk-i7-Jjw" customClass="KAPTInfoHeaderCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="266"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uGw-Z1-KIm">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="266"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="266" id="gUe-ni-HwV"/>
+                        </constraints>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4XK-ZA-S9A">
+                        <rect key="frame" x="0.0" y="196" width="376" height="69"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIr-f9-geT" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                        <rect key="frame" x="12" y="200" width="352" height="26.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Pby-wY-MIi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-5P-Wop" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                        <rect key="frame" x="12" y="234.5" width="352" height="26.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="fRF-VC-5hT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="4XK-ZA-S9A" secondAttribute="trailing" id="3nl-Qc-qhV"/>
+                    <constraint firstAttribute="bottom" secondItem="uGw-Z1-KIm" secondAttribute="bottom" id="Dh5-RR-wgh"/>
+                    <constraint firstAttribute="trailing" secondItem="hf6-5P-Wop" secondAttribute="trailing" constant="12" id="FkJ-ZG-May"/>
+                    <constraint firstAttribute="trailing" secondItem="uGw-Z1-KIm" secondAttribute="trailing" id="G7y-xE-J4T"/>
+                    <constraint firstItem="4XK-ZA-S9A" firstAttribute="bottom" secondItem="hf6-5P-Wop" secondAttribute="bottom" constant="4" id="GJC-c7-Qag"/>
+                    <constraint firstItem="4XK-ZA-S9A" firstAttribute="top" secondItem="IIr-f9-geT" secondAttribute="top" constant="-4" id="OIt-tT-EyQ"/>
+                    <constraint firstItem="4XK-ZA-S9A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ok6-14-Kfr"/>
+                    <constraint firstItem="IIr-f9-geT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" priority="750" constant="160" id="PGa-5V-cbG"/>
+                    <constraint firstItem="IIr-f9-geT" firstAttribute="leading" secondItem="hf6-5P-Wop" secondAttribute="leading" id="V19-VC-we4"/>
+                    <constraint firstItem="IIr-f9-geT" firstAttribute="trailing" secondItem="hf6-5P-Wop" secondAttribute="trailing" id="WNk-vv-gg1"/>
+                    <constraint firstItem="IIr-f9-geT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="250" constant="4" id="XUz-0q-HEt"/>
+                    <constraint firstItem="uGw-Z1-KIm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YE7-jp-Nso"/>
+                    <constraint firstItem="hf6-5P-Wop" firstAttribute="top" secondItem="IIr-f9-geT" secondAttribute="bottom" constant="8" id="YIz-Zb-Ybr"/>
+                    <constraint firstItem="uGw-Z1-KIm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a7x-k7-FRN"/>
+                    <constraint firstAttribute="bottom" secondItem="hf6-5P-Wop" secondAttribute="bottom" constant="5" id="ccH-dc-CgX"/>
+                    <constraint firstItem="hf6-5P-Wop" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="waz-Fb-EfO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerLabel" destination="hf6-5P-Wop" id="pok-gX-ety"/>
+                <outlet property="headerOpaqueView" destination="4XK-ZA-S9A" id="fl7-XR-vez"/>
+                <outlet property="headerTitleLabel" destination="IIr-f9-geT" id="sWA-dC-duH"/>
+                <outlet property="headerTitleLabelBottomConstraint" destination="YIz-Zb-Ybr" id="RMw-ga-jYS"/>
+                <outlet property="headerTitleTopConstraint" destination="PGa-5V-cbG" id="fXC-oc-qYG"/>
+                <outlet property="headerTitleTopConstraintWithoutImage" destination="XUz-0q-HEt" id="y6Y-Ar-Yis"/>
+                <outlet property="kaptImageHeightConstraint" destination="gUe-ni-HwV" id="OfZ-eZ-0WZ"/>
+                <outlet property="kaptInfoImage" destination="uGw-Z1-KIm" id="gV4-J4-MZm"/>
+            </connections>
+            <point key="canvasLocation" x="178.2608695652174" y="276.5625"/>
+        </tableViewCell>
+    </objects>
+</document>

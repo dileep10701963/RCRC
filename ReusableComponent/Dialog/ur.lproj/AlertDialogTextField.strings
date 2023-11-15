@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "17I-Gy-IY4"; */
+"17I-Gy-IY4.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "P0n-60-0yk"; */
+"P0n-60-0yk.normalTitle" = "کینسل";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "TKi-C2-wYg"; */
+"TKi-C2-wYg.normalTitle" = "محفوظ کریں";
+
+/* Class = "UILabel"; text = "Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message "; ObjectID = "UQQ-bz-pli"; */
+"UQQ-bz-pli.text" = "Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message Message ";
+
+/* Class = "UITextField"; placeholder = "Enter a name for your Location"; ObjectID = "vBK-oG-ac9"; */
+"vBK-oG-ac9.placeholder" = "Enter a name for your Location";

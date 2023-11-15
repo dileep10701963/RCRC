@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventListViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="eventsTableView" destination="giP-aC-Wq6" id="Ysy-Pi-BBC"/>
+                <outlet property="headerLabel" destination="CXn-Ix-pN8" id="lor-hq-j34"/>
+                <outlet property="searchBar" destination="4oe-uo-28w" id="UMa-ia-MCz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wN6-fh-gdS">
+                    <rect key="frame" x="0.0" y="54" width="414" height="99.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can select from list or search from event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXn-Ix-pN8">
+                            <rect key="frame" x="22" y="15" width="370" height="28.5"/>
+                            <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for event" translatesAutoresizingMaskIntoConstraints="NO" id="4oe-uo-28w" customClass="RCRCSearchBar" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                            <rect key="frame" x="10" y="43.5" width="394" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <scopeButtonTitles>
+                                <string>Title</string>
+                                <string>Title</string>
+                            </scopeButtonTitles>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CXn-Ix-pN8" secondAttribute="trailing" constant="22" id="GHZ-Uj-rju"/>
+                        <constraint firstAttribute="trailing" secondItem="4oe-uo-28w" secondAttribute="trailing" constant="10" id="Xdy-Lh-bdA"/>
+                        <constraint firstItem="CXn-Ix-pN8" firstAttribute="leading" secondItem="wN6-fh-gdS" secondAttribute="leading" constant="22" id="XhN-Bu-wtj"/>
+                        <constraint firstItem="4oe-uo-28w" firstAttribute="top" secondItem="CXn-Ix-pN8" secondAttribute="bottom" id="dIA-Uc-pg2"/>
+                        <constraint firstItem="4oe-uo-28w" firstAttribute="leading" secondItem="wN6-fh-gdS" secondAttribute="leading" constant="10" id="dSk-A2-fF2"/>
+                        <constraint firstAttribute="bottom" secondItem="4oe-uo-28w" secondAttribute="bottom" id="hvr-dN-kMA"/>
+                        <constraint firstItem="CXn-Ix-pN8" firstAttribute="top" secondItem="wN6-fh-gdS" secondAttribute="top" constant="15" id="lgk-da-Hwg"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="giP-aC-Wq6">
+                    <rect key="frame" x="0.0" y="153.5" width="414" height="708.5"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wN6-fh-gdS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="1UL-r4-lvH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="giP-aC-Wq6" secondAttribute="trailing" id="CYo-Lh-6aQ"/>
+                <constraint firstItem="giP-aC-Wq6" firstAttribute="top" secondItem="wN6-fh-gdS" secondAttribute="bottom" id="GYQ-bB-Ckd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wN6-fh-gdS" secondAttribute="trailing" id="PgV-N7-MCe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="giP-aC-Wq6" secondAttribute="bottom" id="VQ2-dA-sOL"/>
+                <constraint firstItem="wN6-fh-gdS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="b7f-Tg-sDr"/>
+                <constraint firstItem="giP-aC-Wq6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bqr-B0-OTq"/>
+            </constraints>
+            <point key="canvasLocation" x="136" y="57"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

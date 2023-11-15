@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On Boarding PlanA Trip-->
+        <scene sceneID="WFb-g0-fMt">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingPlanATrip" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WMW-UZ-FTv" customClass="OnBoardingPlanATrip" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xVZ-CL-oH3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFW-Xb-io1">
+                                <rect key="frame" x="26" y="829" width="35" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.22352941176470587" green="1" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="WMW-UZ-FTv" eventType="touchUpInside" id="DIL-TP-9Ja"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q3-Su-e6j">
+                                <rect key="frame" x="354" y="829" width="37" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="WMW-UZ-FTv" eventType="touchUpInside" id="Sg5-4i-NMP"/>
+                                    <segue destination="RNf-p3-8jn" kind="show" id="hee-Bs-nQT"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="1ij-Qo-zMt">
+                                <rect key="frame" x="152" y="799.5" width="110" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="hvQ-7h-pq7"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0078431372549019607" green="0.30588235294117649" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageSelected:" destination="WMW-UZ-FTv" eventType="valueChanged" id="TsR-MO-vhh"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan a Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gR-s3-r7i">
+                                <rect key="frame" x="122.5" y="138" width="169.5" height="66.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan a Trip or Schedule a Trip based on all available transport options according to your travel preferences" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnY-FK-sLY">
+                                <rect key="frame" x="30" y="584.5" width="354" height="109.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App_Guide_Plan_A_Trip" translatesAutoresizingMaskIntoConstraints="NO" id="kF5-DS-H48">
+                                <rect key="frame" x="57" y="244.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="7wt-oP-bJi"/>
+                                    <constraint firstAttribute="height" constant="300" id="gfa-se-5Tp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9pS-GE-Xnv"/>
+                        <color key="backgroundColor" red="0.0" green="0.43529411764705883" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="5gR-s3-r7i" firstAttribute="centerX" secondItem="xVZ-CL-oH3" secondAttribute="centerX" id="0m1-wU-6Hm"/>
+                            <constraint firstItem="5gR-s3-r7i" firstAttribute="top" secondItem="9pS-GE-Xnv" secondAttribute="top" constant="50" id="2mF-28-q6e"/>
+                            <constraint firstAttribute="trailing" secondItem="YnY-FK-sLY" secondAttribute="trailing" constant="30" id="Ndt-Gz-sUL"/>
+                            <constraint firstItem="YnY-FK-sLY" firstAttribute="top" secondItem="kF5-DS-H48" secondAttribute="bottom" constant="40" id="UrD-CK-8vH"/>
+                            <constraint firstItem="kF5-DS-H48" firstAttribute="top" secondItem="5gR-s3-r7i" secondAttribute="bottom" constant="40" id="Wkv-Aq-Ajh"/>
+                            <constraint firstItem="9pS-GE-Xnv" firstAttribute="bottom" secondItem="1ij-Qo-zMt" secondAttribute="bottom" constant="35" id="Ypl-PQ-sfc"/>
+                            <constraint firstItem="YnY-FK-sLY" firstAttribute="leading" secondItem="xVZ-CL-oH3" secondAttribute="leading" constant="30" id="bLa-dp-t1Q"/>
+                            <constraint firstItem="kF5-DS-H48" firstAttribute="centerX" secondItem="xVZ-CL-oH3" secondAttribute="centerX" id="l86-Ie-yKo"/>
+                            <constraint firstItem="1ij-Qo-zMt" firstAttribute="centerX" secondItem="xVZ-CL-oH3" secondAttribute="centerX" id="tTI-dp-Ke1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="l8d-sI-yp6"/>
+                    <connections>
+                        <outlet property="nextButton" destination="2Q3-Su-e6j" id="IbV-M6-szf"/>
+                        <outlet property="pageControl" destination="1ij-Qo-zMt" id="wa8-Gp-UdL"/>
+                        <outlet property="skipButton" destination="DFW-Xb-io1" id="5in-Q8-gJU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mby-lj-voG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684.057971014493" y="-106.47321428571428"/>
+        </scene>
+        <!--On Boarding Kaprpt Network-->
+        <scene sceneID="Ekl-wN-clz">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingKaprptNetwork" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RNf-p3-8jn" customClass="OnBoardingKaprptNetwork" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="81m-CG-l9X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtV-qJ-nE8">
+                                <rect key="frame" x="26" y="829" width="35" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="RNf-p3-8jn" eventType="touchUpInside" id="uf3-XF-LnO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtO-2U-ytg">
+                                <rect key="frame" x="354" y="829" width="37" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="RNf-p3-8jn" eventType="touchUpInside" id="X0e-66-g3j"/>
+                                    <segue destination="Ao0-T0-Fd0" kind="show" id="a4p-A8-K7o"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-eS-Rpd">
+                                <rect key="frame" x="152" y="799.5" width="110" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="JEW-wr-tp7"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0078431372550000003" green="0.30588235289999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageSelected:" destination="RNf-p3-8jn" eventType="valueChanged" id="4Sk-uU-ArS"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KAPRPT Network" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfc-u9-5Db">
+                                <rect key="frame" x="70" y="138" width="274.5" height="66.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know all the information of Riyadh Public Transport about of their respective route names or numbers and time table" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ums-0k-ERW">
+                                <rect key="frame" x="30" y="584.5" width="354" height="146"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App_Guide_KAPRPT" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-Hr-mgv">
+                                <rect key="frame" x="57" y="244.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NLH-we-Edt"/>
+                                    <constraint firstAttribute="width" constant="300" id="tP2-Tl-aMb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JSn-A3-ri0"/>
+                        <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="h4S-Hr-mgv" firstAttribute="centerX" secondItem="81m-CG-l9X" secondAttribute="centerX" id="Go5-gn-w8j"/>
+                            <constraint firstItem="h4S-Hr-mgv" firstAttribute="top" secondItem="nfc-u9-5Db" secondAttribute="bottom" constant="40" id="KO3-HJ-pak"/>
+                            <constraint firstItem="nfc-u9-5Db" firstAttribute="centerX" secondItem="81m-CG-l9X" secondAttribute="centerX" id="M5b-0q-ZqL"/>
+                            <constraint firstItem="ums-0k-ERW" firstAttribute="top" secondItem="h4S-Hr-mgv" secondAttribute="bottom" constant="40" id="PAZ-El-7NU"/>
+                            <constraint firstItem="WCU-eS-Rpd" firstAttribute="centerX" secondItem="81m-CG-l9X" secondAttribute="centerX" id="Q4P-pg-AUM"/>
+                            <constraint firstItem="ums-0k-ERW" firstAttribute="top" secondItem="nfc-u9-5Db" secondAttribute="bottom" constant="380" id="Yco-LE-sIs"/>
+                            <constraint firstItem="ums-0k-ERW" firstAttribute="leading" secondItem="JSn-A3-ri0" secondAttribute="leading" constant="30" id="hD1-Gx-boc"/>
+                            <constraint firstItem="JSn-A3-ri0" firstAttribute="bottom" secondItem="WCU-eS-Rpd" secondAttribute="bottom" constant="35" id="nTr-xB-oru"/>
+                            <constraint firstItem="JSn-A3-ri0" firstAttribute="trailing" secondItem="ums-0k-ERW" secondAttribute="trailing" constant="30" id="soe-2S-DNp"/>
+                            <constraint firstItem="nfc-u9-5Db" firstAttribute="top" secondItem="JSn-A3-ri0" secondAttribute="top" constant="50" id="yFf-kF-BqO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pbq-EC-ZgB"/>
+                    <connections>
+                        <outlet property="nextButton" destination="dtO-2U-ytg" id="o5M-wM-gn2"/>
+                        <outlet property="pageControl" destination="WCU-eS-Rpd" id="Znt-0R-Xel"/>
+                        <outlet property="skipButton" destination="HtV-qJ-nE8" id="6zP-ob-2mI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRQ-1E-lSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2413.04347826087" y="-106.47321428571428"/>
+        </scene>
+        <!--On Boarding Places Of Interest-->
+        <scene sceneID="d2y-gJ-LC3">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingPlacesOfInterest" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ao0-T0-Fd0" customClass="OnBoardingPlacesOfInterest" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wsq-CP-z6l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0a-fM-YdO">
+                                <rect key="frame" x="26" y="829" width="35" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="Ao0-T0-Fd0" eventType="touchUpInside" id="meC-C7-zDk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSa-CT-3ap">
+                                <rect key="frame" x="354" y="829" width="37" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="Ao0-T0-Fd0" eventType="touchUpInside" id="eH1-IM-vdc"/>
+                                    <segue destination="3sY-dd-nBW" kind="show" id="rR7-hz-Esl"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="IlF-hX-K6t">
+                                <rect key="frame" x="152" y="799.5" width="110" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="4RE-Ek-Yhd"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0078431372550000003" green="0.30588235289999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageSelected:" destination="Ao0-T0-Fd0" eventType="valueChanged" id="OeS-qg-QWB"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Places of Interest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiY-TV-KJL">
+                                <rect key="frame" x="70" y="138" width="274.5" height="66.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access places of Interest or Events by searching or directly selecting from map to know distance from your origin" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3d-A3-b8m">
+                                <rect key="frame" x="30" y="584.5" width="354" height="109.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="App_Guide_Places_Of_Interest" translatesAutoresizingMaskIntoConstraints="NO" id="IwD-9L-x5X">
+                                <rect key="frame" x="57" y="244.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="DBj-FT-CFt"/>
+                                    <constraint firstAttribute="width" constant="300" id="JHz-On-Qru"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2e0-vl-RJr"/>
+                        <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BiY-TV-KJL" firstAttribute="centerX" secondItem="Wsq-CP-z6l" secondAttribute="centerX" id="BLQ-sH-hZg"/>
+                            <constraint firstItem="BiY-TV-KJL" firstAttribute="top" secondItem="2e0-vl-RJr" secondAttribute="top" constant="50" id="JPQ-wB-Chd"/>
+                            <constraint firstItem="2e0-vl-RJr" firstAttribute="bottom" secondItem="IlF-hX-K6t" secondAttribute="bottom" constant="35" id="KbA-Vg-4Ve"/>
+                            <constraint firstItem="2e0-vl-RJr" firstAttribute="trailing" secondItem="N3d-A3-b8m" secondAttribute="trailing" constant="30" id="S8t-4h-Ifs"/>
+                            <constraint firstItem="IwD-9L-x5X" firstAttribute="centerX" secondItem="Wsq-CP-z6l" secondAttribute="centerX" id="abm-ys-hdz"/>
+                            <constraint firstItem="IwD-9L-x5X" firstAttribute="top" secondItem="BiY-TV-KJL" secondAttribute="bottom" constant="40" id="jXj-1Z-SqL"/>
+                            <constraint firstItem="N3d-A3-b8m" firstAttribute="top" secondItem="IwD-9L-x5X" secondAttribute="bottom" constant="40" id="ovN-pr-0ww"/>
+                            <constraint firstItem="IlF-hX-K6t" firstAttribute="centerX" secondItem="Wsq-CP-z6l" secondAttribute="centerX" id="swA-G2-QFF"/>
+                            <constraint firstItem="N3d-A3-b8m" firstAttribute="leading" secondItem="2e0-vl-RJr" secondAttribute="leading" constant="30" id="xHV-he-GNE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WY0-aG-lMm"/>
+                    <connections>
+                        <outlet property="nextButton" destination="eSa-CT-3ap" id="CVr-lJ-VuA"/>
+                        <outlet property="pageControl" destination="IlF-hX-K6t" id="hAN-fG-54a"/>
+                        <outlet property="skipButton" destination="k0a-fM-YdO" id="jVn-0m-rUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elV-0F-QZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3113.04347826087" y="-106.47321428571428"/>
+        </scene>
+        <!--On Boarding Automated Fare-->
+        <scene sceneID="vne-pD-EtQ">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingAutomatedFare" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3sY-dd-nBW" customClass="OnBoardingAutomatedFare" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RtT-Zh-zVN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTu-d2-xAM">
+                                <rect key="frame" x="26" y="829" width="35" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="3sY-dd-nBW" eventType="touchUpInside" id="UcQ-EB-a5Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-0e-BpG">
+                                <rect key="frame" x="354" y="830" width="37" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="3sY-dd-nBW" eventType="touchUpInside" id="Dte-dQ-uF4"/>
+                                    <segue destination="deX-ZF-CzQ" kind="show" id="5QL-r5-p98"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="b7R-aM-bbc">
+                                <rect key="frame" x="152" y="799.5" width="110" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="3h8-vb-hax"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0078431372550000003" green="0.30588235289999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageSelected:" destination="3sY-dd-nBW" eventType="valueChanged" id="Z9n-iG-HNf"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automated Fare" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjV-pg-XmM">
+                                <rect key="frame" x="80.5" y="138" width="253.5" height="66.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Option to automatic buying the Journey e-tickets, Top up of Fare Media Smart Card" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiU-AK-w5P">
+                                <rect key="frame" x="30" y="584.5" width="354" height="109.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="App_Guide_Card" translatesAutoresizingMaskIntoConstraints="NO" id="csB-cC-cyx">
+                                <rect key="frame" x="57" y="244.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KYM-rF-etu"/>
+                                    <constraint firstAttribute="height" constant="300" id="qIv-1d-2wH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bbG-0L-aOh"/>
+                        <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b7R-aM-bbc" firstAttribute="centerX" secondItem="RtT-Zh-zVN" secondAttribute="centerX" id="4Lo-GM-kVu"/>
+                            <constraint firstItem="bbG-0L-aOh" firstAttribute="bottom" secondItem="b7R-aM-bbc" secondAttribute="bottom" constant="35" id="5E9-hY-UYt"/>
+                            <constraint firstItem="KjV-pg-XmM" firstAttribute="top" secondItem="bbG-0L-aOh" secondAttribute="top" constant="50" id="7Sn-AD-xjX"/>
+                            <constraint firstItem="KjV-pg-XmM" firstAttribute="centerX" secondItem="RtT-Zh-zVN" secondAttribute="centerX" id="L2L-8t-IPh"/>
+                            <constraint firstItem="xiU-AK-w5P" firstAttribute="leading" secondItem="bbG-0L-aOh" secondAttribute="leading" constant="30" id="Q4N-ll-vuQ"/>
+                            <constraint firstItem="csB-cC-cyx" firstAttribute="centerX" secondItem="RtT-Zh-zVN" secondAttribute="centerX" id="QGs-jh-gUA"/>
+                            <constraint firstItem="csB-cC-cyx" firstAttribute="top" secondItem="KjV-pg-XmM" secondAttribute="bottom" constant="40" id="Yn2-HR-9HE"/>
+                            <constraint firstItem="bbG-0L-aOh" firstAttribute="trailing" secondItem="xiU-AK-w5P" secondAttribute="trailing" constant="30" id="qRR-ph-agT"/>
+                            <constraint firstItem="xiU-AK-w5P" firstAttribute="top" secondItem="csB-cC-cyx" secondAttribute="bottom" constant="40" id="scE-8K-qsF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QH3-Y2-h0y"/>
+                    <connections>
+                        <outlet property="nextButton" destination="UI0-0e-BpG" id="ac5-Ka-mfh"/>
+                        <outlet property="pageControl" destination="b7R-aM-bbc" id="6Al-KB-AVc"/>
+                        <outlet property="skipButton" destination="XTu-d2-xAM" id="7Br-zb-OXm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRq-2g-W2T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3800.0000000000005" y="-106.47321428571428"/>
+        </scene>
+        <!--On Boarding Personalization-->
+        <scene sceneID="UB9-56-Vnc">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingPersonalization" useStoryboardIdentifierAsRestorationIdentifier="YES" id="deX-ZF-CzQ" customClass="OnBoardingPersonalization" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c1I-ap-sEn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcN-63-gt7">
+                                <rect key="frame" x="28" y="832" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="deX-ZF-CzQ" eventType="touchUpInside" id="1rm-gB-ghX"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="oEX-1M-SYB">
+                                <rect key="frame" x="152" y="799.5" width="110" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="qfb-Zj-ogZ"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0078431372550000003" green="0.30588235289999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="pageSelected:" destination="deX-ZF-CzQ" eventType="valueChanged" id="r6i-Do-NKm"/>
+                                </connections>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7K-Wf-LiZ">
+                                <rect key="frame" x="313" y="825" width="89" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="20"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="deX-ZF-CzQ" eventType="touchUpInside" id="omA-PC-y5t"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up for enhanced personalization &amp; synching your details across all the platforms" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSS-bQ-CVD">
+                                <rect key="frame" x="30" y="584.5" width="354" height="109.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STv-q7-ncf">
+                                <rect key="frame" x="142" y="724" width="130" height="41"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="1" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="PiJ-50-srJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButtonTapped:" destination="deX-ZF-CzQ" eventType="touchUpInside" id="YHf-3L-UTs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwW-Q9-kO6">
+                                <rect key="frame" x="84.5" y="138" width="245.5" height="66.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App_Guide_Personalization" translatesAutoresizingMaskIntoConstraints="NO" id="UIA-R1-cKd">
+                                <rect key="frame" x="57" y="244.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="aru-6i-HsZ"/>
+                                    <constraint firstAttribute="height" constant="300" id="hfT-NQ-38k"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Kd-oX-59y"/>
+                        <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UIA-R1-cKd" firstAttribute="centerX" secondItem="c1I-ap-sEn" secondAttribute="centerX" id="5qI-5W-6G9"/>
+                            <constraint firstItem="7Kd-oX-59y" firstAttribute="trailing" secondItem="ZSS-bQ-CVD" secondAttribute="trailing" constant="30" id="CZl-1r-Ofl"/>
+                            <constraint firstItem="QwW-Q9-kO6" firstAttribute="centerX" secondItem="c1I-ap-sEn" secondAttribute="centerX" id="DrB-aq-1Bj"/>
+                            <constraint firstItem="7Kd-oX-59y" firstAttribute="bottom" secondItem="oEX-1M-SYB" secondAttribute="bottom" constant="35" id="IwH-7N-fEj"/>
+                            <constraint firstItem="oEX-1M-SYB" firstAttribute="centerX" secondItem="c1I-ap-sEn" secondAttribute="centerX" id="NTm-Dw-Ueb"/>
+                            <constraint firstItem="ZSS-bQ-CVD" firstAttribute="top" secondItem="QwW-Q9-kO6" secondAttribute="bottom" constant="380" id="QBB-dw-Jsh"/>
+                            <constraint firstItem="ZSS-bQ-CVD" firstAttribute="leading" secondItem="7Kd-oX-59y" secondAttribute="leading" constant="30" id="RRs-6b-Y9W"/>
+                            <constraint firstItem="UIA-R1-cKd" firstAttribute="top" secondItem="QwW-Q9-kO6" secondAttribute="bottom" constant="40" id="Rk6-36-PTo"/>
+                            <constraint firstItem="STv-q7-ncf" firstAttribute="top" secondItem="ZSS-bQ-CVD" secondAttribute="bottom" constant="30" id="Vmp-Mi-cx4"/>
+                            <constraint firstItem="STv-q7-ncf" firstAttribute="centerX" secondItem="c1I-ap-sEn" secondAttribute="centerX" id="f6T-qX-cyR"/>
+                            <constraint firstItem="ZSS-bQ-CVD" firstAttribute="top" secondItem="UIA-R1-cKd" secondAttribute="bottom" constant="40" id="hS0-Yw-wWp"/>
+                            <constraint firstItem="QwW-Q9-kO6" firstAttribute="top" secondItem="7Kd-oX-59y" secondAttribute="top" constant="50" id="qE0-fJ-uXD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xGw-Bv-oWm"/>
+                    <connections>
+                        <outlet property="nextButton" destination="J7K-Wf-LiZ" id="ZSI-US-V1u"/>
+                        <outlet property="pageControl" destination="oEX-1M-SYB" id="psA-iW-Yb4"/>
+                        <outlet property="signUpButton" destination="STv-q7-ncf" id="GZe-eQ-OkP"/>
+                        <outlet property="skipButton" destination="DcN-63-gt7" id="GZw-oU-dDE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVU-Tu-U5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4510.144927536232" y="-106.47321428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xfa-BQ-htm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jDK-Ea-VfZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iag-7L-sbk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WMW-UZ-FTv" kind="relationship" relationship="rootViewController" id="vDG-nN-z86"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jp-2a-H8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="-106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="App_Guide_Card" width="422.5" height="400"/>
+        <image name="App_Guide_KAPRPT" width="397.5" height="399"/>
+        <image name="App_Guide_Personalization" width="459" height="459"/>
+        <image name="App_Guide_Places_Of_Interest" width="343" height="342"/>
+        <image name="App_Guide_Plan_A_Trip" width="334.5" height="326.5"/>
+    </resources>
+</document>

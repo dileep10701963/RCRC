@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YYL-0T-FG2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="Pzh-rO-Lgb">
+            <objects>
+                <viewController storyboardIdentifier="NewsViewController" id="hYB-pT-i4r" customClass="NewsViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1iZ-Na-yFg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dze-u4-kHg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rrM-Vc-UoU"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dze-u4-kHg" firstAttribute="leading" secondItem="rrM-Vc-UoU" secondAttribute="leading" id="2BD-Pp-L3v"/>
+                            <constraint firstItem="rrM-Vc-UoU" firstAttribute="bottom" secondItem="dze-u4-kHg" secondAttribute="bottom" id="2vk-Dq-A7u"/>
+                            <constraint firstItem="dze-u4-kHg" firstAttribute="top" secondItem="rrM-Vc-UoU" secondAttribute="top" id="35d-lZ-O1q"/>
+                            <constraint firstItem="rrM-Vc-UoU" firstAttribute="trailing" secondItem="dze-u4-kHg" secondAttribute="trailing" id="YNO-A0-zHe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iC2-c3-Y6z"/>
+                    <connections>
+                        <outlet property="newsTableView" destination="dze-u4-kHg" id="nkL-or-QCE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6d-0w-n5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3558" y="1551"/>
+        </scene>
+        <!--Detailed News View Controller-->
+        <scene sceneID="Rg2-he-vvC">
+            <objects>
+                <viewController storyboardIdentifier="DetailedNewsViewController" id="ubg-Ya-chp" customClass="DetailedNewsViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vhm-4F-Fzr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOC-CW-Isi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bo7-gh-Y5X" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtY-33-83T">
+                                                <rect key="frame" x="0.0" y="20" width="414" height="449.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="b1J-iP-AYY">
+                                                        <rect key="frame" x="16" y="10" width="382" height="60"/>
+                                                        <string key="text">10-week program to indigenize Riyadh Metro 
+Project launched</string>
+                                                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday August 17, 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uo-Vx-fFO">
+                                                        <rect key="frame" x="281.5" y="78" width="116.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="12"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news_placeholder_img" translatesAutoresizingMaskIntoConstraints="NO" id="PgM-yj-cen">
+                                                        <rect key="frame" x="0.0" y="106" width="414" height="186"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="186" id="tYc-Fo-P5m"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newstime" translatesAutoresizingMaskIntoConstraints="NO" id="Eyg-6R-tSh">
+                                                        <rect key="frame" x="259.5" y="79" width="16" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="16" id="0wG-Hw-mmE"/>
+                                                            <constraint firstAttribute="height" constant="16" id="Y7k-ZV-ncQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saudi Arabia’s Riyadh Metro project has exceeded three million safe work hours, according to US-headquartered consultancy…" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSG-xp-huo">
+                                                        <rect key="frame" x="16" y="300" width="382" height="79.5"/>
+                                                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="16"/>
+                                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cT2-zs-98D">
+                                                        <rect key="frame" x="133.5" y="399.5" width="147" height="30"/>
+                                                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="18"/>
+                                                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="-10" maxY="0.0"/>
+                                                        <state key="normal" title="Share This News" image="Share">
+                                                            <color key="titleColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="shareNewsTapped:" destination="ubg-Ya-chp" eventType="touchUpInside" id="vZ8-sv-LZB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Eyg-6R-tSh" firstAttribute="centerY" secondItem="6uo-Vx-fFO" secondAttribute="centerY" constant="-1" id="2PN-95-WTz"/>
+                                                    <constraint firstItem="6uo-Vx-fFO" firstAttribute="top" secondItem="b1J-iP-AYY" secondAttribute="bottom" constant="8" id="DWZ-b7-DJj"/>
+                                                    <constraint firstItem="b1J-iP-AYY" firstAttribute="top" secondItem="JtY-33-83T" secondAttribute="top" constant="10" id="K3e-r0-abD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uSG-xp-huo" secondAttribute="trailing" constant="16" id="N8i-RU-jyi"/>
+                                                    <constraint firstItem="cT2-zs-98D" firstAttribute="centerX" secondItem="JtY-33-83T" secondAttribute="centerX" id="Nov-QM-Zq3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cT2-zs-98D" secondAttribute="bottom" constant="20" id="Q3Q-J0-R8q"/>
+                                                    <constraint firstItem="b1J-iP-AYY" firstAttribute="leading" secondItem="JtY-33-83T" secondAttribute="leading" constant="16" id="QzY-CY-kt5"/>
+                                                    <constraint firstItem="uSG-xp-huo" firstAttribute="top" secondItem="PgM-yj-cen" secondAttribute="bottom" constant="8" id="SIe-nl-8bX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6uo-Vx-fFO" secondAttribute="trailing" constant="16" id="UMf-eW-MUR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="b1J-iP-AYY" secondAttribute="trailing" constant="16" id="crG-qh-x7f"/>
+                                                    <constraint firstItem="cT2-zs-98D" firstAttribute="top" secondItem="uSG-xp-huo" secondAttribute="bottom" constant="20" id="ecl-qb-oEp"/>
+                                                    <constraint firstItem="PgM-yj-cen" firstAttribute="leading" secondItem="JtY-33-83T" secondAttribute="leading" id="l0Y-ct-JyW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PgM-yj-cen" secondAttribute="trailing" id="pZc-7l-wc2"/>
+                                                    <constraint firstItem="6uo-Vx-fFO" firstAttribute="leading" secondItem="Eyg-6R-tSh" secondAttribute="trailing" constant="6" id="pw9-Jg-DsF"/>
+                                                    <constraint firstItem="uSG-xp-huo" firstAttribute="leading" secondItem="JtY-33-83T" secondAttribute="leading" constant="16" id="qG6-Sb-5gd"/>
+                                                    <constraint firstItem="PgM-yj-cen" firstAttribute="top" secondItem="6uo-Vx-fFO" secondAttribute="bottom" constant="8" id="sWa-AD-WUs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-sF-8Zt">
+                                                <rect key="frame" x="0.0" y="469.5" width="414" height="52"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mT-Bz-i8c">
+                                                        <rect key="frame" x="16" y="20" width="25" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="XNM-Qa-V9B"/>
+                                                        </constraints>
+                                                        <state key="normal" image="more_news_left">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="previousNewsTapped:" destination="ubg-Ya-chp" eventType="touchUpInside" id="mgN-Lk-lwx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEu-ya-8OS">
+                                                        <rect key="frame" x="373" y="20" width="25" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="25" id="qsO-Ys-G8o"/>
+                                                        </constraints>
+                                                        <state key="normal" image="more_news_right">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nextNewsTapped:" destination="ubg-Ya-chp" eventType="touchUpInside" id="ELX-5R-dqW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FR-RE-8Cf">
+                                                        <rect key="frame" x="51" y="16" width="79" height="30"/>
+                                                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="4mT-Bz-i8c" firstAttribute="top" secondItem="8K6-sF-8Zt" secondAttribute="top" constant="20" id="5y0-jC-BVo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UEu-ya-8OS" secondAttribute="trailing" constant="16" id="98b-AU-TvD"/>
+                                                    <constraint firstItem="3FR-RE-8Cf" firstAttribute="centerY" secondItem="4mT-Bz-i8c" secondAttribute="centerY" id="Auj-Cq-dKA"/>
+                                                    <constraint firstItem="3FR-RE-8Cf" firstAttribute="leading" secondItem="4mT-Bz-i8c" secondAttribute="trailing" constant="10" id="IMH-4T-CP5"/>
+                                                    <constraint firstItem="UEu-ya-8OS" firstAttribute="top" secondItem="8K6-sF-8Zt" secondAttribute="top" constant="20" id="SGu-Zg-ItQ"/>
+                                                    <constraint firstItem="4mT-Bz-i8c" firstAttribute="leading" secondItem="8K6-sF-8Zt" secondAttribute="leading" constant="16" id="cfF-5r-cJB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UEu-ya-8OS" secondAttribute="bottom" constant="10" id="eHA-gl-0dx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4mT-Bz-i8c" secondAttribute="bottom" constant="10" id="gIf-og-uir"/>
+                                                </constraints>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xpk-6t-42A">
+                                                <rect key="frame" x="0.0" y="526.5" width="414" height="369.5"/>
+                                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="aea-3E-QOb"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GBL-Ey-IYv">
+                                                    <size key="itemSize" width="416" height="350"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="ubg-Ya-chp" id="ip5-5e-IlJ"/>
+                                                    <outlet property="delegate" destination="ubg-Ya-chp" id="13U-k0-8tr"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="xpk-6t-42A" firstAttribute="top" secondItem="8K6-sF-8Zt" secondAttribute="bottom" constant="5" id="6JM-lo-YrB"/>
+                                            <constraint firstAttribute="bottom" secondItem="xpk-6t-42A" secondAttribute="bottom" id="S7n-Dt-CTX"/>
+                                            <constraint firstItem="JtY-33-83T" firstAttribute="top" secondItem="bo7-gh-Y5X" secondAttribute="top" constant="20" id="SrC-Ox-h1X"/>
+                                            <constraint firstItem="8K6-sF-8Zt" firstAttribute="top" secondItem="JtY-33-83T" secondAttribute="bottom" id="TSL-Zy-bT8"/>
+                                            <constraint firstAttribute="trailing" secondItem="8K6-sF-8Zt" secondAttribute="trailing" id="V0X-xZ-lwX"/>
+                                            <constraint firstItem="JtY-33-83T" firstAttribute="leading" secondItem="bo7-gh-Y5X" secondAttribute="leading" id="bn1-nD-9dh"/>
+                                            <constraint firstItem="xpk-6t-42A" firstAttribute="leading" secondItem="bo7-gh-Y5X" secondAttribute="leading" id="eJv-uF-UX9"/>
+                                            <constraint firstItem="xpk-6t-42A" firstAttribute="width" secondItem="8K6-sF-8Zt" secondAttribute="width" id="fSB-Qt-MpW"/>
+                                            <constraint firstAttribute="trailing" secondItem="JtY-33-83T" secondAttribute="trailing" id="gBh-fj-UKH"/>
+                                            <constraint firstItem="8K6-sF-8Zt" firstAttribute="leading" secondItem="bo7-gh-Y5X" secondAttribute="leading" id="usy-Ns-RAI"/>
+                                            <constraint firstAttribute="trailing" secondItem="xpk-6t-42A" secondAttribute="trailing" id="yXv-CQ-jmW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bo7-gh-Y5X" firstAttribute="leading" secondItem="UOC-CW-Isi" secondAttribute="leading" id="Vtd-1k-lz4"/>
+                                    <constraint firstAttribute="trailing" secondItem="bo7-gh-Y5X" secondAttribute="trailing" id="XjR-aX-H1o"/>
+                                    <constraint firstItem="bo7-gh-Y5X" firstAttribute="top" secondItem="UOC-CW-Isi" secondAttribute="top" id="qoN-5v-QaJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="bo7-gh-Y5X" secondAttribute="bottom" id="rPv-PK-jYc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RC3-kT-xI3"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UOC-CW-Isi" firstAttribute="leading" secondItem="RC3-kT-xI3" secondAttribute="leading" id="1Wh-2E-8WG"/>
+                            <constraint firstItem="bo7-gh-Y5X" firstAttribute="width" secondItem="vhm-4F-Fzr" secondAttribute="width" id="6y7-4X-gwH"/>
+                            <constraint firstItem="UOC-CW-Isi" firstAttribute="trailing" secondItem="RC3-kT-xI3" secondAttribute="trailing" id="DNv-Vf-KHm"/>
+                            <constraint firstItem="bo7-gh-Y5X" firstAttribute="height" secondItem="vhm-4F-Fzr" secondAttribute="height" priority="250" id="N9z-qr-Mcq"/>
+                            <constraint firstItem="UOC-CW-Isi" firstAttribute="top" secondItem="RC3-kT-xI3" secondAttribute="top" id="iKI-f8-GFb"/>
+                            <constraint firstAttribute="bottom" secondItem="UOC-CW-Isi" secondAttribute="bottom" id="m6O-Jh-hYi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailedNewsView" destination="bo7-gh-Y5X" id="CU0-Nk-rmu"/>
+                        <outlet property="moreNewsCollectionView" destination="xpk-6t-42A" id="euz-fq-u4y"/>
+                        <outlet property="newsDescription" destination="uSG-xp-huo" id="ZzC-jF-OPS"/>
+                        <outlet property="newsImage" destination="PgM-yj-cen" id="Cbj-gt-2p4"/>
+                        <outlet property="newsTimeLabel" destination="6uo-Vx-fFO" id="d2M-mj-7t9"/>
+                        <outlet property="newsTitleLabel" destination="b1J-iP-AYY" id="frc-o9-xbl"/>
+                        <outlet property="nextNewsButton" destination="UEu-ya-8OS" id="val-Wg-BTV"/>
+                        <outlet property="previousNewsButton" destination="4mT-Bz-i8c" id="1lF-Q7-osD"/>
+                        <outlet property="scrollView" destination="UOC-CW-Isi" id="8K5-dY-fpw"/>
+                        <outlet property="shareNewsButton" destination="cT2-zs-98D" id="z7K-mA-F1r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NA3-9T-UZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4349" y="1551"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ecT-A8-xGx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="YYL-0T-FG2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="chj-QJ-l2s"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qLm-6y-FUT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hYB-pT-i4r" kind="relationship" relationship="rootViewController" id="tUe-JY-UV4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lL8-2G-pb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2801" y="1551"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Share" width="17" height="17"/>
+        <image name="more_news_left" width="8" height="13"/>
+        <image name="more_news_right" width="8" height="13"/>
+        <image name="news_placeholder_img" width="382" height="194"/>
+        <image name="newstime" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

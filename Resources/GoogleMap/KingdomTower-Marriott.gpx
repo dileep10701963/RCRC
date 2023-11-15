@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+xmlns="http://www.topografix.com/GPX/1/1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+version="1.1"
+creator="Errol">
+
+<wpt lat="24.70967" lon="46.67451"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70965" lon="46.67448"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70864" lon="46.67501"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70889" lon="46.67559"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70894" lon="46.67571"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70919" lon="46.67628"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70948" lon="46.67693"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70961" lon="46.67686"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70949" lon="46.67693"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70949" lon="46.67693"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70955" lon="46.67707"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70843" lon="46.67769"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70837" lon="46.67773"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.7075" lon="46.67816"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70749" lon="46.67817"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70721" lon="46.67831"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70592" lon="46.67896"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70496" lon="46.67943"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70453" lon="46.67964"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70453" lon="46.67963"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70406" lon="46.67986"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70403" lon="46.67988"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70341" lon="46.68015"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70305" lon="46.67945"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70289" lon="46.67908"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70279" lon="46.67913"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70268" lon="46.67887"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70248" lon="46.67841"> <name>Ann Arbor</name> </wpt>
+<wpt lat="24.70228" lon="46.67853"> <name>Ann Arbor</name> </wpt>
+</gpx>

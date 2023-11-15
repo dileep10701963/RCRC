@@ -1,0 +1,24 @@
+
+/* Class = "UITabBarItem"; title = "Plan My Trip"; ObjectID = "Egm-jj-8wc"; */
+"Egm-jj-8wc.title" = "خطط رحلتي";
+
+/* Class = "UILabel"; text = "Work"; ObjectID = "JPO-Mi-cdh"; */
+"JPO-Mi-cdh.text" = "عمل";
+
+/* Class = "UILabel"; text = "Nearby Stations"; ObjectID = "TyV-ZI-btK"; */
+"TyV-ZI-btK.text" = "المحطات القريبة";
+
+/* Class = "UILabel"; text = "Events"; ObjectID = "cUS-lG-QTt"; */
+"cUS-lG-QTt.text" = "الأحداث";
+
+/* Class = "UILabel"; text = "Favorites"; ObjectID = "eC4-2I-Tzc"; */
+"hub-jp-JYV.text" = "المفضلة";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "kvf-3E-Sgp"; */
+"kvf-3E-Sgp.text" = "الصفحة رئيسية";
+
+/* Class = "UILabel"; text = "Plan a Trip"; ObjectID = "n8x-vV-Omy"; */
+"n8x-vV-Omy.text" = "خطط لرحلة";
+
+/* Class = "UITabBarItem"; title = "Event"; ObjectID = "hub-jp-JYV"; */
+"eC4-2I-Tzc.title" = "حدث";

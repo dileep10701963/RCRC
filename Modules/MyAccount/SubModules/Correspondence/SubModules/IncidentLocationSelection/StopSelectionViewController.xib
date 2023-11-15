@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StopSelectionViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="AHi-9c-ofP" id="1p0-Jm-OTQ"/>
+                <outlet property="tableView" destination="yZy-Ug-3Y7" id="gi1-He-ZcY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="AHi-9c-ofP">
+                    <rect key="frame" x="17" y="74" width="380" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yZy-Ug-3Y7">
+                    <rect key="frame" x="20" y="140" width="374" height="722"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AHi-9c-ofP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="0Rl-MS-T9N"/>
+                <constraint firstItem="AHi-9c-ofP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="35W-tc-sdU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AHi-9c-ofP" secondAttribute="trailing" constant="17" id="JZX-cX-JVl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yZy-Ug-3Y7" secondAttribute="trailing" constant="20" id="YoZ-G1-ykF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yZy-Ug-3Y7" secondAttribute="bottom" id="aaj-Aq-Pga"/>
+                <constraint firstItem="yZy-Ug-3Y7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="g6S-J3-wdM"/>
+                <constraint firstItem="yZy-Ug-3Y7" firstAttribute="top" secondItem="AHi-9c-ofP" secondAttribute="bottom" constant="10" id="hPt-nt-268"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="115"/>
+        </view>
+    </objects>
+</document>

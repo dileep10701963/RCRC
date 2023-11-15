@@ -1,0 +1,16 @@
+//
+//  ProdMode.xcconfig
+//  RCRC
+//
+//  Created by Ganesh Shinde on 31/03/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+JourneyPlannerBaseURL = https:/$()/gw.riyadhbus.sa/
+FrequentlyAskedQuestionsURL = https:/$()/www.riyadhbus.sa/
+LatestNewsURL = https:/$()/sit.riyadhbus.sa/o/
+ContactURL = https:/$()/www.riyadhbus.sa/
+Wso2TokenUrl = https:/$()/idam.riyadhbus.sa/oauth2/

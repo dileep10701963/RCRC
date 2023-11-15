@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="347" id="J44-Sy-pPW" customClass="BusDetailsCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="347"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J44-Sy-pPW" id="qi6-2b-Zh0">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="347"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="BNc-Wd-orl">
+                        <rect key="frame" x="47" y="0.0" width="263" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="lDO-eM-D7u"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRK-Qz-Mp4" userLabel="titleLabel">
+                        <rect key="frame" x="83" y="0.0" width="192" height="35"/>
+                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="17"/>
+                        <color key="textColor" red="0.086274509799999996" green="0.14901960780000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2Y-cl-yXc">
+                        <rect key="frame" x="278" y="9.6666666666666643" width="16" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="LOU-53-ePG"/>
+                            <constraint firstAttribute="width" constant="16" id="NC2-p0-Jrb"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="plusIcon"/>
+                        <connections>
+                            <action selector="accessoryButtonTapped:" destination="J44-Sy-pPW" eventType="touchUpInside" id="KVw-Gu-2Wo"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-Fa-obB">
+                        <rect key="frame" x="83" y="271" width="211" height="0.0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="16"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dI4-7C-jQq">
+                        <rect key="frame" x="83" y="51" width="211" height="204"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pWf-js-inF">
+                                <rect key="frame" x="0.0" y="0.0" width="211" height="182"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="d94-OU-IhS"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="z7x-cg-dgk">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-K3-ySi" customClass="CustomPageControl" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                                <rect key="frame" x="56.33333333333335" y="190" width="98.666666666666686" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="KVw-fr-2wH"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="currentPageImage" value="filledPolygonIcon"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="otherPagesImage" value="PolygonIcon"/>
+                                </userDefinedRuntimeAttributes>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pWf-js-inF" secondAttribute="trailing" id="2VL-Yc-8mI"/>
+                            <constraint firstItem="pWf-js-inF" firstAttribute="leading" secondItem="dI4-7C-jQq" secondAttribute="leading" id="9cY-if-afY"/>
+                            <constraint firstAttribute="bottom" secondItem="WAa-K3-ySi" secondAttribute="bottom" id="T8V-VH-npF"/>
+                            <constraint firstItem="pWf-js-inF" firstAttribute="top" secondItem="dI4-7C-jQq" secondAttribute="top" id="bjb-sP-Tna"/>
+                            <constraint firstItem="WAa-K3-ySi" firstAttribute="centerX" secondItem="pWf-js-inF" secondAttribute="centerX" id="hyh-6O-TzF"/>
+                            <constraint firstItem="WAa-K3-ySi" firstAttribute="top" secondItem="pWf-js-inF" secondAttribute="bottom" constant="8" id="nKM-eU-ZCe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cRK-Qz-Mp4" firstAttribute="top" secondItem="qi6-2b-Zh0" secondAttribute="top" id="3Yi-3i-GDZ"/>
+                    <constraint firstItem="BNc-Wd-orl" firstAttribute="top" secondItem="qi6-2b-Zh0" secondAttribute="top" id="3zo-DL-aea"/>
+                    <constraint firstItem="dI4-7C-jQq" firstAttribute="trailing" secondItem="iY0-Fa-obB" secondAttribute="trailing" id="DAZ-y9-BOS"/>
+                    <constraint firstItem="y2Y-cl-yXc" firstAttribute="centerY" secondItem="cRK-Qz-Mp4" secondAttribute="centerY" id="EmU-xT-dh1"/>
+                    <constraint firstItem="dI4-7C-jQq" firstAttribute="leading" secondItem="iY0-Fa-obB" secondAttribute="leading" id="Gcf-O7-8xF"/>
+                    <constraint firstItem="iY0-Fa-obB" firstAttribute="top" secondItem="dI4-7C-jQq" secondAttribute="bottom" constant="16" id="R33-2Y-IEC"/>
+                    <constraint firstAttribute="trailing" secondItem="iY0-Fa-obB" secondAttribute="trailing" constant="16" id="TNX-6e-GV2"/>
+                    <constraint firstItem="dI4-7C-jQq" firstAttribute="top" secondItem="BNc-Wd-orl" secondAttribute="bottom" constant="16" id="UJv-1H-MN1"/>
+                    <constraint firstItem="cRK-Qz-Mp4" firstAttribute="bottom" secondItem="BNc-Wd-orl" secondAttribute="bottom" id="Wkz-Y8-U8c"/>
+                    <constraint firstAttribute="trailing" secondItem="y2Y-cl-yXc" secondAttribute="trailing" constant="16" id="Wvw-2Q-Owk"/>
+                    <constraint firstItem="iY0-Fa-obB" firstAttribute="centerX" secondItem="dI4-7C-jQq" secondAttribute="centerX" id="Xqg-dM-8hx"/>
+                    <constraint firstItem="cRK-Qz-Mp4" firstAttribute="leading" secondItem="qi6-2b-Zh0" secondAttribute="leading" constant="83" id="Zhf-GV-cbf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iY0-Fa-obB" secondAttribute="bottom" id="bSy-AD-gnz"/>
+                    <constraint firstItem="BNc-Wd-orl" firstAttribute="leading" secondItem="qi6-2b-Zh0" secondAttribute="leading" constant="47" id="cYn-HS-4Ym"/>
+                    <constraint firstAttribute="trailing" secondItem="BNc-Wd-orl" secondAttribute="trailing" id="s5T-TU-kqi"/>
+                    <constraint firstItem="y2Y-cl-yXc" firstAttribute="leading" secondItem="cRK-Qz-Mp4" secondAttribute="trailing" constant="3" id="wjM-n9-8qK"/>
+                    <constraint firstItem="iY0-Fa-obB" firstAttribute="leading" secondItem="cRK-Qz-Mp4" secondAttribute="leading" id="wy4-0L-bvZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="teu-1q-Mtk"/>
+            <constraints>
+                <constraint firstItem="pWf-js-inF" firstAttribute="leading" secondItem="teu-1q-Mtk" secondAttribute="leading" constant="83" id="aeh-us-wwG"/>
+            </constraints>
+            <connections>
+                <outlet property="accessoryButton" destination="y2Y-cl-yXc" id="M4P-wD-49J"/>
+                <outlet property="answerLabel" destination="iY0-Fa-obB" id="Urv-2O-AGB"/>
+                <outlet property="answerLabelBottomConstraint" destination="bSy-AD-gnz" id="eWa-e4-A8A"/>
+                <outlet property="answerLabelTopConstraint" destination="R33-2Y-IEC" id="DsU-4W-SO2"/>
+                <outlet property="busCollectView" destination="pWf-js-inF" id="omY-gv-LQc"/>
+                <outlet property="busViewTopConstraint" destination="UJv-1H-MN1" id="LZQ-rO-qdu"/>
+                <outlet property="collectionViewBottomConstraint" destination="nKM-eU-ZCe" id="q0p-3l-NoL"/>
+                <outlet property="collectionViewHeightConstraint" destination="d94-OU-IhS" id="3fQ-nf-Pls"/>
+                <outlet property="heightConstraint" destination="LOU-53-ePG" id="HVA-5r-yh3"/>
+                <outlet property="pageControl" destination="WAa-K3-ySi" id="XnU-gm-j9y"/>
+                <outlet property="pageControlHeightConstraint" destination="KVw-fr-2wH" id="VNl-p0-nPM"/>
+                <outlet property="titleLabel" destination="cRK-Qz-Mp4" id="HUN-n5-feB"/>
+                <outlet property="widthConstraint" destination="NC2-p0-Jrb" id="vuf-JV-2jB"/>
+            </connections>
+            <point key="canvasLocation" x="-102" y="241"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CellBackgroundImage" width="323" height="35.666667938232422"/>
+        <image name="PolygonIcon" width="14" height="14"/>
+        <image name="filledPolygonIcon" width="14" height="14"/>
+        <image name="plusIcon" width="16.333333969116211" height="15.666666984558105"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

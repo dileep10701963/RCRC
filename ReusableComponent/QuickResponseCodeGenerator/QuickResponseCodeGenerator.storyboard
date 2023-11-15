@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quick Response Code Generator View Controller-->
+        <scene sceneID="3TS-iv-PCa">
+            <objects>
+                <viewController storyboardIdentifier="QuickResponseCodeGeneratorViewController" id="Jz8-Ad-2rc" customClass="QuickResponseCodeGeneratorViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G6F-ML-Uqj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-gF-b0i">
+                                <rect key="frame" x="107" y="226" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Cbr-w3-tsd"/>
+                                    <constraint firstAttribute="height" constant="200" id="yqs-gm-gRg"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uhP-HI-Jqi">
+                                <rect key="frame" x="40" y="94" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygy-Ip-VI3">
+                                <rect key="frame" x="165" y="158" width="84" height="38"/>
+                                <color key="backgroundColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="generateButtonTapped:" destination="Jz8-Ad-2rc" eventType="touchUpInside" id="cnm-g8-x2Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g6a-qy-hzZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ygy-Ip-VI3" firstAttribute="top" secondItem="uhP-HI-Jqi" secondAttribute="bottom" constant="30" id="7ik-3i-Qbs"/>
+                            <constraint firstItem="g6a-qy-hzZ" firstAttribute="trailing" secondItem="uhP-HI-Jqi" secondAttribute="trailing" constant="40" id="NJ0-ae-9us"/>
+                            <constraint firstItem="aHy-gF-b0i" firstAttribute="top" secondItem="Ygy-Ip-VI3" secondAttribute="bottom" constant="30" id="Pex-Bk-P3N"/>
+                            <constraint firstItem="Ygy-Ip-VI3" firstAttribute="centerX" secondItem="G6F-ML-Uqj" secondAttribute="centerX" id="hgv-iD-m4g"/>
+                            <constraint firstItem="uhP-HI-Jqi" firstAttribute="top" secondItem="g6a-qy-hzZ" secondAttribute="top" constant="50" id="mDQ-zG-55L"/>
+                            <constraint firstItem="aHy-gF-b0i" firstAttribute="centerX" secondItem="G6F-ML-Uqj" secondAttribute="centerX" id="nSb-ei-7X5"/>
+                            <constraint firstItem="uhP-HI-Jqi" firstAttribute="leading" secondItem="g6a-qy-hzZ" secondAttribute="leading" constant="40" id="nqI-0R-rA7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputLabel" destination="uhP-HI-Jqi" id="5n3-r9-PKn"/>
+                        <outlet property="quickResponseCodeImage" destination="aHy-gF-b0i" id="RZ9-aL-Cp4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8c-QD-SZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

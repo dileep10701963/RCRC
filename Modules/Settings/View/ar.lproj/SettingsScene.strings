@@ -1,0 +1,30 @@
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "1TD-22-drI"; */
+"1TD-22-drI.title" = "إعدادات";
+
+/* Class = "UILabel"; text = "Build: Sprint"; ObjectID = "FEh-vC-WUi"; */
+"FEh-vC-WUi.text" = "Build: Sprint";
+
+/* Class = "UILabel"; text = "Released On: 24 March 2021"; ObjectID = "VpP-NN-hHg"; */
+"VpP-NN-hHg.text" = "Released On: 24 March 2021";
+
+/* Class = "UISegmentedControl"; fex-rb-Xzh.segmentTitles[0] = "English"; ObjectID = "fex-rb-Xzh"; */
+"fex-rb-Xzh.segmentTitles[0]" = "English";
+
+/* Class = "UISegmentedControl"; fex-rb-Xzh.segmentTitles[1] = "Arabic"; ObjectID = "fex-rb-Xzh"; */
+"fex-rb-Xzh.segmentTitles[1]" = "عربى";
+
+/* Class = "UISegmentedControl"; fex-rb-Xzh.segmentTitles[2] = "Urdu"; ObjectID = "fex-rb-Xzh"; */
+"fex-rb-Xzh.segmentTitles[2]" = "اردو";
+
+/* Class = "UILabel"; text = "Application Language"; ObjectID = "gNt-Pd-JI0"; */
+"gNt-Pd-JI0.text" = "لغة التطبيق";
+
+/* Class = "UIButton"; normalTitle = "QR Code Test"; ObjectID = "orK-Xn-2dC"; */
+"orK-Xn-2dC.normalTitle" = "QR Code Test";
+
+/* Class = "UIButton"; normalTitle = "Launch Tutorial"; ObjectID = "uRK-Qb-AOw"; */
+"uRK-Qb-AOw.normalTitle" = "Launch Tutorial";
+
+"d3a-na-dns.normalTitle" = "تابع";
+"RZR-wo-dRY.text" = "اللغة";

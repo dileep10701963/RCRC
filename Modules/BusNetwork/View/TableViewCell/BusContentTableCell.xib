@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="BusContentTableCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYG-g3-ceg" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                        <rect key="frame" x="18" y="10" width="327" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ef-GO-cut">
+                        <rect key="frame" x="18" y="70" width="349" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="Sxg-VY-nsc"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiz-rh-Bd1">
+                        <rect key="frame" x="177.5" y="80" width="30" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="paB-vG-AW6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.0" green="0.43529411759999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="fullScreenButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ynO-bl-Asj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nax-H4-hhk">
+                        <rect key="frame" x="355" y="25" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="FlX-Rw-FNo"/>
+                            <constraint firstAttribute="width" constant="20" id="juU-G1-64y"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Y7-sc-yqO">
+                        <rect key="frame" x="15" y="112" width="355" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ve4-l3-SD3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JYG-g3-ceg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="2yc-a9-w0Z"/>
+                    <constraint firstAttribute="trailing" secondItem="4Y7-sc-yqO" secondAttribute="trailing" constant="15" id="97L-ic-7qy"/>
+                    <constraint firstAttribute="trailing" secondItem="1Ef-GO-cut" secondAttribute="trailing" constant="18" id="A12-LK-PCM"/>
+                    <constraint firstAttribute="bottom" secondItem="xiz-rh-Bd1" secondAttribute="bottom" constant="12" id="ARy-AT-FkR"/>
+                    <constraint firstItem="Nax-H4-hhk" firstAttribute="centerY" secondItem="JYG-g3-ceg" secondAttribute="centerY" id="Gne-NJ-skm"/>
+                    <constraint firstAttribute="bottom" secondItem="4Y7-sc-yqO" secondAttribute="bottom" id="Kmg-Wc-Bgx"/>
+                    <constraint firstItem="1Ef-GO-cut" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="P6l-TL-0qJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Nax-H4-hhk" secondAttribute="trailing" constant="10" id="Pgj-g2-oJm"/>
+                    <constraint firstItem="Nax-H4-hhk" firstAttribute="leading" secondItem="JYG-g3-ceg" secondAttribute="trailing" constant="10" id="hJl-Et-ulh"/>
+                    <constraint firstItem="JYG-g3-ceg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iwR-jL-MQD"/>
+                    <constraint firstItem="xiz-rh-Bd1" firstAttribute="top" secondItem="1Ef-GO-cut" secondAttribute="bottom" constant="10" id="p3j-Ki-4CF"/>
+                    <constraint firstItem="1Ef-GO-cut" firstAttribute="top" secondItem="JYG-g3-ceg" secondAttribute="bottom" constant="10" id="pJW-mM-aSi"/>
+                    <constraint firstItem="4Y7-sc-yqO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sAo-IL-2oI"/>
+                    <constraint firstItem="xiz-rh-Bd1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="y9D-QY-3ij"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="accessoryButton" destination="Nax-H4-hhk" id="U5g-O8-lqn"/>
+                <outlet property="buttonHeightConstraint" destination="paB-vG-AW6" id="VnC-RB-RBR"/>
+                <outlet property="fullScreenButton" destination="xiz-rh-Bd1" id="jRZ-YY-nc3"/>
+                <outlet property="imageBottomConstraint" destination="p3j-Ki-4CF" id="51Z-HT-ocE"/>
+                <outlet property="imageContent" destination="1Ef-GO-cut" id="i2I-jF-HjS"/>
+                <outlet property="imageHeightConstraint" destination="Sxg-VY-nsc" id="lAw-9N-YMQ"/>
+                <outlet property="imageTopConstraint" destination="pJW-mM-aSi" id="NPi-Pi-hGn"/>
+                <outlet property="titleLabel" destination="JYG-g3-ceg" id="VcY-ks-SqV"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="116.85267857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

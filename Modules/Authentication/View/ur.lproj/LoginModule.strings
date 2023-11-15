@@ -1,0 +1,93 @@
+
+/* Class = "UILabel"; text = "Check your email"; ObjectID = "0d3-WZ-nrw"; */
+"0d3-WZ-nrw.text" = "اپنا ای میل چیک کریں";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "1vp-CU-4le"; */
+"1vp-CU-4le.placeholder" = "پاس ورڈ";
+
+/* Class = "UILabel"; text = "Already a member?"; ObjectID = "3QI-nr-WOm"; */
+"3QI-nr-WOm.text" = "پہلے سے ہی رکن؟";
+
+/* Class = "UILabel"; text = "Please check your registered email for email verification"; ObjectID = "3uj-WV-K5T"; */
+"3uj-WV-K5T.text" = "براہ کرم ای میل کی توثیق کے لئے اپنا رجسٹرڈ ای میل چیک کریں";
+
+/* Class = "UILabel"; text = "Enable Touch ID/ Face ID"; ObjectID = "4gE-5n-Vte"; */
+"4gE-5n-Vte.text" = "ٹچ ID / چہرہ ID کو فعال کریں";
+
+/* Class = "UIButton"; normalTitle = "Reset Password"; ObjectID = "8dW-Lc-ulN"; */
+"8dW-Lc-ulN.normalTitle" = "پاس ورڈ ری سیٹ";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "AXV-Lz-75g"; */
+"AXV-Lz-75g.placeholder" = "ای میل اڈریس";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "Azw-iM-Uk5"; */
+"Azw-iM-Uk5.normalTitle" = "پاسورڈ بھول گے؟";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "CPS-yJ-byk"; */
+"CPS-yJ-byk.placeholder" = "موبائل فون کانمبر";
+
+/* Class = "UILabel"; text = "Congratulations, now you are a member of KAPRPT family"; ObjectID = "DxE-3L-n71"; */
+"DxE-3L-n71.text" = "مبارک ہو ، اب آپ کے اے پی آر پی ٹی فیملی کے ممبر ہیں";
+
+/* Class = "UILabel"; text = "Create an account"; ObjectID = "EHT-In-yb3"; */
+"EHT-In-yb3.text" = "کھاتا کھولیں";
+
+/* Class = "UIButton"; normalTitle = "Use your Touch ID/Face ID to sign in to account"; ObjectID = "EnC-1S-oju"; */
+"EnC-1S-oju.normalTitle" = "اکاؤنٹ میں سائن ان کرنے کے لئے اپنا ٹچ ID / چہرہ ID استعمال کریں";
+
+/* Class = "UIButton"; normalTitle = "Register now"; ObjectID = "Num-Ih-g5J"; */
+"Num-Ih-g5J.normalTitle" = "ابھی رجسٹر کریں";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "OZO-gZ-xhR"; */
+"OZO-gZ-xhR.normalTitle" = "سائن ان";
+
+/* Class = "UITextField"; placeholder = "User ID"; ObjectID = "PB7-tZ-hmg"; */
+"PB7-tZ-hmg.placeholder" = "صارف کی شناخت";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Pth-Zi-Jyl"; */
+"Pth-Zi-Jyl.placeholder" = "پاس ورڈ";
+
+/* Class = "UILabel"; text = "Registration Successful!"; ObjectID = "THh-FG-zez"; */
+"THh-FG-zez.text" = "رجسٹریشن کامیاب!";
+
+/* Class = "UIButton"; normalTitle = "Proceed"; ObjectID = "Vqp-ml-tAL"; */
+"Vqp-ml-tAL.normalTitle" = "آگے بڑھو";
+
+/* Class = "UILabel"; text = "Sign In to continue"; ObjectID = "Wd1-At-z01"; */
+"Wd1-At-z01.text" = "جاری رکھنے کے لئے سائن ان کریں";
+
+/* Class = "UILabel"; text = "We have sent you a reset password link on your registered email address"; ObjectID = "Yhd-de-nWQ"; */
+"Yhd-de-nWQ.text" = "ہم نے آپ کو رجسٹرڈ ای میل ایڈریس پر دوبارہ ترتیب دینے والا پاس ورڈ لنک بھیجا ہے";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "ZLs-Ue-Gvs"; */
+"ZLs-Ue-Gvs.normalTitle" = "سائن اپ";
+
+/* Class = "UIButton"; normalTitle = "Proceed"; ObjectID = "bcA-cz-Cfh"; */
+"bcA-cz-Cfh.normalTitle" = "ٓگے چلیں ";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "eZs-SO-RZQ"; */
+"eZs-SO-RZQ.placeholder" = "ای میل اڈریس";
+
+/* Class = "UITextField"; placeholder = "Re-type Password"; ObjectID = "gVF-c0-Vbe"; */
+"gVF-c0-Vbe.placeholder" = "دوبارہ پاسوورڈ لکھئے";
+
+/* Class = "UILabel"; text = "Forgotten your Password?"; ObjectID = "l4z-eO-raz"; */
+"l4z-eO-raz.text" = "اپنا پاس ورڈ بھول گئے؟";
+
+/* Class = "UILabel"; text = "Welcome,"; ObjectID = "miG-6W-xod"; */
+"miG-6W-xod.text" = "خوش آمدید،";
+
+/* Class = "UILabel"; text = "Enter your email address to get a link to reset your password"; ObjectID = "nQ6-RL-Jok"; */
+"nQ6-RL-Jok.text" = "اپنا پاس ورڈ دوبارہ ترتیب دینے کیلئے لنک حاصل کرنے کے لئے اپنا ای میل ایڈریس درج کریں";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "vKu-dP-pDb"; */
+"vKu-dP-pDb.placeholder" = "نام";
+
+/* Class = "UILabel"; text = "Get Started"; ObjectID = "xF8-3T-eLQ"; */
+"xF8-3T-eLQ.text" = "شروع کرنے کے";
+
+/* Class = "UILabel"; text = "Not a member yet?"; ObjectID = "xlj-9b-9aI"; */
+"xlj-9b-9aI.text" = "ابھی ممبر نہیں؟";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "yX3-pU-7hZ"; */
+"yX3-pU-7hZ.normalTitle" = "سائن ان";

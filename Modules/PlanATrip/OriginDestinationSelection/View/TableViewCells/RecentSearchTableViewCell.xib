@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="RecentSearchTableViewCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="twd-PY-Kdw">
+                        <rect key="frame" x="16" y="37.5" width="20" height="24.5"/>
+                        <color key="tintColor" name="ButtonBGColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8e6-Oh-7rH"/>
+                            <constraint firstAttribute="height" priority="999" constant="20" id="a0X-PA-JnU"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELx-6c-817">
+                        <rect key="frame" x="334" y="24" width="52" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="94K-M0-UhB"/>
+                            <constraint firstAttribute="height" constant="52" id="mI3-8x-Q6c"/>
+                        </constraints>
+                        <state key="normal" image="add_fav_icon"/>
+                        <connections>
+                            <action selector="favoriteButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BC8-1q-Fy6"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-AJ-Ul1" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                        <rect key="frame" x="60" y="42" width="250" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="7ly-IB-yKK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                        <color key="textColor" red="0.086274509803921567" green="0.14901960784313725" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heM-5o-VZG" customClass="LocalizedLabel" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+                        <rect key="frame" x="60" y="66" width="250" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="YNh-mh-osz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="16"/>
+                        <color key="textColor" red="0.086274509803921567" green="0.14901960784313725" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="BG3-83-8pQ">
+                        <rect key="frame" x="16" y="42.5" width="20" height="18.5"/>
+                        <color key="tintColor" name="ButtonBGColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="kmo-1W-JFy"/>
+                            <constraint firstAttribute="height" constant="20" id="o5u-gV-yaW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="cZ3-AJ-Ul1" firstAttribute="top" secondItem="twd-PY-Kdw" secondAttribute="top" constant="5" id="0Xa-C3-yaF"/>
+                    <constraint firstAttribute="bottom" secondItem="twd-PY-Kdw" secondAttribute="bottom" priority="250" constant="6" id="18Z-s7-sfh"/>
+                    <constraint firstItem="ELx-6c-817" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4jp-lS-Cgc"/>
+                    <constraint firstItem="heM-5o-VZG" firstAttribute="leading" secondItem="cZ3-AJ-Ul1" secondAttribute="leading" id="4vO-aB-rQ4"/>
+                    <constraint firstItem="BG3-83-8pQ" firstAttribute="trailing" secondItem="twd-PY-Kdw" secondAttribute="trailing" id="ET6-g5-yaJ"/>
+                    <constraint firstItem="twd-PY-Kdw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="I0F-qW-Uw3"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="twd-PY-Kdw" secondAttribute="bottom" constant="6" id="RDK-ep-42e"/>
+                    <constraint firstItem="twd-PY-Kdw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="TZC-5I-7dO"/>
+                    <constraint firstItem="heM-5o-VZG" firstAttribute="top" secondItem="cZ3-AJ-Ul1" secondAttribute="bottom" constant="8" id="Tzi-Lb-bUO"/>
+                    <constraint firstAttribute="bottom" secondItem="heM-5o-VZG" secondAttribute="bottom" priority="250" constant="6" id="YO3-Ic-PUs"/>
+                    <constraint firstItem="twd-PY-Kdw" firstAttribute="centerY" secondItem="ELx-6c-817" secondAttribute="centerY" id="ZZx-sX-FfS"/>
+                    <constraint firstItem="twd-PY-Kdw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="250" constant="6" id="boU-W8-Dhs"/>
+                    <constraint firstItem="cZ3-AJ-Ul1" firstAttribute="centerY" secondItem="twd-PY-Kdw" secondAttribute="centerY" priority="250" id="ggd-z3-G0d"/>
+                    <constraint firstItem="ELx-6c-817" firstAttribute="leading" secondItem="cZ3-AJ-Ul1" secondAttribute="trailing" constant="24" id="ila-Az-2W4"/>
+                    <constraint firstItem="BG3-83-8pQ" firstAttribute="top" secondItem="cZ3-AJ-Ul1" secondAttribute="top" id="irg-ze-wes"/>
+                    <constraint firstItem="cZ3-AJ-Ul1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="250" constant="11" id="pXz-oX-IvK"/>
+                    <constraint firstAttribute="trailing" secondItem="ELx-6c-817" secondAttribute="trailing" constant="16" id="q1M-N6-DSS"/>
+                    <constraint firstItem="cZ3-AJ-Ul1" firstAttribute="leading" secondItem="twd-PY-Kdw" secondAttribute="trailing" constant="24" id="s53-HR-p2i"/>
+                    <constraint firstItem="heM-5o-VZG" firstAttribute="trailing" secondItem="cZ3-AJ-Ul1" secondAttribute="trailing" id="snw-lJ-aan"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="cZ3-AJ-Ul1" firstAttribute="centerY" secondItem="njF-e1-oar" secondAttribute="centerY" id="5I1-Wj-bAv"/>
+            </constraints>
+            <connections>
+                <outlet property="favBtnLeadingConstraint" destination="ila-Az-2W4" id="Efh-vB-NjT"/>
+                <outlet property="favoriteButton" destination="ELx-6c-817" id="FIs-Kt-iMC"/>
+                <outlet property="favouriteBtnWidthConstraint" destination="94K-M0-UhB" id="LUN-b5-rBA"/>
+                <outlet property="labelHorizontalConstraint" destination="5I1-Wj-bAv" id="2gg-Qc-l0l"/>
+                <outlet property="locationLabelCenterConstraint" destination="ggd-z3-G0d" id="96e-rD-daJ"/>
+                <outlet property="locationLabelIconTopConstraint" destination="0Xa-C3-yaF" id="CUb-w4-s9Z"/>
+                <outlet property="locationLabelTopConstraint" destination="pXz-oX-IvK" id="iHT-eS-fAM"/>
+                <outlet property="recentSearchAddressLabel" destination="heM-5o-VZG" id="oT7-wE-8QY"/>
+                <outlet property="recentSearchIconWidth" destination="8e6-Oh-7rH" id="O9T-JX-HDA"/>
+                <outlet property="recentSearchImage" destination="twd-PY-Kdw" id="z2L-l2-2Pl"/>
+                <outlet property="recentSearchImageTopConstraint" destination="boU-W8-Dhs" id="eT7-ml-Xge"/>
+                <outlet property="recentSearchLocationLabel" destination="cZ3-AJ-Ul1" id="855-SD-cet"/>
+                <outlet property="recentSearchSmallIcon" destination="BG3-83-8pQ" id="ZIg-O2-lum"/>
+            </connections>
+            <point key="canvasLocation" x="-165" y="113"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_fav_icon" width="31.5" height="31.5"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <namedColor name="ButtonBGColor">
+            <color red="0.43500000238418579" green="0.83099997043609619" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

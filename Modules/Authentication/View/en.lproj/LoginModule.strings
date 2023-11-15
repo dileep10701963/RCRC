@@ -1,0 +1,158 @@
+
+/* Class = "UILabel"; text = "Please check your email"; ObjectID = "0d3-WZ-nrw"; */
+"0d3-WZ-nrw.text" = "Please check your email";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "0gC-u1-pc5"; */
+"0gC-u1-pc5.placeholder" = "Last Name";
+
+/* Class = "UILabel"; text = "Your Account"; ObjectID = "0pn-qx-FK1"; */
+"0pn-qx-FK1.text" = "Your Account";
+
+/* Class = "UILabel"; text = "Date of Birth"; ObjectID = "17K-3V-t0a"; */
+"17K-3V-t0a.text" = "Date of Birth";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "1vp-CU-4le"; */
+"1vp-CU-4le.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Citizenship ID"; ObjectID = "2Oi-pR-6xj"; */
+"2Oi-pR-6xj.text" = "Citizenship ID";
+
+/* Class = "UILabel"; text = "Enable Touch ID/ Face ID"; ObjectID = "4gE-5n-Vte"; */
+"4gE-5n-Vte.text" = "Enable Touch ID/ Face ID";
+
+/* Class = "UITextField"; placeholder = "Email Address or User ID"; ObjectID = "7YO-pm-oj0"; */
+"7YO-pm-oj0.placeholder" = "Email Address or User ID";
+
+/* Class = "UIButton"; normalTitle = "Proceed"; ObjectID = "8dW-Lc-ulN"; */
+"8dW-Lc-ulN.normalTitle" = "Proceed";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "8wS-fB-grv"; */
+"8wS-fB-grv.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "AmZ-MT-mSa"; */
+"AmZ-MT-mSa.placeholder" = "First Name";
+
+/* Class = "UIButton"; normalTitle = "Forgot Your Password?"; ObjectID = "Azw-iM-Uk5"; */
+"Azw-iM-Uk5.normalTitle" = "Forgot Your Password?";
+
+/* Class = "UILabel"; text = "Reseller"; ObjectID = "C1J-AQ-Lmn"; */
+"C1J-AQ-Lmn.text" = "Reseller";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "EeG-K7-KDM"; */
+"EeG-K7-KDM.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Use your Touch ID/Face ID to sign in to account"; ObjectID = "EnC-1S-oju"; */
+"EnC-1S-oju.normalTitle" = "Use your Touch ID/Face ID to sign in to account";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "FxG-43-iMd"; */
+"FxG-43-iMd.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "Is8-Oq-PNQ"; */
+"Is8-Oq-PNQ.placeholder" = "Email Address";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "KLJ-Yx-GCS"; */
+"KLJ-Yx-GCS.normalTitle" = "Yes";
+
+/* Class = "UILabel"; text = "Gender"; ObjectID = "Lmv-uK-5FQ"; */
+"Lmv-uK-5FQ.text" = "Gender";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "Num-Ih-g5J"; */
+"Num-Ih-g5J.normalTitle" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "OZO-gZ-xhR"; */
+"OZO-gZ-xhR.normalTitle" = "Sign in";
+
+/* Class = "UITextField"; placeholder = "Email Address or User ID"; ObjectID = "PB7-tZ-hmg"; */
+"PB7-tZ-hmg.placeholder" = "Email Address or User ID";
+
+/* Class = "UILabel"; text = "Verification Required"; ObjectID = "THh-FG-zez"; */
+"THh-FG-zez.text" = "Verification Required";
+
+/* Class = "UILabel"; text = "Don't have an account yet?"; ObjectID = "Urf-6R-oFI"; */
+"Urf-6R-oFI.text" = "Do not have an account?";
+
+/* Class = "UIButton"; normalTitle = "Back to Account"; ObjectID = "Vqp-ml-tAL"; */
+"Vqp-ml-tAL.normalTitle" = "Back to Account";
+
+/* Class = "UILabel"; text = "Sign In to continue"; ObjectID = "Wd1-At-z01"; */
+"Wd1-At-z01.text" = "Sign In to continue";
+
+/* Class = "UILabel"; text = "Already a member?"; ObjectID = "X8U-z5-aHD"; */
+"X8U-z5-aHD.text" = "Already a member?";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "XyJ-xd-6Q1"; */
+"XyJ-xd-6Q1.normalTitle" = "Sign in";
+
+/* Class = "UILabel"; text = "Forgot Password"; ObjectID = "Ztn-OE-ArV"; */
+"Ztn-OE-ArV.text" = "Forgot Password";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "axM-a5-d7S"; */
+"axM-a5-d7S.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "Get Started"; ObjectID = "ayB-4Q-Krk"; */
+"ayB-4Q-Krk.text" = "Get Started";
+
+/* Class = "UIButton"; normalTitle = "Proceed"; ObjectID = "bcA-cz-Cfh"; */
+"bcA-cz-Cfh.normalTitle" = "Proceed";
+
+/* Class = "UILabel"; text = "Register"; ObjectID = "d3X-0n-UwN"; */
+"d3X-0n-UwN.text" = "Register";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "eZs-SO-RZQ"; */
+"eZs-SO-RZQ.placeholder" = "Email Address";
+
+/* Class = "UILabel"; text = "Create an account. All fields are required."; ObjectID = "fJy-aL-TIn"; */
+"fJy-aL-TIn.text" = "Create an account. All fields are required.";
+
+/* Class = "UITextField"; placeholder = "Mobile Number"; ObjectID = "gA2-JL-O8A"; */
+"gA2-JL-O8A.placeholder" = "Mobile Number";
+
+/* Class = "UILabel"; text = "Enable Touch ID/ Face ID"; ObjectID = "hHz-g0-4I5"; */
+"hHz-g0-4I5.text" = "Enable Touch ID/ Face ID";
+
+/* Class = "UILabel"; text = "Sign In to continue"; ObjectID = "kQQ-0t-vdP"; */
+"kQQ-0t-vdP.text" = "Sign In to continue";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "l8Z-M0-HA5"; */
+"l8Z-M0-HA5.normalTitle" = "No";
+
+/* Class = "UILabel"; text = "Eligible for Concession?"; ObjectID = "m1t-Z5-5f4"; */
+"m1t-Z5-5f4.text" = "Eligible for Concession?";
+
+/* Class = "UIButton"; normalTitle = "Forgot Your Password?"; ObjectID = "mCU-cw-PYb"; */
+"mCU-cw-PYb.normalTitle" = "Forgot Your Password?";
+
+/* Class = "UILabel"; text = "Your Account,"; ObjectID = "miG-6W-xod"; */
+"miG-6W-xod.text" = "Your Account,";
+
+/* Class = "UILabel"; text = "Enter your email address and we will send you an email to reset your password"; ObjectID = "nQ6-RL-Jok"; */
+"nQ6-RL-Jok.text" = "Enter your email address and we will send you an email to reset your password";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "oqm-ch-8tP"; */
+"oqm-ch-8tP.normalTitle" = "Sign in";
+
+/* Class = "UIButton"; normalTitle = "Yes"; ObjectID = "qqz-1z-Nlh"; */
+"qqz-1z-Nlh.normalTitle" = "Yes";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "rnK-oc-9FD"; */
+"rnK-oc-9FD.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "User ID"; ObjectID = "rvF-yC-8mW"; */
+"rvF-yC-8mW.placeholder" = "User ID e.g. mohammed1981";
+
+/* Class = "UITextField"; placeholder = "Citizenship ID"; ObjectID = "tza-zP-8Tr"; */
+"tza-zP-8Tr.placeholder" = "Citizenship ID";
+
+/* Class = "UILabel"; text = "Document Type"; ObjectID = "vpa-gc-hXg"; */
+"vpa-gc-hXg.text" = "Document Type";
+
+/* Class = "UILabel"; text = "Do not have an account yet?"; ObjectID = "xlj-9b-9aI"; */
+"xlj-9b-9aI.text" = "Do not have an account yet?";
+
+/* Class = "UIButton"; normalTitle = "No"; ObjectID = "yi3-as-FBG"; */
+"yi3-as-FBG.normalTitle" = "No";
+
+/* Class = "UIButton"; normalTitle = "Use your Touch ID/Face ID to sign in to account"; ObjectID = "zAv-dq-8Cu"; */
+"zAv-dq-8Cu.normalTitle" = "Use your Touch ID/Face ID to sign in to account";
+
+"kqj-c8-VOk.text" = "Change Language";

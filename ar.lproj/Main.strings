@@ -1,0 +1,61 @@
+
+/* Class = "UILabel"; text = "Messages"; ObjectID = "2t0-pa-CWB"; */
+"2t0-pa-CWB.text" = "الرسائل";
+
+/* Class = "UINavigationItem"; title = "News"; ObjectID = "47O-WV-SWc"; */
+"47O-WV-SWc.title" = "أخبار";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "4mp-F5-VyP"; */
+"4mp-F5-VyP.title" = "ابحث";
+
+/* Class = "UILabel"; text = "News"; ObjectID = "Fn4-y1-4Rc"; */
+"Fn4-y1-4Rc.text" = "أخبار";
+
+/* Class = "UITabBarItem"; title = "News"; ObjectID = "HY2-4w-F3E"; */
+"HY2-4w-F3E.title" = "أخبار";
+
+/* Class = "UILabel"; text = "@rcrc"; ObjectID = "K1t-aO-l4l"; */
+"K1t-aO-l4l.text" = "@rcrc";
+
+/* Class = "UILabel"; text = "RT Network"; ObjectID = "Ty1-GW-u14"; */
+"Ty1-GW-u14.text" = "شبكة RT";
+
+/* Class = "UILabel"; text = "Plan My Trip"; ObjectID = "UCI-92-lL9"; */
+"UCI-92-lL9.text" = "خطة رحلتي";
+
+/* Class = "UITabBarItem"; title = "Plan My Trip"; ObjectID = "Ugh-WE-f4k"; */
+"Ugh-WE-f4k.title" = "خطة رحلتي";
+
+/* Class = "UINavigationItem"; title = "Notifications"; ObjectID = "XV8-Gb-SIV"; */
+"XV8-Gb-SIV.title" = "الاخطارات";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "Y12-sK-X4L"; */
+"Y12-sK-X4L.title" = "الصفحة رئيسية";
+
+/* Class = "UITabBarItem"; title = "RT Network"; ObjectID = "agE-kF-pUI"; */
+"agE-kF-pUI.title" = "شبكة RT";
+
+/* Class = "UILabel"; text = "Axel 🇲🇾"; ObjectID = "fTL-AL-aPl"; */
+"fTL-AL-aPl.text" = "أكسل 🇲🇾";
+
+/* Class = "UITabBarItem"; title = "More"; ObjectID = "hxZ-GA-Q7g"; */
+"hxZ-GA-Q7g.title" = "اكثر";
+
+/* Class = "UILabel"; text = "Line Tracker"; ObjectID = "jGl-dX-U7B"; */
+"jGl-dX-U7B.text" = "متعقب الخط";
+
+/* Class = "UINavigationItem"; title = "Messages"; ObjectID = "mgp-dE-l7k"; */
+"mgp-dE-l7k.title" = "الرسائل";
+
+/* Class = "UILabel"; text = "My Profile"; ObjectID = "tJK-bF-79t"; */
+"tJK-bF-79t.text" = "ملف التعريف الخاص بي";
+
+/* Class = "UITabBarItem"; title = "Line Tracker"; ObjectID = "zse-3E-TwL"; */
+"zse-3E-TwL.title" = "متعقب الخط";
+"tJK-bF-79t.text" = "اندرو";
+
+/* Class = "UILabel"; text = "No Internet Connection"; ObjectID = "gSf-fG-pXz"; */
+"gSf-fG-pXz.text" = "لا يوجد اتصال بالإنترنت";
+
+/* Class = "UIButton"; normalTitle = "Try Again"; ObjectID = "fEX-JZ-tJZ"; */
+"mq5-u0-J8t.normalTitle" = "حاول مرة أخرى";

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FareMediaViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="appleBackView" destination="aTs-4c-mzT" id="7pT-nI-33b"/>
+                <outlet property="applePayButton" destination="dC7-dI-0ar" id="irQ-lG-KDD"/>
+                <outlet property="creditBackView" destination="yfW-hT-EVe" id="3Qp-FS-8Po"/>
+                <outlet property="creditCardButton" destination="Qkh-8l-19d" id="7jo-cP-jrq"/>
+                <outlet property="paymentBackView" destination="mXO-3i-F26" id="dBM-bt-3aH"/>
+                <outlet property="tableView" destination="9RT-RO-W9z" id="Vzd-43-9Wd"/>
+                <outlet property="titleLabel" destination="jfG-Fa-jUy" id="iRs-iX-lgN"/>
+                <outlet property="transferentView" destination="EfQ-CH-2fj" id="gqb-hd-1Ba"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9RT-RO-W9z">
+                    <rect key="frame" x="0.0" y="102" width="414" height="710"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rpt_bottom_banner" translatesAutoresizingMaskIntoConstraints="NO" id="6Cw-Ej-vUC">
+                    <rect key="frame" x="0.0" y="896" width="414" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="izk-Wt-Rpi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfG-Fa-jUy">
+                    <rect key="frame" x="16" y="64" width="382" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3U9-7u-LSi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EfQ-CH-2fj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXO-3i-F26">
+                            <rect key="frame" x="0.0" y="466" width="414" height="430"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Payment Method" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="8zI-1r-foq">
+                                    <rect key="frame" x="112" y="16" width="190" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="BaW-W9-8XC"/>
+                                        <constraint firstAttribute="width" constant="190" id="EQq-j2-zrd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="22"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="DSPaymentMethod"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qA5-xY-Uxy">
+                                    <rect key="frame" x="30" y="105" width="354" height="120"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-hT-EVe">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="52"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="RTf-o0-MCP">
+                                                    <rect key="frame" x="8" y="4" width="342" height="44"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlr-Sl-JOp">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="7w1-Vi-QMU"/>
+                                                                <constraint firstAttribute="width" constant="50" id="WI4-De-kdc"/>
+                                                            </constraints>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="creditcard"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ti-TT-SrB">
+                                                            <rect key="frame" x="66" y="0.0" width="216" height="44"/>
+                                                            <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Credit card">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <state key="selected" title="عربي">
+                                                                <color key="titleColor" red="0.086274509799999996" green="0.14901960780000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="DSCreditCard"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="creditCardButtonClickAction:" destination="-1" eventType="touchUpInside" id="HIW-kv-SgA"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkh-8l-19d">
+                                                            <rect key="frame" x="298" y="0.0" width="44" height="44"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="HAe-hr-1as"/>
+                                                                <constraint firstAttribute="width" constant="44" id="JiL-TS-2W9"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="tintColor"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="deselected-green"/>
+                                                            <connections>
+                                                                <action selector="creditCardButtonClickAction:" destination="-1" eventType="touchUpInside" id="g7A-mk-6xc"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Qkh-8l-19d" secondAttribute="trailing" id="qun-iz-3jF"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94901960780000005" green="0.99215686270000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="RTf-o0-MCP" secondAttribute="trailing" constant="4" id="CZ2-WD-chK"/>
+                                                <constraint firstItem="RTf-o0-MCP" firstAttribute="top" secondItem="yfW-hT-EVe" secondAttribute="top" constant="4" id="I2j-2q-14E"/>
+                                                <constraint firstItem="RTf-o0-MCP" firstAttribute="leading" secondItem="yfW-hT-EVe" secondAttribute="leading" constant="8" id="kJZ-B3-Oyn"/>
+                                                <constraint firstAttribute="bottom" secondItem="RTf-o0-MCP" secondAttribute="bottom" constant="4" id="lvW-u0-Vmz"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.43529411759999997" green="0.83137254900000002" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTs-4c-mzT">
+                                            <rect key="frame" x="0.0" y="68" width="354" height="52"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Oz0-h3-fDg">
+                                                    <rect key="frame" x="8" y="4" width="342" height="44"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9h9-rZ-6Cd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="5so-KI-2J8"/>
+                                                                <constraint firstAttribute="height" constant="44" id="mou-S2-MRC"/>
+                                                            </constraints>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="applepay"/>
+                                                        </button>
+                                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tGu-Sq-r1A">
+                                                            <rect key="frame" x="66" y="0.0" width="216" height="44"/>
+                                                            <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Apple pay">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <state key="selected" title="عربي">
+                                                                <color key="titleColor" red="0.086274509799999996" green="0.14901960780000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="DSApplePay"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="applePayButtonClickAction:" destination="-1" eventType="touchUpInside" id="aJ9-Lz-JlU"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC7-dI-0ar">
+                                                            <rect key="frame" x="298" y="0.0" width="44" height="44"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="ewG-BH-63H"/>
+                                                                <constraint firstAttribute="width" constant="44" id="uvN-4k-iqC"/>
+                                                            </constraints>
+                                                            <color key="tintColor" systemColor="tintColor"/>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="selected-green"/>
+                                                            <connections>
+                                                                <action selector="applePayButtonClickAction:" destination="-1" eventType="touchUpInside" id="sjW-9j-w2X"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="dC7-dI-0ar" secondAttribute="trailing" id="xGX-7y-YaM"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Oz0-h3-fDg" secondAttribute="trailing" constant="4" id="LL5-JP-gsA"/>
+                                                <constraint firstItem="Oz0-h3-fDg" firstAttribute="top" secondItem="aTs-4c-mzT" secondAttribute="top" constant="4" id="aMr-60-mXb"/>
+                                                <constraint firstAttribute="bottom" secondItem="Oz0-h3-fDg" secondAttribute="bottom" constant="4" id="xOu-Xe-csS"/>
+                                                <constraint firstItem="Oz0-h3-fDg" firstAttribute="leading" secondItem="aTs-4c-mzT" secondAttribute="leading" constant="8" id="zKt-DP-nxB"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.96078431369999995" green="0.96078431369999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="120" id="SOB-Sr-C4p"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsX-p0-ZcD">
+                                    <rect key="frame" x="16" y="285" width="382" height="46"/>
+                                    <color key="backgroundColor" red="0.43529411759999997" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="2YC-pC-GWH"/>
+                                    </constraints>
+                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Continue">
+                                        <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="18"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="23"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="DSContinue"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="continueButtonClickAction:" destination="-1" eventType="touchUpInside" id="oUw-su-YXx"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kD-7D-7T0">
+                                    <rect key="frame" x="366" y="16" width="32" height="32"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="delete_attach"/>
+                                    <connections>
+                                        <action selector="closePopUpButtonAction:" destination="-1" eventType="touchUpInside" id="FvQ-ke-Q8K"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="fsX-p0-ZcD" firstAttribute="leading" secondItem="mXO-3i-F26" secondAttribute="leading" constant="16" id="2Kv-YI-bQw"/>
+                                <constraint firstItem="8kD-7D-7T0" firstAttribute="top" secondItem="mXO-3i-F26" secondAttribute="top" constant="16" id="BMK-am-vSc"/>
+                                <constraint firstAttribute="trailing" secondItem="qA5-xY-Uxy" secondAttribute="trailing" constant="30" id="MdC-Xu-ha9"/>
+                                <constraint firstItem="qA5-xY-Uxy" firstAttribute="centerY" secondItem="mXO-3i-F26" secondAttribute="centerY" constant="-50" id="TpF-zU-og7"/>
+                                <constraint firstItem="8zI-1r-foq" firstAttribute="centerX" secondItem="mXO-3i-F26" secondAttribute="centerX" id="UFO-AL-BRU"/>
+                                <constraint firstItem="8zI-1r-foq" firstAttribute="top" secondItem="mXO-3i-F26" secondAttribute="top" constant="16" id="btr-zQ-weE"/>
+                                <constraint firstAttribute="trailing" secondItem="8kD-7D-7T0" secondAttribute="trailing" constant="16" id="fpd-e5-3IA"/>
+                                <constraint firstAttribute="height" constant="430" id="kM1-Mu-Lga"/>
+                                <constraint firstAttribute="trailing" secondItem="fsX-p0-ZcD" secondAttribute="trailing" constant="16" id="qZP-Hs-IIG"/>
+                                <constraint firstItem="fsX-p0-ZcD" firstAttribute="top" secondItem="qA5-xY-Uxy" secondAttribute="bottom" constant="60" id="wJF-Ph-5nh"/>
+                                <constraint firstItem="qA5-xY-Uxy" firstAttribute="centerX" secondItem="mXO-3i-F26" secondAttribute="centerX" id="ykh-lt-Gge"/>
+                                <constraint firstItem="qA5-xY-Uxy" firstAttribute="leading" secondItem="mXO-3i-F26" secondAttribute="leading" constant="30" id="yph-90-cLC"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="32"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mXO-3i-F26" firstAttribute="leading" secondItem="EfQ-CH-2fj" secondAttribute="leading" id="5Uz-ke-kPl"/>
+                        <constraint firstAttribute="trailing" secondItem="mXO-3i-F26" secondAttribute="trailing" id="B14-Qy-Lc4"/>
+                        <constraint firstItem="mXO-3i-F26" firstAttribute="width" secondItem="EfQ-CH-2fj" secondAttribute="width" id="BsR-QW-NPH"/>
+                        <constraint firstAttribute="bottom" secondItem="mXO-3i-F26" secondAttribute="bottom" id="qeg-O6-cZn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9RT-RO-W9z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="06t-pI-wn1"/>
+                <constraint firstItem="EfQ-CH-2fj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0ON-gq-5mp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jfG-Fa-jUy" secondAttribute="trailing" constant="16" id="5SJ-H2-RLz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9RT-RO-W9z" secondAttribute="bottom" constant="50" id="5jB-Ka-6fn"/>
+                <constraint firstItem="9RT-RO-W9z" firstAttribute="top" secondItem="jfG-Fa-jUy" secondAttribute="bottom" constant="8" id="JYs-F6-0F3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9RT-RO-W9z" secondAttribute="trailing" id="NXT-IR-OCz"/>
+                <constraint firstItem="jfG-Fa-jUy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="mUa-dz-iIi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Cw-Ej-vUC" secondAttribute="trailing" id="min-Te-Clb"/>
+                <constraint firstAttribute="bottom" secondItem="6Cw-Ej-vUC" secondAttribute="bottom" id="msb-nw-6EQ"/>
+                <constraint firstItem="jfG-Fa-jUy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ocE-Gx-Iqm"/>
+                <constraint firstItem="6Cw-Ej-vUC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="otY-gh-aM7"/>
+                <constraint firstItem="EfQ-CH-2fj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="puP-ci-K1x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EfQ-CH-2fj" secondAttribute="trailing" id="qhS-qL-tpp"/>
+                <constraint firstItem="6Cw-Ej-vUC" firstAttribute="top" secondItem="EfQ-CH-2fj" secondAttribute="bottom" id="uAK-ff-D5b"/>
+            </constraints>
+            <point key="canvasLocation" x="102.89855072463769" y="136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="applepay" width="52.5" height="27"/>
+        <image name="creditcard" width="53" height="27"/>
+        <image name="delete_attach" width="32" height="32"/>
+        <image name="deselected-green" width="20.5" height="20.5"/>
+        <image name="rpt_bottom_banner" width="4833" height="202"/>
+        <image name="selected-green" width="20" height="20.5"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

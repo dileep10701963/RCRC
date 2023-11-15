@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Date"; ObjectID = "R2q-bo-pjT"; */
+"R2q-bo-pjT.normalTitle" = "التاريخ";
+
+/* Class = "UIButton"; normalTitle = "Min."; ObjectID = "dci-So-Pou"; */
+"dci-So-Pou.normalTitle" = "دقيقة.";
+
+/* Class = "UIButton"; normalTitle = "Hr. "; ObjectID = "lWn-Vt-KX6"; */
+"lWn-Vt-KX6.normalTitle" = "ساعة";
+
+/* Class = "UIButton"; normalTitle = "Now"; ObjectID = "see-4R-848"; */
+"see-4R-848.normalTitle" = "حالياً";

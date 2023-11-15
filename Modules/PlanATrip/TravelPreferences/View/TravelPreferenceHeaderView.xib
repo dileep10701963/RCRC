@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TravelPreferenceHeaderView" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKs-lj-dnw">
+                    <rect key="frame" x="0.0" y="8" width="386" height="35"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pt_sectionLeftHeader" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-xg-lbL">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="e8A-Wn-XpJ"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pt_cellBackground" translatesAutoresizingMaskIntoConstraints="NO" id="lGA-Lv-xs8">
+                            <rect key="frame" x="48" y="0.0" width="338" height="35"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoy-Zc-l4w">
+                            <rect key="frame" x="84" y="10.666666666666668" width="42" height="14"/>
+                            <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                            <color key="textColor" red="0.086274509799999996" green="0.14901960780000001" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5xa-xg-lbL" firstAttribute="leading" secondItem="gKs-lj-dnw" secondAttribute="leading" id="8Cc-nB-a31"/>
+                        <constraint firstItem="lGA-Lv-xs8" firstAttribute="leading" secondItem="5xa-xg-lbL" secondAttribute="trailing" id="AZa-qb-26W"/>
+                        <constraint firstItem="hoy-Zc-l4w" firstAttribute="centerY" secondItem="lGA-Lv-xs8" secondAttribute="centerY" id="EE0-9r-Cof"/>
+                        <constraint firstAttribute="bottom" secondItem="5xa-xg-lbL" secondAttribute="bottom" id="Eux-mP-xKS"/>
+                        <constraint firstItem="5xa-xg-lbL" firstAttribute="top" secondItem="gKs-lj-dnw" secondAttribute="top" id="VI0-rc-FbC"/>
+                        <constraint firstAttribute="height" constant="35" id="VYr-Sp-bIG"/>
+                        <constraint firstItem="hoy-Zc-l4w" firstAttribute="leading" secondItem="lGA-Lv-xs8" secondAttribute="leading" constant="36" id="doO-zY-Rrn"/>
+                        <constraint firstAttribute="bottom" secondItem="lGA-Lv-xs8" secondAttribute="bottom" id="hBt-3I-l6b"/>
+                        <constraint firstAttribute="trailing" secondItem="lGA-Lv-xs8" secondAttribute="trailing" id="ibV-6q-Axt"/>
+                        <constraint firstItem="lGA-Lv-xs8" firstAttribute="top" secondItem="gKs-lj-dnw" secondAttribute="top" id="t1o-k3-Ner"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray2Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gKs-lj-dnw" secondAttribute="trailing" id="0XD-XS-pkq"/>
+                <constraint firstItem="gKs-lj-dnw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UtM-lY-Q7c"/>
+                <constraint firstItem="gKs-lj-dnw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="YKX-mM-vUF"/>
+                <constraint firstAttribute="bottom" secondItem="gKs-lj-dnw" secondAttribute="bottom" constant="8" id="pQr-jY-pXu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="headerLabel" destination="hoy-Zc-l4w" id="XE6-5n-TeF"/>
+                <outletCollection property="arrayImageView" destination="5xa-xg-lbL" collectionClass="NSMutableArray" id="FUl-9I-hXE"/>
+                <outletCollection property="arrayImageView" destination="lGA-Lv-xs8" collectionClass="NSMutableArray" id="l9B-YF-KQL"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="-159.78260869565219"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pt_cellBackground" width="337" height="35"/>
+        <image name="pt_sectionLeftHeader" width="53" height="35"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

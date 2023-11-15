@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MPDateTimePicker" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="arriveByOutlet" destination="CfD-9W-CON" id="afX-JQ-dkv"/>
+                <outlet property="cancelButton" destination="BHa-is-iok" id="YyM-0q-dqe"/>
+                <outlet property="datePicker" destination="Lbf-BO-OpX" id="SHd-x9-XaP"/>
+                <outlet property="leaveByOutlet" destination="tyD-wN-RgP" id="hQF-SE-UxT"/>
+                <outlet property="okButton" destination="Qf5-1V-7nm" id="fYv-ES-ACr"/>
+                <outlet property="resetNowButton" destination="Zcg-ld-DOg" id="fQG-g0-qeh"/>
+                <outlet property="timePicker" destination="gFl-lc-DCV" id="zDg-gu-yhu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeN-uR-hMh">
+                    <rect key="frame" x="37" y="138" width="340" height="620"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popupLargeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="WeS-9L-mbN">
+                            <rect key="frame" x="0.0" y="0.0" width="340" height="620"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hBn-PK-Cuy">
+                            <rect key="frame" x="24" y="20" width="292" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyD-wN-RgP">
+                                    <rect key="frame" x="0.0" y="0.0" width="146" height="44"/>
+                                    <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="19"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Leave By">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="leaveByAction:" destination="-1" eventType="touchUpInside" id="GTI-xT-PV3"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CfD-9W-CON">
+                                    <rect key="frame" x="146" y="0.0" width="146" height="44"/>
+                                    <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="19"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Arrive By">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="arrivrByAction:" destination="-1" eventType="touchUpInside" id="1NX-tc-bTF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="tUF-qo-TcG"/>
+                            </constraints>
+                        </stackView>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="Lbf-BO-OpX">
+                            <rect key="frame" x="10" y="100" width="320" height="325"/>
+                            <color key="tintColor" red="0.43529411759999997" green="0.82352941180000006" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="325" id="uex-zk-UKT"/>
+                            </constraints>
+                            <locale key="locale" localeIdentifier="en"/>
+                            <connections>
+                                <action selector="dateSelectedAction:" destination="-1" eventType="valueChanged" id="UGb-q1-Tpc"/>
+                            </connections>
+                        </datePicker>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-lc-DCV">
+                            <rect key="frame" x="90" y="435" width="160" height="90"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="90" id="Liq-2i-AC6"/>
+                                <constraint firstAttribute="width" constant="160" id="dlQ-E0-l9U"/>
+                            </constraints>
+                            <locale key="locale" localeIdentifier="en"/>
+                            <connections>
+                                <action selector="timeSelectedAction:" destination="-1" eventType="valueChanged" id="J6P-Tv-NM9"/>
+                            </connections>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcg-ld-DOg">
+                            <rect key="frame" x="15" y="533" width="158" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="158" id="ebF-kI-JLa"/>
+                                <constraint firstAttribute="height" constant="31" id="zHC-k4-zLe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="17"/>
+                            <color key="tintColor" red="0.31372549019607843" green="0.80000000000000004" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Reset Now"/>
+                            <connections>
+                                <action selector="resetNowButtonAction:" destination="-1" eventType="touchUpInside" id="qzs-Ti-iyd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="WeS-9L-mbN" firstAttribute="leading" secondItem="YeN-uR-hMh" secondAttribute="leading" id="3jW-FB-uhB"/>
+                        <constraint firstAttribute="height" constant="620" id="CZT-xc-ta0"/>
+                        <constraint firstAttribute="trailing" secondItem="Lbf-BO-OpX" secondAttribute="trailing" constant="10" id="GCQ-GD-VPz"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="368" id="GCe-2R-VQr"/>
+                        <constraint firstItem="hBn-PK-Cuy" firstAttribute="centerX" secondItem="YeN-uR-hMh" secondAttribute="centerX" id="TtU-rt-9X5"/>
+                        <constraint firstItem="Lbf-BO-OpX" firstAttribute="leading" secondItem="YeN-uR-hMh" secondAttribute="leading" constant="10" id="WgC-CD-baZ"/>
+                        <constraint firstAttribute="trailing" secondItem="WeS-9L-mbN" secondAttribute="trailing" id="aTF-ow-Zd2"/>
+                        <constraint firstItem="gFl-lc-DCV" firstAttribute="centerX" secondItem="YeN-uR-hMh" secondAttribute="centerX" id="ac5-P2-Fc1"/>
+                        <constraint firstItem="hBn-PK-Cuy" firstAttribute="top" secondItem="YeN-uR-hMh" secondAttribute="top" constant="20" id="cNm-xp-W2j"/>
+                        <constraint firstItem="WeS-9L-mbN" firstAttribute="top" secondItem="YeN-uR-hMh" secondAttribute="top" id="dIh-SO-2Ms"/>
+                        <constraint firstItem="gFl-lc-DCV" firstAttribute="top" secondItem="Lbf-BO-OpX" secondAttribute="bottom" constant="10" id="dpN-Co-EMt"/>
+                        <constraint firstItem="Zcg-ld-DOg" firstAttribute="leading" secondItem="YeN-uR-hMh" secondAttribute="leading" constant="15" id="o1g-io-n7O"/>
+                        <constraint firstAttribute="bottom" secondItem="WeS-9L-mbN" secondAttribute="bottom" id="p50-oO-pLF"/>
+                        <constraint firstItem="Lbf-BO-OpX" firstAttribute="top" secondItem="hBn-PK-Cuy" secondAttribute="bottom" constant="36" id="uCg-e1-oMX"/>
+                        <constraint firstItem="Zcg-ld-DOg" firstAttribute="top" secondItem="gFl-lc-DCV" secondAttribute="bottom" constant="8" id="xuI-Pf-SIM"/>
+                        <constraint firstItem="hBn-PK-Cuy" firstAttribute="leading" secondItem="YeN-uR-hMh" secondAttribute="leading" constant="24" id="yMS-ry-LHq"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yAX-qP-tNP">
+                    <rect key="frame" x="107" y="735" width="200" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf5-1V-7nm">
+                            <rect key="frame" x="0.0" y="0.0" width="92.5" height="44"/>
+                            <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="OK" backgroundImage="popupbutton">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="okButtonAction:" destination="-1" eventType="touchUpInside" id="w1A-Hf-ObF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHa-is-iok">
+                            <rect key="frame" x="107.5" y="0.0" width="92.5" height="44"/>
+                            <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="15"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Cancel" backgroundImage="greyButtonBackground">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="zfP-w7-hFc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="YmX-xV-JMY"/>
+                        <constraint firstAttribute="width" constant="200" id="qiz-KF-Hmz"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.54117647059999996" green="0.55294117649999996" blue="0.56078431370000004" alpha="0.75256917050000005" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="YeN-uR-hMh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NCs-QT-hcM"/>
+                <constraint firstItem="YeN-uR-hMh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="QK9-RG-Dyu"/>
+                <constraint firstItem="yAX-qP-tNP" firstAttribute="centerX" secondItem="YeN-uR-hMh" secondAttribute="centerX" id="gtt-6Z-OYj"/>
+                <constraint firstItem="yAX-qP-tNP" firstAttribute="top" secondItem="YeN-uR-hMh" secondAttribute="bottom" constant="-23" id="ugi-Uq-uU3"/>
+            </constraints>
+            <point key="canvasLocation" x="-81" y="107"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="greyButtonBackground" width="88" height="24"/>
+        <image name="popupLargeBackground" width="320" height="604"/>
+        <image name="popupbutton" width="86.5" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

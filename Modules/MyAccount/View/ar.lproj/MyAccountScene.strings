@@ -1,0 +1,21 @@
+
+/* Class = "UITextView"; text = "Text"; ObjectID = "7RS-MU-Tt6"; */
+"7RS-MU-Tt6.text" = "Text";
+
+/* Class = "UILabel"; text = "We are sorry that you are thinking to delete your account!"; ObjectID = "Vyh-x0-kdL"; */
+"Vyh-x0-kdL.text" = "نأسف لأنك تفكر في حذف حسابك!";
+
+/* Class = "UIButton"; normalTitle = "Save Profile"; ObjectID = "ZSj-5W-7Tx"; */
+"ZSj-5W-7Tx.normalTitle" = "Save Profile";
+
+/* Class = "UIButton"; normalTitle = "Delete My Account"; ObjectID = "gtt-E9-58u"; */
+"gtt-E9-58u.normalTitle" = "احذف حسابي";
+
+/* Class = "UILabel"; text = "+966-545-546-547"; ObjectID = "guv-KS-Pob"; */
+"guv-KS-Pob.text" = "+966-545-546-547";
+
+/* Class = "UILabel"; text = "moukhled.al.outaibi@emailadd.com"; ObjectID = "tru-km-TPr"; */
+"tru-km-TPr.text" = "moukhled.al.outaibi@emailadd.com";
+
+/* Class = "UILabel"; text = "Moukhled Al-Outaibi"; ObjectID = "usd-EK-87Z"; */
+"usd-EK-87Z.text" = "Moukhled Al-Outaibi";

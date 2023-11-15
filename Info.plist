@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>riyadh bus</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ContactURL</key>
+	<string>$(ContactURL)</string>
+	<key>FrequentlyAskedQuestionsURL</key>
+	<string>$(FrequentlyAskedQuestionsURL)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>JourneyPlannerBaseURL</key>
+	<string>$(JourneyPlannerBaseURL)</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>cydia</string>
+		<string>undecimus</string>
+		<string>sileo</string>
+		<string>zbra</string>
+		<string>filza</string>
+		<string>activator</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>LatestNewsURL</key>
+	<string>$(LatestNewsURL)</string>
+	<key>Liferay</key>
+	<string>$(Liferay)</string>
+	<key>LoginURL</key>
+	<string>$(LoginURL)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>RCRC need camera permission for capturing photo for profile pic.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>This application will use your biometrics to login</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This application requires location services to show routes and other related information.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This application requires location services to show nearby routes</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Mobility Portal needs microphone permission to record video.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>RCRC need photo permission for capturing photo for profile pic.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>CodecProNews.ttf</string>
+		<string>CodecPro-Regular.ttf</string>
+		<string>CodecPro-Light.ttf</string>
+		<string>Arial.ttf</string>
+		<string>codec-pro-bold.ttf</string>
+		<string>rpt-Bold.ttf</string>
+		<string>rpt-Light.ttf</string>
+		<string>rpt-Regular.ttf</string>
+		<string>rpta-signage.ttf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>Wso2TokenUrl</key>
+	<string>$(Wso2TokenUrl)</string>
+</dict>
+</plist>

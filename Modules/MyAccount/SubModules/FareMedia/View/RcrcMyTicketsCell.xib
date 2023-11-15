@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RcrcMyTicketsCell" rowHeight="77" id="lZ2-UC-S1O" customClass="RcrcMyTicketsCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="lZ2-UC-S1O" id="h5g-TX-O7W">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gV-qn-ksE">
+                        <rect key="frame" x="16" y="8" width="343" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-TK-p7M">
+                                <rect key="frame" x="67" y="8" width="222" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="4 SAR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTN-Jd-tT2">
+                                        <rect key="frame" x="0.0" y="0.0" width="222" height="22"/>
+                                        <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="2 hours pass" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fy2-nS-3K9">
+                                        <rect key="frame" x="0.0" y="22" width="222" height="22"/>
+                                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="16"/>
+                                        <color key="textColor" white="0.67000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purchaseticket" translatesAutoresizingMaskIntoConstraints="NO" id="pBy-e0-Ff2">
+                                <rect key="frame" x="16" y="12.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="ceF-u6-ueO"/>
+                                    <constraint firstAttribute="height" constant="35" id="keh-bS-xNH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="bTm-Eu-m8d">
+                                <rect key="frame" x="305" y="15" width="30" height="30"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="haN-CQ-u2a"/>
+                                    <constraint firstAttribute="width" constant="30" id="usp-F3-lhv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bTm-Eu-m8d" secondAttribute="trailing" constant="8" id="5Rh-GU-CoP"/>
+                            <constraint firstAttribute="bottom" secondItem="gfi-TK-p7M" secondAttribute="bottom" constant="8" id="8vi-fB-ko1"/>
+                            <constraint firstItem="gfi-TK-p7M" firstAttribute="top" secondItem="3gV-qn-ksE" secondAttribute="top" constant="8" id="Gdz-t8-Lsg"/>
+                            <constraint firstItem="gfi-TK-p7M" firstAttribute="leading" secondItem="pBy-e0-Ff2" secondAttribute="trailing" constant="16" id="YRa-TB-pj4"/>
+                            <constraint firstItem="pBy-e0-Ff2" firstAttribute="centerY" secondItem="3gV-qn-ksE" secondAttribute="centerY" id="aaW-Po-kvx"/>
+                            <constraint firstItem="bTm-Eu-m8d" firstAttribute="leading" secondItem="gfi-TK-p7M" secondAttribute="trailing" constant="16" id="bDo-kP-Q6M"/>
+                            <constraint firstItem="bTm-Eu-m8d" firstAttribute="centerY" secondItem="3gV-qn-ksE" secondAttribute="centerY" id="iyZ-GM-3Fq"/>
+                            <constraint firstAttribute="height" constant="60" id="twN-ad-HTG"/>
+                            <constraint firstItem="pBy-e0-Ff2" firstAttribute="leading" secondItem="3gV-qn-ksE" secondAttribute="leading" constant="16" id="xMl-P8-PBq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.92000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3gV-qn-ksE" firstAttribute="leading" secondItem="h5g-TX-O7W" secondAttribute="leading" constant="16" id="TBf-vA-7RI"/>
+                    <constraint firstAttribute="trailing" secondItem="3gV-qn-ksE" secondAttribute="trailing" constant="16" id="eAx-NW-hto"/>
+                    <constraint firstItem="3gV-qn-ksE" firstAttribute="top" secondItem="h5g-TX-O7W" secondAttribute="top" constant="8" id="hWc-n5-ZMs"/>
+                    <constraint firstAttribute="bottom" secondItem="3gV-qn-ksE" secondAttribute="bottom" constant="8" id="swD-YG-Fem"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="KHI-hO-oJr"/>
+            <connections>
+                <outlet property="arrowImage" destination="bTm-Eu-m8d" id="yfe-gq-ers"/>
+                <outlet property="passCost" destination="ZTN-Jd-tT2" id="jws-q7-iil"/>
+                <outlet property="passDescription" destination="Fy2-nS-3K9" id="jsE-1T-r9y"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="-15.736607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="purchaseticket" width="40" height="40"/>
+        <image name="right_arrow" width="24" height="24"/>
+    </resources>
+</document>

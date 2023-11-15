@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lC8-nX-nOj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="Lss-Mi-9hr">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="lC8-nX-nOj" customClass="ProfileViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HdG-Ck-ioV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-EH-DfK">
+                                <rect key="frame" x="30" y="224" width="354" height="30"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6Y-ez-USd">
+                                <rect key="frame" x="30" y="279" width="354" height="30"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WV-Xj-4SZ">
+                                <rect key="frame" x="30" y="334" width="354" height="30"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dEl-8l-oa3">
+                                <rect key="frame" x="157" y="94" width="100" height="100"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ge0-1I-bjC"/>
+                                    <constraint firstAttribute="width" constant="100" id="vA1-dY-G6Y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.54117647059999996" green="0.55294117649999996" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5jW-qq-6p6"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2WV-Xj-4SZ" firstAttribute="top" secondItem="A6Y-ez-USd" secondAttribute="bottom" constant="25" id="9WT-HW-Dbe"/>
+                            <constraint firstItem="5jW-qq-6p6" firstAttribute="trailing" secondItem="2WV-Xj-4SZ" secondAttribute="trailing" constant="30" id="CfM-sj-TMi"/>
+                            <constraint firstItem="2WV-Xj-4SZ" firstAttribute="leading" secondItem="5jW-qq-6p6" secondAttribute="leading" constant="30" id="DSI-sD-QEC"/>
+                            <constraint firstItem="Jbd-EH-DfK" firstAttribute="top" secondItem="dEl-8l-oa3" secondAttribute="bottom" constant="30" id="Ed3-Li-0HC"/>
+                            <constraint firstItem="Jbd-EH-DfK" firstAttribute="leading" secondItem="5jW-qq-6p6" secondAttribute="leading" constant="30" id="Lcs-bq-iWf"/>
+                            <constraint firstItem="A6Y-ez-USd" firstAttribute="leading" secondItem="5jW-qq-6p6" secondAttribute="leading" constant="30" id="M0f-H5-h6J"/>
+                            <constraint firstItem="dEl-8l-oa3" firstAttribute="centerX" secondItem="HdG-Ck-ioV" secondAttribute="centerX" id="T7H-Cg-ZV4"/>
+                            <constraint firstItem="dEl-8l-oa3" firstAttribute="top" secondItem="5jW-qq-6p6" secondAttribute="top" constant="50" id="Zcp-Le-hWo"/>
+                            <constraint firstItem="A6Y-ez-USd" firstAttribute="top" secondItem="Jbd-EH-DfK" secondAttribute="bottom" constant="25" id="dLW-jk-Cpv"/>
+                            <constraint firstItem="5jW-qq-6p6" firstAttribute="trailing" secondItem="A6Y-ez-USd" secondAttribute="trailing" constant="30" id="oCM-OQ-4UZ"/>
+                            <constraint firstItem="5jW-qq-6p6" firstAttribute="trailing" secondItem="Jbd-EH-DfK" secondAttribute="trailing" constant="30" id="xka-HQ-w1l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailAddressLabel" destination="2WV-Xj-4SZ" id="3vJ-FZ-p6t"/>
+                        <outlet property="mobileNumberLabel" destination="A6Y-ez-USd" id="Kfo-bB-MOA"/>
+                        <outlet property="nameLabel" destination="Jbd-EH-DfK" id="VW1-FC-kcR"/>
+                        <outlet property="profileImage" destination="dEl-8l-oa3" id="YPo-bJ-qds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGv-D6-4MJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-940.57971014492762" y="747.99107142857144"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.1529411765" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

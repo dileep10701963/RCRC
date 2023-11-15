@@ -1,0 +1,32 @@
+//
+//  DevMode.xcconfig
+//  RCRC
+//
+//  Created by Ganesh Shinde on 31/03/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Public Base URL
+//JourneyPlannerBaseURL = https:/$()/37.224.41.117:8243/
+//FrequentlyAskedQuestionsURL = https:/$()/37.224.41.117:8080/
+//LatestNewsURL = https:/$()/37.224.41.117:8080/o/
+//ContactURL = https:/$()/37.224.41.117:8080/
+
+// Private Base URL
+// Global Network
+JourneyPlannerBaseURL = https:/$()/192.168.59.12:8243/
+FrequentlyAskedQuestionsURL = https:/$()/192.168.59.11:8080/
+LatestNewsURL = https:/$()/192.168.59.11:8080/o/
+ContactURL = https:/$()/192.168.59.11:8080/
+Wso2TokenUrl = https:/$()/192.168.59.12:8243/
+
+// Cisco VPN
+//JourneyPlannerBaseURL = https:/$()/10.200.24.182:8243/
+//FrequentlyAskedQuestionsURL = https:/$()/10.200.24.181:8080/
+//LatestNewsURL = https:/$()/10.200.24.181:8080/o/
+//ContactURL = https:/$()/10.200.24.181:8080/
+
+LoginURL = https:/$()/192.168.59.12:8243/
+Liferay = https:/$()/37.224.41.117:8080/

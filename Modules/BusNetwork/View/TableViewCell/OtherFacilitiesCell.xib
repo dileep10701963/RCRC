@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="189" id="KGk-i7-Jjw" customClass="OtherFacilitiesCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx9-43-gW6">
+                        <rect key="frame" x="16" y="50.5" width="288" height="130.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="NgX-89-Gj2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyZ-bl-MiD">
+                        <rect key="frame" x="16" y="10" width="264" height="28.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2S-C5-ubk">
+                        <rect key="frame" x="290" y="14.5" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8jk-Oj-4HR"/>
+                            <constraint firstAttribute="height" constant="20" id="mlK-Gy-ZPa"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="t2S-C5-ubk" secondAttribute="trailing" constant="10" id="9we-aV-gUK"/>
+                    <constraint firstItem="t2S-C5-ubk" firstAttribute="centerY" secondItem="lyZ-bl-MiD" secondAttribute="centerY" id="DWG-7A-YBk"/>
+                    <constraint firstItem="t2S-C5-ubk" firstAttribute="leading" secondItem="lyZ-bl-MiD" secondAttribute="trailing" constant="10" id="U5K-yj-57L"/>
+                    <constraint firstItem="Wx9-43-gW6" firstAttribute="top" secondItem="lyZ-bl-MiD" secondAttribute="bottom" constant="12" id="Zn3-XQ-pas"/>
+                    <constraint firstItem="lyZ-bl-MiD" firstAttribute="leading" secondItem="Wx9-43-gW6" secondAttribute="leading" id="cwl-e4-E4N"/>
+                    <constraint firstAttribute="trailing" secondItem="Wx9-43-gW6" secondAttribute="trailing" constant="16" id="eRW-UF-tsq"/>
+                    <constraint firstItem="Wx9-43-gW6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="p6c-Lg-Vos"/>
+                    <constraint firstItem="lyZ-bl-MiD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xIP-TV-PDC"/>
+                    <constraint firstAttribute="bottom" secondItem="Wx9-43-gW6" secondAttribute="bottom" constant="8" id="z3c-3k-aIs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="accessoryButton" destination="t2S-C5-ubk" id="Knb-ex-2bU"/>
+                <outlet property="bottomConstraint" destination="z3c-3k-aIs" id="l5c-Zq-CFS"/>
+                <outlet property="otherFacilityDescriptionLabel" destination="Wx9-43-gW6" id="YtU-Zl-sR5"/>
+                <outlet property="otherFacilityLabel" destination="lyZ-bl-MiD" id="ocw-TL-m5L"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="142.96875"/>
+        </tableViewCell>
+    </objects>
+</document>

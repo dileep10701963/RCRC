@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="rpta-signage.ttf">
+            <string>rpta-signage4</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="KGk-i7-Jjw" customClass="NotificationTableCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kV0-8P-D0u">
+                        <rect key="frame" x="16" y="8" width="288" height="131"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHt-7a-s3n">
+                                <rect key="frame" x="241.5" y="12" width="36.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IBt-tW-1ja">
+                                <rect key="frame" x="10" y="61.5" width="268" height="61.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqV-dG-uEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIm-K5-i5F">
+                                        <rect key="frame" x="0.0" y="35" width="268" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqC-RX-rqT">
+                                <rect key="frame" x="10" y="48.5" width="268" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4td-bh-kdH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VM-1e-HGn">
+                                <rect key="frame" x="10" y="12" width="36.5" height="28.5"/>
+                                <fontDescription key="fontDescription" name="rpta-signage4" family="rpta-signage4" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3VM-1e-HGn" firstAttribute="top" secondItem="kV0-8P-D0u" secondAttribute="top" constant="12" id="0BO-lX-upe"/>
+                            <constraint firstItem="nqC-RX-rqT" firstAttribute="leading" secondItem="3VM-1e-HGn" secondAttribute="leading" id="1ef-8X-srn"/>
+                            <constraint firstItem="IBt-tW-1ja" firstAttribute="leading" secondItem="kV0-8P-D0u" secondAttribute="leading" constant="10" id="7L1-yu-UaD"/>
+                            <constraint firstItem="IBt-tW-1ja" firstAttribute="top" secondItem="nqC-RX-rqT" secondAttribute="bottom" constant="12" id="KVZ-fx-a04"/>
+                            <constraint firstAttribute="bottom" secondItem="IBt-tW-1ja" secondAttribute="bottom" constant="8" id="L1g-6A-xAh"/>
+                            <constraint firstItem="OHt-7a-s3n" firstAttribute="bottom" secondItem="3VM-1e-HGn" secondAttribute="bottom" id="LcH-xt-xzV"/>
+                            <constraint firstItem="IBt-tW-1ja" firstAttribute="trailing" secondItem="OHt-7a-s3n" secondAttribute="trailing" id="RRS-UE-7aJ"/>
+                            <constraint firstItem="OHt-7a-s3n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3VM-1e-HGn" secondAttribute="trailing" constant="16" id="beY-OI-kZC"/>
+                            <constraint firstItem="nqC-RX-rqT" firstAttribute="top" secondItem="OHt-7a-s3n" secondAttribute="bottom" constant="8" id="cN9-yO-I9t"/>
+                            <constraint firstAttribute="trailing" secondItem="OHt-7a-s3n" secondAttribute="trailing" constant="10" id="cfW-Tp-znj"/>
+                            <constraint firstItem="3VM-1e-HGn" firstAttribute="leading" secondItem="kV0-8P-D0u" secondAttribute="leading" constant="10" id="gLr-ec-fVP"/>
+                            <constraint firstItem="nqC-RX-rqT" firstAttribute="trailing" secondItem="OHt-7a-s3n" secondAttribute="trailing" id="mPH-E2-7NE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kV0-8P-D0u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2x9-a3-Rqa"/>
+                    <constraint firstItem="kV0-8P-D0u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="DuW-Lf-bFp"/>
+                    <constraint firstAttribute="bottom" secondItem="kV0-8P-D0u" secondAttribute="bottom" constant="8" id="Tk3-75-frH"/>
+                    <constraint firstAttribute="trailing" secondItem="kV0-8P-D0u" secondAttribute="trailing" constant="16" id="riI-wm-RcV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="kV0-8P-D0u" id="JAs-aP-81M"/>
+                <outlet property="notificationDate" destination="OHt-7a-s3n" id="LK9-qa-ESR"/>
+                <outlet property="notificationMessageLabel" destination="wqV-dG-uEU" id="Dhc-N5-LWf"/>
+                <outlet property="notificationSubMessageLabel" destination="lIm-K5-i5F" id="Ezl-Nv-1mY"/>
+                <outlet property="notificationTitleLabel" destination="3VM-1e-HGn" id="VQY-1E-833"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="116.18303571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

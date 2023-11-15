@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="TravelHistoryCellTableViewCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ier-tA-Qk0">
+                        <rect key="frame" x="8" y="8" width="304" height="100"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="C9i-NM-30O">
+                                <rect key="frame" x="8" y="8" width="288" height="84"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="t7H-Uu-oCb">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Station Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="52P-DC-Cx7">
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="24"/>
+                                                <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Station Name"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGJ-ea-kuG">
+                                                <rect key="frame" x="97" y="0.0" width="5" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="Hg0-2t-CQ7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makha AL Mukhahram 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="PYy-Ym-VmC" userLabel="valueLabel">
+                                                <rect key="frame" x="106" y="0.0" width="182" height="24"/>
+                                                <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="LYk-h3-kFr">
+                                        <rect key="frame" x="0.0" y="30" width="288" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Travel Line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="1xY-oa-S9v">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="24"/>
+                                                <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Travel Line"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTk-14-4hu">
+                                                <rect key="frame" x="74" y="0.0" width="5" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="hmL-HU-ZQT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makha AL Mukhahram 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vga-2O-xEk" userLabel="valueLabel">
+                                                <rect key="frame" x="83" y="0.0" width="205" height="24"/>
+                                                <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aou-Lm-lgi">
+                                        <rect key="frame" x="0.0" y="60" width="288" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Date of Travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="6R2-ug-7pc">
+                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="Date of Travel"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpi-jx-oxU">
+                                                <rect key="frame" x="95.5" y="0.0" width="5" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="5" id="UAP-MY-agR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Makha AL Mukhahram 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="eek-iw-uvG" userLabel="valueLabel">
+                                                <rect key="frame" x="104.5" y="0.0" width="183.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="t7H-Uu-oCb" secondAttribute="trailing" id="173-zg-Dqg"/>
+                                    <constraint firstAttribute="trailing" secondItem="LYk-h3-kFr" secondAttribute="trailing" id="7Zq-H9-w3k"/>
+                                    <constraint firstItem="aou-Lm-lgi" firstAttribute="leading" secondItem="C9i-NM-30O" secondAttribute="leading" id="FFy-s9-ug5"/>
+                                    <constraint firstItem="LYk-h3-kFr" firstAttribute="leading" secondItem="C9i-NM-30O" secondAttribute="leading" id="KD9-ny-ThY"/>
+                                    <constraint firstItem="t7H-Uu-oCb" firstAttribute="leading" secondItem="C9i-NM-30O" secondAttribute="leading" id="KO0-61-Jz5"/>
+                                    <constraint firstItem="LYk-h3-kFr" firstAttribute="top" secondItem="t7H-Uu-oCb" secondAttribute="bottom" constant="6" id="Tcr-Si-yhY"/>
+                                    <constraint firstItem="aou-Lm-lgi" firstAttribute="centerX" secondItem="C9i-NM-30O" secondAttribute="centerX" id="VOH-xh-aGm"/>
+                                    <constraint firstAttribute="trailing" secondItem="aou-Lm-lgi" secondAttribute="trailing" id="Zih-Hu-9li"/>
+                                    <constraint firstItem="aou-Lm-lgi" firstAttribute="top" secondItem="LYk-h3-kFr" secondAttribute="bottom" constant="6" id="bpt-hQ-XUC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="C9i-NM-30O" secondAttribute="bottom" constant="8" id="2Ar-gX-7wp"/>
+                            <constraint firstAttribute="trailing" secondItem="C9i-NM-30O" secondAttribute="trailing" constant="8" id="N3o-nc-vFs"/>
+                            <constraint firstItem="C9i-NM-30O" firstAttribute="centerY" secondItem="ier-tA-Qk0" secondAttribute="centerY" id="ZXb-lt-KYv"/>
+                            <constraint firstAttribute="height" constant="100" id="ln4-vA-my3"/>
+                            <constraint firstItem="C9i-NM-30O" firstAttribute="top" secondItem="ier-tA-Qk0" secondAttribute="top" constant="8" id="mvi-Eo-PGR"/>
+                            <constraint firstItem="C9i-NM-30O" firstAttribute="leading" secondItem="ier-tA-Qk0" secondAttribute="leading" constant="8" id="ugY-Fv-reb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ier-tA-Qk0" secondAttribute="trailing" constant="8" id="BZf-Mq-YuV"/>
+                    <constraint firstItem="ier-tA-Qk0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="DsR-wx-ogs"/>
+                    <constraint firstItem="ier-tA-Qk0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="IYd-Mk-nkm"/>
+                    <constraint firstAttribute="bottom" secondItem="ier-tA-Qk0" secondAttribute="bottom" constant="8" id="aGc-uw-1KU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateOftravelLabel" destination="eek-iw-uvG" id="DMn-01-M0T"/>
+                <outlet property="stationNameLabel" destination="PYy-Ym-VmC" id="aLa-mD-sgy"/>
+                <outlet property="travelNumerLabel" destination="Vga-2O-xEk" id="1GK-pi-Vd0"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

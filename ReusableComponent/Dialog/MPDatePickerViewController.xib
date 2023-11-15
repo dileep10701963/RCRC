@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="codec-pro-bold.ttf">
+            <string>CodecPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MPDatePickerViewController" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="New-2g-DxZ" id="5g4-B8-bSO"/>
+                <outlet property="datePicker" destination="1e5-E3-Rvx" id="8Iv-dJ-0lx"/>
+                <outlet property="okButton" destination="Dxz-JU-Irb" id="Cjy-uC-qlc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-po-OD2">
+                    <rect key="frame" x="16.666666666666657" y="216" width="360" height="420"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcO-SS-Fdf">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="420"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="1e5-E3-Rvx">
+                                    <rect key="frame" x="20" y="26" width="320" height="325"/>
+                                    <color key="tintColor" red="0.43529411759999997" green="0.82352941180000006" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="325" id="ay3-RL-7LK"/>
+                                    </constraints>
+                                    <locale key="locale" localeIdentifier="en"/>
+                                    <connections>
+                                        <action selector="dateSelectedAction:" destination="-1" eventType="valueChanged" id="pT1-il-dfo"/>
+                                    </connections>
+                                </datePicker>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="1e5-E3-Rvx" firstAttribute="top" secondItem="TcO-SS-Fdf" secondAttribute="top" constant="26" id="3al-55-MvF"/>
+                                <constraint firstItem="1e5-E3-Rvx" firstAttribute="leading" secondItem="TcO-SS-Fdf" secondAttribute="leading" constant="20" id="Tut-DI-Twh"/>
+                                <constraint firstAttribute="trailing" secondItem="1e5-E3-Rvx" secondAttribute="trailing" constant="20" id="chb-bD-rpA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="32"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZnR-ZI-1Xl">
+                            <rect key="frame" x="30" y="360" width="300" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxz-JU-Irb">
+                                    <rect key="frame" x="0.0" y="0.0" width="142.33333333333334" height="44"/>
+                                    <color key="backgroundColor" red="0.43529411759999997" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="22"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="okButtonAction:" destination="-1" eventType="touchUpInside" id="Q1V-lh-2yt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="New-2g-DxZ">
+                                    <rect key="frame" x="157.33333333333337" y="0.0" width="142.66666666666663" height="44"/>
+                                    <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="CodecPro-Bold" family="Codec Pro" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="22"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="cancelButtonAction:" destination="-1" eventType="touchUpInside" id="6Tw-i6-3aE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="5CE-3f-KYs"/>
+                                <constraint firstAttribute="height" constant="44" id="f34-iI-Lfq"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZnR-ZI-1Xl" secondAttribute="bottom" constant="16" id="H7D-YV-3TZ"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="368" id="Q0k-3e-1nT"/>
+                        <constraint firstAttribute="height" constant="420" id="dH9-55-43q"/>
+                        <constraint firstAttribute="trailing" secondItem="TcO-SS-Fdf" secondAttribute="trailing" id="drw-ml-EPy"/>
+                        <constraint firstItem="TcO-SS-Fdf" firstAttribute="top" secondItem="qQF-po-OD2" secondAttribute="top" id="fhr-hf-ErQ"/>
+                        <constraint firstItem="ZnR-ZI-1Xl" firstAttribute="centerX" secondItem="TcO-SS-Fdf" secondAttribute="centerX" id="jgO-Ak-Cb9"/>
+                        <constraint firstAttribute="bottom" secondItem="TcO-SS-Fdf" secondAttribute="bottom" id="txf-pd-eNL"/>
+                        <constraint firstItem="TcO-SS-Fdf" firstAttribute="leading" secondItem="qQF-po-OD2" secondAttribute="leading" id="yUS-VP-0uN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.54117647058823526" green="0.55294117647058827" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qQF-po-OD2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AEV-iX-EF6"/>
+                <constraint firstItem="qQF-po-OD2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Hug-mB-uLf"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

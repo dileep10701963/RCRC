@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CodecPro-Regular.ttf">
+            <string>CodecPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FilterRoutesByCell" id="KGk-i7-Jjw" customClass="FilterRoutesByCell" customModule="Riyadh_Journey_Planner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDx-0l-6GD">
+                        <rect key="frame" x="278" y="11" width="22" height="22"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="BOh-5N-gY0"/>
+                            <constraint firstAttribute="width" constant="22" id="Cfg-ZB-kB0"/>
+                        </constraints>
+                        <state key="normal" image="Unselected"/>
+                        <state key="selected" image="Selected"/>
+                        <connections>
+                            <action selector="optionsSelectionTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="obN-gs-ijA"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-pf-iPk">
+                        <rect key="frame" x="278" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="L4Z-be-8DC"/>
+                            <constraint firstAttribute="height" constant="22" id="usI-k9-IzH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBB-M0-cPJ">
+                        <rect key="frame" x="24" y="15" width="234" height="14"/>
+                        <fontDescription key="fontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="16"/>
+                        <color key="textColor" red="0.086274509803921567" green="0.14901960784313725" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="May-La-Vjb" userLabel="separator">
+                        <rect key="frame" x="19" y="43" width="282" height="1"/>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DOu-3M-V0o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="May-La-Vjb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="7rH-0e-S1H"/>
+                    <constraint firstItem="yDx-0l-6GD" firstAttribute="leading" secondItem="RBB-M0-cPJ" secondAttribute="trailing" constant="20" id="81H-7S-dRm"/>
+                    <constraint firstAttribute="trailing" secondItem="May-La-Vjb" secondAttribute="trailing" constant="19" id="8ra-n2-HX9"/>
+                    <constraint firstAttribute="trailing" secondItem="yDx-0l-6GD" secondAttribute="trailing" constant="20" id="CIR-J7-HUM"/>
+                    <constraint firstAttribute="trailing" secondItem="S6L-pf-iPk" secondAttribute="trailing" constant="20" id="Esa-e3-X4Y"/>
+                    <constraint firstItem="yDx-0l-6GD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Ren-YE-OHr"/>
+                    <constraint firstItem="S6L-pf-iPk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="alI-06-Pgf"/>
+                    <constraint firstAttribute="bottom" secondItem="S6L-pf-iPk" secondAttribute="bottom" constant="11" id="eZM-ya-vl4"/>
+                    <constraint firstItem="RBB-M0-cPJ" firstAttribute="centerY" secondItem="S6L-pf-iPk" secondAttribute="centerY" id="h43-oW-QcL"/>
+                    <constraint firstItem="S6L-pf-iPk" firstAttribute="leading" secondItem="RBB-M0-cPJ" secondAttribute="trailing" constant="20" id="ixi-BO-fqG"/>
+                    <constraint firstAttribute="bottom" secondItem="yDx-0l-6GD" secondAttribute="bottom" constant="11" id="swV-se-Vu0"/>
+                    <constraint firstItem="RBB-M0-cPJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="vQG-kY-VRA"/>
+                    <constraint firstAttribute="bottom" secondItem="May-La-Vjb" secondAttribute="bottom" id="wk0-94-gI1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headerLabel" destination="RBB-M0-cPJ" id="P1i-RC-UYR"/>
+                <outlet property="optionsSelectionButton" destination="yDx-0l-6GD" id="66r-hD-8U9"/>
+                <outlet property="optionsSelectionImageView" destination="S6L-pf-iPk" id="RbS-Oh-x7q"/>
+                <outlet property="separatorBottomConstraint" destination="wk0-94-gI1" id="cbN-wE-wiM"/>
+                <outlet property="seperatorLabel" destination="May-La-Vjb" id="3ai-tS-huz"/>
+            </connections>
+            <point key="canvasLocation" x="53.623188405797109" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Selected" width="66" height="66"/>
+        <image name="Unselected" width="22" height="22"/>
+    </resources>
+</document>

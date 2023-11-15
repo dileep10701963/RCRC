@@ -1,0 +1,11 @@
+xcodeproj: ./RCRC.xcodeproj
+scheme: RCRC
+output_directory: ./test-reports-slather
+ignore:
+  - "Frameworks/*"
+  - "**/DerivedData/*"
+  - "../../../Library/*"
+  - "**/*.m"
+  - "**/*.h"
+  - "**/*ViewController.swift"
+  - "**/*TableViewCell.swift"
